@@ -97,6 +97,55 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-white font-inter leading-snug;
+  }
+
+  main {
+    @apply min-h-[calc(100dvh-4rem)];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-text-heading mb-2 text-balance;
+  }
+
+  h1 {
+    @apply text-3xl md:text-5xl font-bold;
+  }
+
+  h2 {
+    @apply text-xl md:text-3xl font-bold;
+  }
+
+  h3 {
+    @apply text-lg md:text-xl font-bold;
+  }
+
+  h4 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .active {
+    @apply font-bold;
+  }
+
+  .navLink {
+    @apply transition-all duration-200 hover:text-primary;
+  }
+
+  .page {
+    @apply w-full h-full min-h-fit;
+  }
+
+  .halfPage {
+    @apply w-full h-1/2 min-h-fit;
+  }
+
+  .section {
+    @apply mx-auto max-w-custom h-full pt-[4rem] px-x-gap pb-y-gap;
   }
 }

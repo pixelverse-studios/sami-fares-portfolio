@@ -30,7 +30,7 @@ const config: Config = {
           DEFAULT: 'hsl(var(--popover))',
           foreground: 'hsl(var(--popover-foreground))'
         },
-        primary: 'var(--primary)',
+        primary: 'var(--green)',
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))'
@@ -62,6 +62,17 @@ const config: Config = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
+      },
+      fontFamily: {
+        poppins: ['var(--font-poppins)'],
+        inter: ['var(--font-inter)']
+      },
+      maxWidth: {
+        custom: '1400px'
+      },
+      spacing: {
+        'x-gap': '1.5rem',
+        'y-gap': '2.5rem'
       }
     }
   },
