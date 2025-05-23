@@ -101,7 +101,7 @@
   }
 
   main {
-    @apply min-h-[calc(100dvh-4rem)];
+    @apply min-h-[calc(100dvh-8rem)];
   }
 
   h1,

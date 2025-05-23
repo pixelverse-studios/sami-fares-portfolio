@@ -19,7 +19,7 @@ const works = [
 
 export default function FeaturedWorks() {
   return (
-    <section className="halfPage">
+    <section id="work" className="halfPage">
       <div className="section">
         <h3>Featured Work</h3>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">

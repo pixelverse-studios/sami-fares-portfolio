@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <section className="halfPage">
+    <section id="about" className="halfPage">
       <div className="section grid grid-cols-1 md:grid-cols-2 gap-6">
         <article className="flex flex-col gap-8 justify-center">
           <h2 className="mb-6">

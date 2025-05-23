@@ -1,6 +1,6 @@
 export default function HomeHero() {
   return (
-    <section className="halfPage">
+    <section id="home" className="halfPage mt-16">
       <div className="section grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center md:justify-items-end">
         <article className="flex flex-col gap-6 justify-center">
           <h2>
