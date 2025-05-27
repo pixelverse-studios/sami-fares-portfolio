@@ -15,6 +15,7 @@ import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { NavigationMap } from '@/lib/constants'
 import { useSmoothScroll } from '@/lib/hooks/useSmoothScroll'
+import { cn } from '@/lib/utils'
 
 const navItems = Array.from(NavigationMap.values())
 
@@ -50,7 +51,10 @@ export const Navbar: React.FC = () => {
       <div className="max-w-custom h-16 mx-auto flex items-center justify-between py-y-4 px-x-gap">
         <span
           onClick={handleLogoClick}
-          className="text-lg font-bold text-primary cursor-pointer">
+          className={cn(
+            'text-lg font-bold text-primary cursor-pointer',
+            isHome ? '' : 'mx-auto'
+          )}>
           Sami Fares
         </span>
 
@@ -60,18 +64,21 @@ export const Navbar: React.FC = () => {
             <NavigationMenuList className="flex gap-8">
               {navItems.map(item => {
                 if (item.id === 'home') return null
-                return (
-                  <NavigationMenuItem className="navLink" key={item.id}>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        key={item.id}
-                        href={item.id}
-                        onClick={e => handleClick(e, item.id)}>
-                        {item.label}
-                      </Link>
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                )
+                if (isHome) {
+                  return (
+                    <NavigationMenuItem className="navLink" key={item.id}>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          key={item.id}
+                          href={item.id}
+                          onClick={e => handleClick(e, item.id)}>
+                          {item.label}
+                        </Link>
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
+                  )
+                }
+                return null
               })}
             </NavigationMenuList>
           </NavigationMenu>

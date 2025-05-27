@@ -1,3 +1,5 @@
+'use client'
+import { useRouter } from 'next/navigation'
 import { Button } from '../ui/button'
 
 const works = [
@@ -6,18 +8,22 @@ const works = [
     label: 'Jones Pressure Washing',
     description:
       'Designed a full website for a local pressure washing business previously operating with only a single landing page. Led all UX, visual design, and copywriting — with a focus on local SEO, conversion-oriented content, and a premium brand presence built to scale in a competitive market.',
-    destination: '/360-degree-care'
+    destination: '/works/jones-pressure-washing'
   },
   {
     img: '/assets/Home_360.png',
     label: '360 Degree Care',
     description:
       'Designed a multi-page website for a new home health care provider launching online for the first time. Balanced client-driven visual preferences with user-centered UX to build trust, deliver clarity, and support long-term growth.',
-    destination: '/360-degree-care'
+    destination: '/works/360-degree-care'
   }
 ]
 
 export default function FeaturedWorks() {
+  const router = useRouter()
+
+  const onReadClick = (to: string) => router.push(to)
+
   return (
     <section id="work" className="halfPage">
       <div className="section">
@@ -38,7 +44,10 @@ export default function FeaturedWorks() {
                 <div className="h-full px-6 py-8 grid grid-rows-[2rem_1fr_2rem] gap-4 items-start justify-items-start">
                   <h3>{item.label}</h3>
                   <p>{item.description}</p>
-                  <Button className="pl-0" variant="link">
+                  <Button
+                    className="pl-0"
+                    variant="link"
+                    onClick={() => onReadClick(item.destination)}>
                     Read Case Study {'->'}
                   </Button>
                 </div>

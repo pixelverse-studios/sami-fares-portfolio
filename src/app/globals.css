@@ -92,6 +92,10 @@
   }
 }
 
+li::marker {
+  color: var(--green);
+}
+
 @layer base {
   * {
     @apply border-border;
