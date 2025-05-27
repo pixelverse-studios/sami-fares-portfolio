@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import * as FaIcons from 'react-icons/fa6'
-import { IconType } from 'react-icons'
 import { SectionTitle } from './SectionTitle'
 
 type Highlight = {
@@ -60,10 +59,11 @@ export default function StrategyAndDesign({
           })}
         </section>
         {mockups.map(mockup => (
-          <section className="pt-6">
+          <section className="pt-6" key={mockup.explanation}>
             <div className="flex flex-wrap gap-8 pb-10">
               {mockup.imgs.map(img => (
                 <Image
+                  key={img}
                   width={0}
                   height={0}
                   sizes="100vw"

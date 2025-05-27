@@ -31,9 +31,9 @@ export default function ResearchAndDiscovery({
         <h4 className="text-primary mb-3 text-lg">Key Research Takeaways</h4>
         <article className="space-y-4">
           {takeaways.map(item => (
-            <div className="flex gap-4 items-center">
+            <div key={item} className="flex gap-4 items-center">
               <FaLightbulb size={16} className="text-primary" />
-              <p key={item}>{item}</p>
+              <p>{item}</p>
             </div>
           ))}
         </article>
