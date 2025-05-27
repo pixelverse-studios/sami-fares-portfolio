@@ -13,7 +13,7 @@ export default function WorksJPW() {
     <main className="text-text-body">
       <WorkHero
         img="/assets/JPW case/JPW_Hero.png"
-        header="360 Degree Care - UX Case Study"
+        header="Jones Pressure Washing - UX Case Study"
         descriptor="Designing a user-centered home care website while balancing evolving client preferences"
       />
       <ProblemFraming
