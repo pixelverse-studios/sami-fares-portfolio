@@ -14,7 +14,7 @@ export default function WorksJPW() {
       <WorkHero
         img="/assets/JPW case/JPW_Hero.png"
         header="Jones Pressure Washing - UX Case Study"
-        descriptor="Designing a user-centered home care website while balancing evolving client preferences"
+        descriptor="Designing scalable, trust-focused website for a new exterior washing company in New Jersey"
       />
       <ProblemFraming
         items={caseJpw.problemFraming}
