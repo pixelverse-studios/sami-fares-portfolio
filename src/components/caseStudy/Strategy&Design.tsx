@@ -1,19 +1,14 @@
 'use client'
 
-import Image from 'next/image'
 import * as FaIcons from 'react-icons/fa6'
-import { IconType } from 'react-icons'
 import { SectionTitle } from './SectionTitle'
+import { Mockup } from '@/lib/types'
+import Mockups from '../mockups'
 
 type Highlight = {
   header: string
   Icon: string
   description: string
-}
-
-type Mockup = {
-  imgs: string[]
-  explanation: string
 }
 
 interface StrategyAndDesignProps {
@@ -39,6 +34,7 @@ export default function StrategyAndDesign({
         <h4 className="text-primary mb-3 text-lg">Design Highlights</h4>
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {highlights.map(({ header, Icon, description }) => {
+            // eslint-disable-next-line import/namespace
             const IconComponent = FaIcons[Icon as keyof typeof FaIcons]
 
             if (!IconComponent) {
@@ -59,25 +55,7 @@ export default function StrategyAndDesign({
             )
           })}
         </section>
-        {mockups.map(mockup => (
-          <section className="pt-6">
-            <div className="flex flex-wrap gap-8 pb-10">
-              {mockup.imgs.map(img => (
-                <Image
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="h-auto max-h-[600px] w-full max-w-2xl mx-auto flex-1 object-contain"
-                  src={img}
-                  alt="Mockup image"
-                />
-              ))}
-            </div>
-            <p className="bg-background-section w-fit text-center p-4 mx-auto text-text-body rounded-lg">
-              {mockup.explanation}
-            </p>
-          </section>
-        ))}
+        <Mockups mockups={mockups} />
       </div>
     </section>
   )

@@ -13,13 +13,18 @@ import {
 } from '@/components/ui/navigation-menu'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { NavigationMap } from '@/lib/constants'
 import { useSmoothScroll } from '@/lib/hooks/useSmoothScroll'
 import { cn } from '@/lib/utils'
 
-const navItems = Array.from(NavigationMap.values())
+interface NavItem {
+  label: string
+  id: string
+}
+interface NavProps {
+  items: NavItem[]
+}
 
-export const Navbar: React.FC = () => {
+export const Navbar = ({ items }: NavProps) => {
   const pathname = usePathname()
   const router = useRouter()
   const { handleNavClick, scrollToPosition } = useSmoothScroll()
@@ -51,41 +56,35 @@ export const Navbar: React.FC = () => {
       <div className="max-w-custom h-16 mx-auto flex items-center justify-between py-y-4 px-x-gap">
         <span
           onClick={handleLogoClick}
-          className={cn(
-            'text-lg font-bold text-primary cursor-pointer',
-            isHome ? '' : 'mx-auto'
-          )}>
+          className={cn('text-lg font-bold text-primary cursor-pointer')}>
           Sami Fares
         </span>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:block">
+        <nav className={cn('hidden', isHome ? 'md:block' : 'lg:block')}>
           <NavigationMenu>
             <NavigationMenuList className="flex gap-8">
-              {navItems.map(item => {
+              {items.map(item => {
                 if (item.id === 'home') return null
-                if (isHome) {
-                  return (
-                    <NavigationMenuItem className="navLink" key={item.id}>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          key={item.id}
-                          href={item.id}
-                          onClick={e => handleClick(e, item.id)}>
-                          {item.label}
-                        </Link>
-                      </NavigationMenuLink>
-                    </NavigationMenuItem>
-                  )
-                }
-                return null
+                return (
+                  <NavigationMenuItem className="navLink" key={item.id}>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        key={item.id}
+                        href={item.id}
+                        onClick={e => handleClick(e, item.id)}>
+                        {item.label}
+                      </Link>
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                )
               })}
             </NavigationMenuList>
           </NavigationMenu>
         </nav>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden">
+        <div className={isHome ? 'md:hidden' : 'lg:hidden'}>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button
@@ -105,7 +104,7 @@ export const Navbar: React.FC = () => {
               <nav className="mt-6">
                 <NavigationMenu>
                   <NavigationMenuList className="flex flex-col gap-4 items-start">
-                    {navItems.map(item => {
+                    {items.map(item => {
                       if (item.id === 'home') return null
                       return (
                         <NavigationMenuItem className="navLink" key={item.id}>

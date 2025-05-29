@@ -32,8 +32,10 @@ export default function GoalsAndChallenges({
             <h4 className="text-primary mb-3 text-lg">Client Goals</h4>
             <div className="flex flex-col gap-2">
               {goals.map(goal => (
-                <div key={goal} className="flex gap-4 items-center">
-                  <FaCheck size={14} className="text-primary" />
+                <div
+                  key={goal}
+                  className="grid grid-cols-[2rem_1fr] gap-4 items-center">
+                  <FaCheck size={18} className="text-primary" />
                   <p>{goal}</p>
                 </div>
               ))}
@@ -43,7 +45,9 @@ export default function GoalsAndChallenges({
             <h4 className="text-primary mb-3 text-lg">Constraints</h4>
             <div className="flex flex-col gap-2">
               {challenges.map(challenge => (
-                <div key={challenge} className="flex gap-4 items-center">
+                <div
+                  key={challenge}
+                  className="grid grid-cols-[2rem_1fr] gap-4 items-center">
                   <FaBan size={16} className="text-yellow-500" />{' '}
                   <p>{challenge}</p>
                 </div>

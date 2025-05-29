@@ -122,6 +122,7 @@ const finalReflections = {
     'This project demonstrated how thoughtful UX strategy can establish credibility from the ground up — even for a brand with no content, reviews, or digital footprint. By designing for where the business was headed, not just where it was at launch, I helped the client establish a polished digital presence they could confidently grow into.',
     'Final development is currently in progress. All designs shown reflect approved deliverables, and I’m actively collaborating with the developer to bring them to life.'
   ],
+  subHeader: 'Final Designs',
   url: 'www.jonespressurewashingnj.com',
   achievments: [
     'Created a scalable site structure designed to grow with the business',
@@ -140,7 +141,7 @@ const finalReflections = {
   feedback:
     '"The website is everything I envisioned it to be. I understood the challenges during this process but ultimately I am extremely happy with how it all turned out. The website is currently being developed and I am confident once it rolls out business will pick up for us."',
   client: 'Owner, Jones Pressure Washing',
-  img: '/assets/JPW case/JPW_FinalMocks.png'
+  img: ['/assets/JPW case/JPW_FinalMocks.png']
 }
 
 const additionalCases = [

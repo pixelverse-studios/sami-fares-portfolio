@@ -104,6 +104,7 @@ const finalReflections = {
   description: [
     'Despite a tight timeline and strong client direction on visuals, I delivered a responsive, multi-page website that remained grounded in UX best practices. The final design performed well in early user feedback, with clear navigation paths, emotionally calibrated copy, and locally relevant content that built instant credibility.'
   ],
+  subHeader: 'Final Homepage Design',
   url: 'www.360degreecare.net',
   achievments: [
     'Launched a fully responsive, multi-page website on a tight 5-week timeline',
@@ -122,16 +123,8 @@ const finalReflections = {
   feedback:
     '"I’m really happy with how everything turned out. You were flexible, patient, and always found a way to make my ideas work. I appreciate how you took the time to explain things and still delivered something polished, and easy to use. Couldn’t have done it without you."',
   client: 'Owner, 360 Degree Care',
-  img: '/assets/360 case/360_FinalMock.png'
+  img: ['/assets/360 case/360_FinalMock.png']
 }
-
-const additionalCases = [
-  {
-    title: 'Jones Pressure Washing',
-    img: '/assets/JPW case/JPW_FinalMocks.png',
-    route: '/works/jones-pressure-washing '
-  }
-]
 
 export default {
   problemFraming,
@@ -139,6 +132,5 @@ export default {
   goalsAndChallenges,
   researchAndDiscovery,
   strategyAndDesign,
-  finalReflections,
-  additionalCases
+  finalReflections
 }
