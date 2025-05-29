@@ -1,26 +1,30 @@
+'use client'
+
 import { FaSquareCheck, FaLightbulb } from 'react-icons/fa6'
 
 import Image from 'next/image'
 import { SectionTitle } from './SectionTitle'
 
 interface FinalReflectionsProps {
-  description: string[]
-  url: string
   achievments: string[]
-  lessons: string[]
-  feedback: string
   client: string
-  img: string
+  description: string[]
+  feedback: string
+  img: string[]
+  lessons: string[]
+  subHeader: string
+  url: string
 }
 
 export default function FinalReflections({
-  description,
-  url,
   achievments,
-  lessons,
-  feedback,
   client,
-  img
+  description,
+  feedback,
+  img,
+  lessons,
+  subHeader,
+  url
 }: FinalReflectionsProps) {
   return (
     <section>
@@ -38,15 +42,20 @@ export default function FinalReflections({
               {url}
             </a>
           </p>
-          <h4 className="text-center pt-8">Final Homepage Design</h4>
-          <Image
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="h-auto w-full max-w-2xl mx-auto"
-            src={img}
-            alt=""
-          />
+          <h3 className="text-center pt-8">{subHeader}</h3>
+          <div className="flex flex-wrap justify-center gap-8 py-4">
+            {img.map(src => (
+              <div key={src} className="flex-none w-[clamp(20rem,25vw,32rem)]">
+                <Image
+                  src={src}
+                  alt=""
+                  width={800}
+                  height={600}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            ))}
+          </div>
         </article>
         <article className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-20">
           <div className="space-y-4">
@@ -72,11 +81,13 @@ export default function FinalReflections({
             </ul>
           </div>
         </article>
-        <article className="p-6 max-w-4xl bg-background-subtle mx-auto rounded-xl shadow-xl space-y-4">
-          <h4 className="text-lg">Client Feedback</h4>
-          <p>{feedback}</p>
-          <p>- {client}</p>
-        </article>
+        {feedback === '' ? null : (
+          <article className="p-6 max-w-4xl bg-background-subtle mx-auto rounded-xl shadow-xl space-y-4">
+            <h4 className="text-lg">Client Feedback</h4>
+            <p>{feedback}</p>
+            <p>- {client}</p>
+          </article>
+        )}
         <div>
           <div className="h-[1px] w-full bg-white mt-20" />
         </div>

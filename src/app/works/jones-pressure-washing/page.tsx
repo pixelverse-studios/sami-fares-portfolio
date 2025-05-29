@@ -4,7 +4,8 @@ import ProjectOverview from '@/components/caseStudy/ProjectOverview'
 import GoalsAndChallenges from '@/components/caseStudy/Goals&Challenges'
 import StrategyAndDesign from '@/components/caseStudy/Strategy&Design'
 import FinalReflections from '@/components/caseStudy/FinalReflections'
-import AdditionalCases from '@/components/caseStudy/AdditionalCases'
+import AvailableCases from '@/components/caseStudy/AvailableCases'
+import ResearchAndDiscovery from '@/components/caseStudy/Research&Discovery'
 
 import caseJpw from '@/lib/caseStudies/caseJpw'
 
@@ -22,9 +23,10 @@ export default function WorksJPW() {
       />
       <ProjectOverview {...caseJpw.projectOverview} />
       <GoalsAndChallenges {...caseJpw.goalsAndChallenges} />
+      <ResearchAndDiscovery {...caseJpw.researchAndDiscovery} />
       <StrategyAndDesign {...caseJpw.strategyAndDesign} />
       <FinalReflections {...caseJpw.finalReflections} />
-      <AdditionalCases cases={caseJpw.additionalCases} />
+      <AvailableCases current="Jones Pressure Washing" showHeader />
     </main>
   )
 }

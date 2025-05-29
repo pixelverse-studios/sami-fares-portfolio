@@ -5,7 +5,7 @@ import GoalsAndChallenges from '@/components/caseStudy/Goals&Challenges'
 import ResearchAndDiscovery from '@/components/caseStudy/Research&Discovery'
 import StrategyAndDesign from '@/components/caseStudy/Strategy&Design'
 import FinalReflections from '@/components/caseStudy/FinalReflections'
-import AdditionalCases from '@/components/caseStudy/AdditionalCases'
+import AvailableCases from '@/components/caseStudy/AvailableCases'
 
 import case360 from '@/lib/caseStudies/case360'
 
@@ -26,7 +26,7 @@ export default function Works360Degree() {
       <ResearchAndDiscovery {...case360.researchAndDiscovery} />
       <StrategyAndDesign {...case360.strategyAndDesign} />
       <FinalReflections {...case360.finalReflections} />
-      <AdditionalCases cases={case360.additionalCases} />
+      <AvailableCases current="360 Degree Care" showHeader />
     </main>
   )
 }
