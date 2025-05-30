@@ -41,8 +41,8 @@ export default function GoalsAndChallenges({
             <div className="flex flex-col gap-2">
               {goals.map(goal => (
                 <SlideInSection key={goal}>
-                  <div className="grid grid-cols-[2rem_1fr] gap-4 items-center">
-                    <FaCheck size={18} className="text-primary" />
+                  <div className="grid grid-cols-[2rem_1fr] gap-4 items-start">
+                    <FaCheck size={18} className="text-primary w-8 mt-1" />
                     <p>{goal}</p>
                   </div>
                 </SlideInSection>
@@ -56,8 +56,8 @@ export default function GoalsAndChallenges({
             <div className="flex flex-col gap-2">
               {challenges.map(challenge => (
                 <SlideInSection key={challenge}>
-                  <div className="grid grid-cols-[2rem_1fr] gap-4 items-center">
-                    <FaBan size={16} className="text-yellow-500" />{' '}
+                  <div className="grid grid-cols-[2rem_1fr] gap-4 items-start">
+                    <FaBan size={16} className="text-yellow-500 w-8 mt-1" />{' '}
                     <p>{challenge}</p>
                   </div>
                 </SlideInSection>

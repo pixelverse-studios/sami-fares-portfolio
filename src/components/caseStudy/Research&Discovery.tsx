@@ -50,8 +50,8 @@ export default function ResearchAndDiscovery({
         <article className="space-y-4">
           {takeaways.map(item => (
             <SlideInSection key={item}>
-              <div className="flex gap-4 items-center">
-                <FaLightbulb size={16} className="text-primary" />
+              <div className="flex gap-4 items-start">
+                <FaLightbulb size={16} className="text-primary w-8 mt-1" />
                 <p>{item}</p>
               </div>
             </SlideInSection>
