@@ -48,7 +48,7 @@ export default function AvailableCases({
                   <Link
                     className="pl-0 flex gap-3 items-center text-primary group relative overflow-hidden px-4 py-2 rounded-lg transition-all duration-200 hover:text-background-section hover:pl-4 cursor-pointer"
                     href={item.destination}>
-                    <span className="absolute inset-0 bg-primary transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
+                    <span className="absolute inset-0 bg-primary transform -translate-x-[101%] transition-transform duration-300 group-hover:translate-x-0"></span>
                     <span className="relative z-10">Read Case Study</span>
                     <FaArrowRight
                       size={18}
