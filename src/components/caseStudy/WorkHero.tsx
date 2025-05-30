@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { SlideInSection } from '../animations'
 
 interface WorkHeroProps {

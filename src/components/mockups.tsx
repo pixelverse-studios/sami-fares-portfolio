@@ -1,7 +1,6 @@
 'use client'
 
 import { Mockup } from '@/lib/types'
-import Image from 'next/image'
 import { SlideInSection } from './animations'
 
 export default function Mockups({

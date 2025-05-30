@@ -2,7 +2,6 @@
 
 import { FaSquareCheck, FaLightbulb } from 'react-icons/fa6'
 
-import Image from 'next/image'
 import { SectionTitle } from './SectionTitle'
 import { CasesMap } from '@/lib/constants'
 import { SlideInSection } from '../animations'
