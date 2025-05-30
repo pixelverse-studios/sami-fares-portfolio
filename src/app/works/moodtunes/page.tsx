@@ -21,7 +21,7 @@ export default function WorksMoodTunes() {
       />
       <ProblemFraming
         items={caseMood.problemFraming}
-        header="Problem Framing - New Local Business with No Credibility"
+        header="Problem Framing - Music that matches the moment"
       />
       <ProjectOverview {...caseMood.projectOverview} />
       <GoalsAndChallenges {...caseMood.goalsAndChallenges} />
