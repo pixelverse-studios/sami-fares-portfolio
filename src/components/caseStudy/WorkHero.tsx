@@ -25,7 +25,7 @@ export default function WorkHero({ img, header, descriptor }: WorkHeroProps) {
             height={0}
             sizes="(max-width: 768px) 90vw, (max-width: 1200px) 80vw, 70vw"
             className="h-[60vh] w-full"
-            loading={'lazy'}
+            loading={'eager'}
             quality={85}
           />
         </SlideInSection>
