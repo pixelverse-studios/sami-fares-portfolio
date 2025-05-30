@@ -5,7 +5,7 @@ import { SlideInSection } from '../animations'
 export default function AboutMe() {
   return (
     <section id="about" className="halfPage">
-      <div className="section grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="section grid grid-cols-1 md:grid-cols-2 gap-12">
         <article className="flex flex-col gap-8 justify-center">
           <SlideInSection>
             <h2 className="mb-6">
@@ -39,7 +39,7 @@ export default function AboutMe() {
             <img
               src="/assets/Home_About.png"
               alt="Creative designs and headphones sketch"
-              className="rounded-xl"
+              className="rounded-xl w-full"
             />
           </div>
         </SlideInSection>

@@ -60,18 +60,12 @@ export default function FinalReflections({
           <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 py-4 pb-20 px-4">
             {img.map((src, index) => (
               <SlideInSection key={src}>
-                <div className="relative h-[50vh] max-h-[500px]">
-                  <Image
-                    src={src}
-                    alt={`Design showcase ${index + 1}`}
-                    fill
-                    sizes="(max-width: 639px) 100vw, 33vw"
-                    className="object-contain"
-                    priority={index < 2}
-                    loading={index >= 2 ? 'lazy' : 'eager'}
-                    quality={85}
-                  />
-                </div>
+                <img
+                  src={src}
+                  alt={`Design showcase ${index + 1}`}
+                  className="w-full h-auto max-h-[50vh] min-h-[200px] object-contain"
+                  loading={index >= 2 ? 'lazy' : 'eager'}
+                />
               </SlideInSection>
             ))}
           </div>

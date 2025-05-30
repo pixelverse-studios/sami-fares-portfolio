@@ -18,15 +18,11 @@ export default function WorkHero({ img, header, descriptor }: WorkHeroProps) {
           <p>{descriptor}</p>
         </SlideInSection>
         <SlideInSection>
-          <Image
+          <img
             src={img}
             alt={`${header} mockup`}
-            width={0}
-            height={0}
-            sizes="(max-width: 768px) 90vw, (max-width: 1200px) 80vw, 70vw"
-            className="h-[60vh] w-full"
-            loading={'eager'}
-            quality={85}
+            className="h-[60vh] w-full object-contain"
+            loading="eager"
           />
         </SlideInSection>
       </div>

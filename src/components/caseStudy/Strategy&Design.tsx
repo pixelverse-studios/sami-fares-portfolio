@@ -55,7 +55,9 @@ export default function StrategyAndDesign({
                     <div className="rounded-full bg-background-subtle p-2">
                       <IconComponent size={16} className="text-primary" />
                     </div>
-                    <span className="font-semibold text-white">{header}</span>
+                    <span className="font-semibold text-text-heading">
+                      {header}
+                    </span>
                   </div>
                   <p>{description}</p>
                 </div>
