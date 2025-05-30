@@ -23,8 +23,10 @@ export default function WorkHero({ img, header, descriptor }: WorkHeroProps) {
             alt={`${header} mockup`}
             width={0}
             height={0}
-            sizes="100vw"
-            className="h-auto w-full max-w-4xl max-h-[65vh] object-contain"
+            sizes="(max-width: 768px) 90vw, (max-width: 1200px) 80vw, 70vw"
+            className="h-[60vh] w-full"
+            loading={'lazy'}
+            quality={85}
           />
         </SlideInSection>
       </div>
