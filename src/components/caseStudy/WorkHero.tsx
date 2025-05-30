@@ -11,7 +11,7 @@ interface WorkHeroProps {
 export default function WorkHero({ img, header, descriptor }: WorkHeroProps) {
   return (
     <section className="page">
-      <div className="section flex flex-col gap-6 items-center space-y-4">
+      <div className="section flex flex-col gap-6 items-center space-y-4 mt-10">
         <h1>{header}</h1>
         <p>{descriptor}</p>
         <Image

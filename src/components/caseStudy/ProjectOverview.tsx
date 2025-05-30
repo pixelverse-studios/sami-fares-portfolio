@@ -1,4 +1,9 @@
+'use client'
+
 import { SectionTitle } from './SectionTitle'
+import { CasesMap } from '@/lib/constants'
+
+const id = CasesMap.get(1).id
 
 interface ProjectOverviewProps {
   client: string
@@ -18,7 +23,7 @@ export default function ProjectOverview({
   tools
 }: ProjectOverviewProps) {
   return (
-    <section className="halfPage text-sm">
+    <section id={id} className="halfPage text-sm">
       <div className="section">
         <SectionTitle header="Project Overview" position="0.1" />
         <div className="space-y-4">
@@ -32,8 +37,11 @@ export default function ProjectOverview({
             <article className="space-y-4">
               <h4 className="text-primary mb-3 text-lg">My Role</h4>
               <div>
-                {roles.map(role => (
-                  <span key={role}>{role}</span>
+                {roles.map((role, index) => (
+                  <span key={role}>
+                    {role}
+                    {index < roles.length - 1 ? ', ' : ''}
+                  </span>
                 ))}
               </div>
               <h4 className="text-primary mb-3 text-lg">Client</h4>

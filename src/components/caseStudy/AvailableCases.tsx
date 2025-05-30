@@ -13,51 +13,45 @@ export default function AvailableCases({
   current,
   showHeader
 }: AdditionalCasesProps) {
-  // const availableCases = useMemo(
-  //   () => allCases.filter(item => item.title !== current),
-  //   [current]
-  // )
   const filtered = useMemo(
     () => allCases.filter(item => item.label !== current),
     [current]
   )
 
   return (
-    <section>
-      <div className="section">
-        {showHeader ? (
-          <h3 className="text-text-heading text-center mb-6">
-            View More Case Studies
-          </h3>
-        ) : null}
-        <ul className="flex flex-wrap justify-center gap-4 mt-10 mx-auto">
-          {filtered.map(item => (
-            <div
-              key={item.label}
-              className="flex-none w-[clamp(15rem,30vw,24rem)] grid grid-rows-2 shadow-xl rounded-xl border-primary bg-background-section">
-              <div className="px-6 py-4 h-80">
-                <img
-                  src={item.img}
-                  alt={`${item.label} example image`}
-                  className="object-fit h-full w-auto mx-auto"
-                />
-              </div>
-              <div className="bg-background-subtle rounded-b-xl h-full">
-                <div className="h-full px-6 py-8 grid grid-rows-[2rem_1fr_2rem] gap-4 items-start justify-items-start">
-                  <h3>{item.label}</h3>
-                  <p>{item.description}</p>
-                  <Link
-                    className="pl-0 flex gap-3 items-center text-primary hover:underline"
-                    href={item.destination}>
-                    Read Case Study
-                    <FaArrowRight size={18} className="text-primary" />
-                  </Link>
-                </div>
+    <div className="section">
+      {showHeader ? (
+        <h3 className="text-text-heading text-center mb-6">
+          View More Case Studies
+        </h3>
+      ) : null}
+      <ul className="flex flex-wrap justify-center gap-4 mx-auto">
+        {filtered.map(item => (
+          <div
+            key={item.label}
+            className="flex-none w-[clamp(20rem,29vw,24rem)] grid grid-rows-2 shadow-xl rounded-xl border-primary bg-background-section">
+            <div className="px-6 py-4 h-80">
+              <img
+                src={item.img}
+                alt={`${item.label} example image`}
+                className="object-fit h-full w-auto mx-auto object-contain"
+              />
+            </div>
+            <div className="bg-background-subtle rounded-b-xl h-full">
+              <div className="h-full px-6 py-8 grid grid-rows-[2rem_1fr_2rem] gap-4 items-start justify-items-start">
+                <h3>{item.label}</h3>
+                <p>{item.description}</p>
+                <Link
+                  className="pl-0 flex gap-3 items-center text-primary hover:underline"
+                  href={item.destination}>
+                  Read Case Study
+                  <FaArrowRight size={18} className="text-primary" />
+                </Link>
               </div>
             </div>
-          ))}
-        </ul>
-      </div>
-    </section>
+          </div>
+        ))}
+      </ul>
+    </div>
   )
 }

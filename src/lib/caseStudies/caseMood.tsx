@@ -103,14 +103,14 @@ const strategyAndDesign = {
     },
     {
       header: 'Playlist Logic',
-      Icon: 'FaStar',
+      Icon: 'FaGears',
       description:
         'Informed playlist groupings using sound frequency principles to align music with emotional or cognitive states like focus or relaxation.'
     }
   ],
   mockups: [
     {
-      imgs: ['/assets/MoodTunes/AristProfile.png'],
+      imgs: ['/assets/MoodTunes/ArtistProfile.png'],
       explanation: 'Mockup showing the Artist Profile Screen under Discovery'
     }
   ]
@@ -141,7 +141,7 @@ const finalReflections = {
   img: [
     '/assets/MoodTunes/HomeScreen.png',
     '/assets/MoodTunes/Playlist.png',
-    '/assets/MoodTunes/AristProfile.png'
+    '/assets/MoodTunes/ArtistProfile.png'
   ]
 }
 

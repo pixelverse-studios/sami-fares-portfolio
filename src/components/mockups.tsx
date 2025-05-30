@@ -14,15 +14,17 @@ export default function Mockups({
     <>
       {mockups.map(mockup => (
         <section className="pt-6" key={mockup.explanation}>
-          <div className="flex justify-center gap-6 pb-10">
+          <div className="flex flex-wrap justify-center gap-6 pb-10">
             {mockup.imgs.map(src => (
-              <div key={src} className="flex-none w-[clamp(20rem,30vw,32rem)]">
+              <div
+                key={src}
+                className="relative flex-none w-full max-w-[90vw] h-[50vh] sm:w-[clamp(20rem,30vw,32rem)] sm:h-[clamp(24rem,50vh,48rem)]">
                 <Image
                   src={src}
                   alt="Mockup image"
-                  width={800}
-                  height={800}
-                  className="w-full h-auto object-contain"
+                  fill
+                  sizes="(max-width: 639px) 90vw, 30vw"
+                  className="object-contain"
                 />
               </div>
             ))}

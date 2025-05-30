@@ -92,10 +92,10 @@ const strategyAndDesign = {
     {
       imgs: [
         '/assets/360 case/NursingMock.png',
-        '/assets/360 case/HomeMock.png'
+        '/assets/360 case/AidesMock.png'
       ],
       explanation:
-        'Mockups showing the Nursing Services page layout (left) and the Home Health Care page (right)'
+        'Mockups showing the Nursing Services page layout (left) and the Home Health Aide page (right)'
     }
   ]
 }

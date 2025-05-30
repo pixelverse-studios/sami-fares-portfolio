@@ -30,6 +30,7 @@ export const Navbar = ({ items }: NavProps) => {
   const { handleNavClick, scrollToPosition } = useSmoothScroll()
 
   const [open, setOpen] = useState(false)
+  const [active, setActive] = useState('')
 
   const isHome = useMemo(() => pathname === '/', [pathname])
 
@@ -39,6 +40,7 @@ export const Navbar = ({ items }: NavProps) => {
       block: 'start'
     })
     setOpen(false)
+    setActive(to)
   }
 
   const handleLogoClick = () => {
@@ -48,6 +50,7 @@ export const Navbar = ({ items }: NavProps) => {
       router.push('/')
     }
 
+    setActive('')
     return setOpen(false)
   }
 
@@ -60,14 +63,18 @@ export const Navbar = ({ items }: NavProps) => {
           Sami Fares
         </span>
 
-        {/* Desktop Navigation */}
         <nav className={cn('hidden', isHome ? 'md:block' : 'lg:block')}>
           <NavigationMenu>
             <NavigationMenuList className="flex gap-8">
               {items.map(item => {
                 if (item.id === 'home') return null
                 return (
-                  <NavigationMenuItem className="navLink" key={item.id}>
+                  <NavigationMenuItem
+                    className={cn(
+                      'navLink',
+                      active === item.id ? 'active-navLink' : ''
+                    )}
+                    key={item.id}>
                     <NavigationMenuLink asChild>
                       <Link
                         key={item.id}

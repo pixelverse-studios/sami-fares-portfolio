@@ -4,6 +4,9 @@ import * as FaIcons from 'react-icons/fa6'
 import { SectionTitle } from './SectionTitle'
 import { Mockup } from '@/lib/types'
 import Mockups from '../mockups'
+import { CasesMap } from '@/lib/constants'
+
+const id = CasesMap.get(4).id
 
 type Highlight = {
   header: string
@@ -23,7 +26,7 @@ export default function StrategyAndDesign({
   mockups
 }: StrategyAndDesignProps) {
   return (
-    <section className="halfPage text-sm">
+    <section id={id} className="halfPage text-sm">
       <div className="section space-y-4">
         <SectionTitle position="0.4" header="UX Strategy & Design Decisions" />
         <article className="space-y-4">

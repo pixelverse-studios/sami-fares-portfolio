@@ -4,6 +4,9 @@ import { FaSquareCheck, FaLightbulb } from 'react-icons/fa6'
 
 import Image from 'next/image'
 import { SectionTitle } from './SectionTitle'
+import { CasesMap } from '@/lib/constants'
+
+const id = CasesMap.get(5).id
 
 interface FinalReflectionsProps {
   achievments: string[]
@@ -27,7 +30,7 @@ export default function FinalReflections({
   url
 }: FinalReflectionsProps) {
   return (
-    <section>
+    <section id={id}>
       <div className="section text-sm text-text-body space-y-4">
         <SectionTitle position="" header="Final Designs & Reflection" />
         <article className="space-y-4">
@@ -43,15 +46,23 @@ export default function FinalReflections({
             </a>
           </p>
           <h3 className="text-center pt-8">{subHeader}</h3>
-          <div className="flex flex-wrap justify-center gap-8 py-4">
+          <div className="flex flex-wrap justify-center gap-4 py-4 pb-20">
             {img.map(src => (
-              <div key={src} className="flex-none w-[clamp(20rem,25vw,32rem)]">
+              <div
+                key={src}
+                className="
+        relative 
+        flex-none 
+        w-full max-w-[90vw] h-[50vh] 
+        sm:w-[clamp(20rem,25vw,32rem)] sm:h-[clamp(24rem,50vh,48rem)]
+      ">
                 <Image
                   src={src}
                   alt=""
-                  width={800}
-                  height={600}
-                  className="w-full h-auto object-contain"
+                  fill
+                  // below:
+                  sizes="(max-width: 639px) 90vw, 25vw"
+                  className="object-contain"
                 />
               </div>
             ))}

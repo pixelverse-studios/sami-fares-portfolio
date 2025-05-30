@@ -137,6 +137,10 @@ li::marker {
   h4 {
     @apply font-semibold;
   }
+
+  section {
+    @apply scroll-mt-6;
+  }
 }
 
 @layer components {
@@ -146,6 +150,10 @@ li::marker {
 
   .navLink {
     @apply transition-all duration-200 hover:text-primary;
+  }
+
+  .active-navLink {
+    @apply text-primary;
   }
 
   .page {

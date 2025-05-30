@@ -4,7 +4,7 @@ import { ContactMap } from '@/lib/constants'
 
 export default function Footer() {
   return (
-    <footer className="bg-background-section">
+    <footer id="contact" className="bg-background-section">
       <section className="max-w-custom mx-auto min-h-16 px-x-gap py-y-gap space-y-10">
         <p className="text-xl text-center">
           Open to joining a UX team - let's connect

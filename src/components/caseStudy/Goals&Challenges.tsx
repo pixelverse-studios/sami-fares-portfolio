@@ -2,6 +2,9 @@
 import { FaCheck, FaBan } from 'react-icons/fa6'
 
 import { SectionTitle } from './SectionTitle'
+import { CasesMap } from '@/lib/constants'
+
+const id = CasesMap.get(2).id
 
 interface GoalsAndChallengesProps {
   goals: string[]
@@ -15,7 +18,7 @@ export default function GoalsAndChallenges({
   description
 }: GoalsAndChallengesProps) {
   return (
-    <section className="halfPage text-sm">
+    <section id={id} className="halfPage text-sm">
       <div className="section space-y-4">
         <SectionTitle
           position="0.2"

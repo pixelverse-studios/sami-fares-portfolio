@@ -1,4 +1,7 @@
 import { SectionTitle } from './SectionTitle'
+import { CasesMap } from '@/lib/constants'
+
+const id = CasesMap.get(0).id
 
 interface ProblemFramingProps {
   items: string[]
@@ -7,7 +10,7 @@ interface ProblemFramingProps {
 
 export default function ProblemFraming({ items, header }: ProblemFramingProps) {
   return (
-    <section className="halfPage">
+    <section id={id} className="halfPage">
       <div className="section">
         <SectionTitle position="0.0" header={header} />
         <div className="space-y-4">

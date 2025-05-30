@@ -27,11 +27,8 @@ module.exports = {
     'react/no-unescaped-entities': 'off',
     '@next/next/no-img-element': 'off',
     'import/no-anonymous-default-export': 'off',
-<<<<<<< HEAD
-    'import/namespace': 'off'
-=======
+    'import/namespace': 'off',
     'react-hooks/exhaustive-deps': 'warn'
->>>>>>> pvs-8
   },
   overrides: [
     {

@@ -112,7 +112,7 @@ const strategyAndDesign = {
     {
       imgs: ['/assets/JPW case/JPW_MobilePair.png'],
       explanation:
-        'Monile Mockups of the Soft Was Service page and Additional Service page'
+        'Mobile Mockups of the Soft Wash Service page and Additional Service page'
     }
   ]
 }
