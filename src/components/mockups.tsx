@@ -24,7 +24,7 @@ export default function Mockups({
                   alt="Mockup image"
                   fill
                   sizes="(max-width: 639px) 90vw, 30vw"
-                  className="object-contain"
+                  className="object-contain z-[-1]"
                 />
               </div>
             ))}

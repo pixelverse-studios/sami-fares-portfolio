@@ -30,7 +30,11 @@ const config: Config = {
           DEFAULT: 'hsl(var(--popover))',
           foreground: 'hsl(var(--popover-foreground))'
         },
-        primary: 'var(--green)',
+        primary: {
+          DEFAULT: 'var(--green)',
+          light: 'var(--light-green)',
+          dark: 'var(--dark-green)'
+        },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))'

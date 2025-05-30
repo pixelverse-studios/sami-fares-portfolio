@@ -1,6 +1,8 @@
 // app/layout.tsx
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { ThemeProvider } from 'next-themes'
+
 import AppNavbar from '@/components/AppNavbar'
 import Footer from '@/components/footer'
 import { NavigationMap, CasesMap } from '@/lib/constants'
@@ -36,10 +38,14 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={inter.variable}>
-        {/* our new client wrapper */}
-        <AppNavbar navItems={navItems} caseItems={caseItems} />
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="system"
+          enableSystem>
+          <AppNavbar navItems={navItems} caseItems={caseItems} />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -13,7 +13,9 @@
   --text-body: #cccccc;
 
   /* Accent */
+  --light-green: #86efac;
   --green: #6be28c;
+  --dark-green: #16a34a;
 }
 
 [data-theme='light'] {
@@ -27,7 +29,9 @@
   --text-body: #444444;
 
   /* Accent */
+  --light-green: #22c55e;
   --green: #3ba66b;
+  --dark-green: #15803d;
 }
 
 @layer utilities {
@@ -108,7 +112,7 @@ li::marker {
     @apply border-border;
   }
   body {
-    @apply bg-background text-white font-inter leading-snug;
+    @apply bg-background text-text-body font-inter leading-snug;
   }
 
   main {

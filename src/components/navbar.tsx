@@ -15,6 +15,7 @@ import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { useSmoothScroll } from '@/lib/hooks/useSmoothScroll'
 import { cn } from '@/lib/utils'
+import { ThemeToggle } from './themeToggle'
 
 interface NavItem {
   label: string
@@ -56,7 +57,7 @@ export const Navbar = ({ items }: NavProps) => {
 
   return (
     <header className="bg-background fixed top-0 w-full">
-      <div className="max-w-custom h-16 mx-auto flex items-center justify-between py-y-4 px-x-gap">
+      <div className="max-w-custom h-16 mx-auto flex items-center justify-between py-y-4 px-x-gap border-b border-b-primary">
         <span
           onClick={handleLogoClick}
           className={cn('text-lg font-bold text-primary cursor-pointer')}>
@@ -86,6 +87,7 @@ export const Navbar = ({ items }: NavProps) => {
                   </NavigationMenuItem>
                 )
               })}
+              <ThemeToggle />
             </NavigationMenuList>
           </NavigationMenu>
         </nav>
@@ -114,7 +116,12 @@ export const Navbar = ({ items }: NavProps) => {
                     {items.map(item => {
                       if (item.id === 'home') return null
                       return (
-                        <NavigationMenuItem className="navLink" key={item.id}>
+                        <NavigationMenuItem
+                          className={cn(
+                            'navLink',
+                            active === item.id ? 'active-navLink' : ''
+                          )}
+                          key={item.id}>
                           <NavigationMenuLink asChild>
                             <Link
                               key={item.id}
@@ -126,6 +133,7 @@ export const Navbar = ({ items }: NavProps) => {
                         </NavigationMenuItem>
                       )
                     })}
+                    <ThemeToggle />
                   </NavigationMenuList>
                 </NavigationMenu>
               </nav>
