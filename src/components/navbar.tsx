@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { FaBars } from 'react-icons/fa6'
@@ -31,32 +31,68 @@ export const Navbar = ({ items }: NavProps) => {
   const { handleNavClick, scrollToPosition } = useSmoothScroll()
 
   const [open, setOpen] = useState(false)
-  const [active, setActive] = useState('')
+  const [activeSection, setActiveSection] = useState('')
 
+  console.log('activeSection: ', activeSection)
   const isHome = useMemo(() => pathname === '/', [pathname])
 
+  // Scroll spy effect
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px', // Trigger when section is 20% from top
+      threshold: 0
+    }
+
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.id
+          setActiveSection(sectionId)
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions)
+
+    // Observe all sections
+    const sections = items
+      .map(item => document.getElementById(item.id))
+      .filter(Boolean)
+    sections.forEach(section => {
+      if (section) observer.observe(section)
+    })
+
+    // Cleanup
+    return () => {
+      sections.forEach(section => {
+        if (section) observer.unobserve(section)
+      })
+    }
+  }, [items, isHome])
+
+  // Handle manual navigation clicks
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, to: string) => {
     handleNavClick(e, to, {
       behavior: 'smooth',
       block: 'start'
     })
     setOpen(false)
-    setActive(to)
+    // Don't set active here - let the scroll spy handle it
   }
 
   const handleLogoClick = () => {
     if (isHome) {
       scrollToPosition(0)
+      setActiveSection('home') // Set home as active when scrolling to top
     } else {
       router.push('/')
     }
-
-    setActive('')
-    return setOpen(false)
+    setOpen(false)
   }
 
   return (
-    <header className="bg-background fixed top-0 w-full">
+    <header className="bg-background fixed top-0 w-full z-50">
       <div className="max-w-custom h-16 mx-auto flex items-center justify-between py-y-4 px-x-gap border-b border-b-primary">
         <span
           onClick={handleLogoClick}
@@ -73,13 +109,13 @@ export const Navbar = ({ items }: NavProps) => {
                   <NavigationMenuItem
                     className={cn(
                       'navLink',
-                      active === item.id ? 'active-navLink' : ''
+                      activeSection === item.id ? 'active-navLink' : ''
                     )}
                     key={item.id}>
                     <NavigationMenuLink asChild>
                       <Link
                         key={item.id}
-                        href={item.id}
+                        href={`#${item.id}`}
                         onClick={e => handleClick(e, item.id)}>
                         {item.label}
                       </Link>
@@ -119,13 +155,13 @@ export const Navbar = ({ items }: NavProps) => {
                         <NavigationMenuItem
                           className={cn(
                             'navLink',
-                            active === item.id ? 'active-navLink' : ''
+                            activeSection === item.id ? 'active-navLink' : ''
                           )}
                           key={item.id}>
                           <NavigationMenuLink asChild>
                             <Link
                               key={item.id}
-                              href={item.id}
+                              href={`#${item.id}`}
                               onClick={e => handleClick(e, item.id)}>
                               {item.label}
                             </Link>
