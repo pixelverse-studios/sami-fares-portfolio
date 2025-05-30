@@ -106,8 +106,7 @@ const strategyAndDesign = {
         '/assets/JPW case/JPW_Mock1.png',
         '/assets/JPW case/JPW_Mock2.png'
       ],
-      explanation:
-        'Mockups comparing the original layout (left) with the new version (right)'
+      explanation: 'Mockups comparing the original layout with the new version'
     },
     {
       imgs: ['/assets/JPW case/JPW_MobilePair.png'],

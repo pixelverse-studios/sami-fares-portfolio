@@ -95,7 +95,7 @@ const strategyAndDesign = {
         '/assets/360 case/AidesMock.png'
       ],
       explanation:
-        'Mockups showing the Nursing Services page layout (left) and the Home Health Aide page (right)'
+        'Mockups showing the Nursing Services page layout and the Home Health Aide page'
     }
   ]
 }

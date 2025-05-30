@@ -73,7 +73,7 @@ const researchAndDiscovery = {
         '/assets/MoodTunes/playlistWF.png'
       ],
       explanation:
-        'Early wireframes showcasing the Homepage (left) and personalized mix (right)'
+        'Early wireframes showcasing the Homepage and personalized mix'
     }
   ]
 }

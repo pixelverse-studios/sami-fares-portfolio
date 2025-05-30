@@ -16,50 +16,50 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Sami Fares | UI/UX',
+  title: 'Sami Fares | UX/UI',
   description:
     "I'm a UX Designer who makes things easy to use and hard to ignore.",
   icons: {
     icon: [
       {
-        url: '/assets/favicon_16x16.svg',
-        type: 'image/svg+xml',
+        url: '/assets/NewAvatar.png',
+        type: 'image/png',
         sizes: '16x16'
       },
       {
-        url: '/assets/favicon_32x32.svg',
-        type: 'image/svg+xml',
+        url: '/assets/NewAvatar.png',
+        type: 'image/png',
         sizes: '32x32'
       },
       {
-        url: '/assets/favicon_200x200.svg',
-        type: 'image/svg+xml',
+        url: '/assets/NewAvatar.png',
+        type: 'image/png',
         sizes: '64x64'
       }
     ],
     apple: [
       {
-        url: '/assets/favicon_200x200.svg',
+        url: '/assets/NewAvatar.png',
         sizes: '180x180',
-        type: 'image/svg+xml'
+        type: 'image/png'
       }
     ],
-    shortcut: '/assets/favicon_32x32.svg'
+    shortcut: '/assets/NewAvatar.png'
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://samifares.com',
+    url: 'https://www.samifares.com',
     siteName: 'Sami Fares Portfolio',
-    title: 'Sami Fares | UI/UX Designer',
+    title: 'Sami Fares | UX/UI Designer',
     description:
       "I'm a UX Designer who makes things easy to use and hard to ignore.",
     images: [
       {
-        url: '/og-image.jpg',
+        url: 'https://www.samifares.com/og-image.jpg', // Use absolute URL
         width: 1200,
         height: 630,
-        alt: 'Sami Fares - UI/UX Designer Portfolio'
+        alt: 'Sami Fares - UX/UI Designer Portfolio'
       }
     ]
   },
@@ -67,10 +67,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@samifares',
     creator: '@samifares',
-    title: 'Sami Fares | UI/UX Designer',
+    title: 'Sami Fares | UX/UI Designer',
     description:
       "I'm a UX Designer who makes things easy to use and hard to ignore.",
-    images: ['/og-image.jpg']
+    images: ['https://www.samifares.com/og-image.jpg'] // Use absolute URL
   },
   robots: {
     index: true,
@@ -101,7 +101,8 @@ export default function RootLayout({
           href="/assets/favicon_32x32.svg"
           type="image/svg+xml"
         />
-        <link rel="apple-touch-icon" href="/assets/favicon_200x200.svg" />
+        {/* <link rel="icon" href="/assets/NewAvatar.png" type="image/png" /> */}
+        <link rel="apple-touch-icon" href="/assets/NewAvatar.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={inter.variable}>
