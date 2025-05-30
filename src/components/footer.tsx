@@ -18,7 +18,7 @@ export default function Footer() {
               </span>
             </li>
           </a>
-          <a href={ContactMap.get('linkedin')} target="__blank">
+          <a href={ContactMap.get('linkedin')} target="_blank">
             <li className="flex flex-col gap-4 items-center group cursor-pointer">
               <FaLinkedinIn size={30} className="text-primary" />
               <span className="transition-all duration-200 group-hover:text-primary">
@@ -26,12 +26,16 @@ export default function Footer() {
               </span>
             </li>
           </a>
-          <li className="flex flex-col gap-4 items-center group cursor-pointer">
+          <a
+            href="/assets/Sami_Fares_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col gap-4 items-center group cursor-pointer">
             <FaFilePdf size={30} className="text-primary" />
             <span className="transition-all duration-200 group-hover:text-primary">
               Resume
             </span>
-          </li>
+          </a>
         </ul>
         <p className="text-text-body text-sm text-center">
           © {new Date().getFullYear()} Sami Fares. All rights reserved.

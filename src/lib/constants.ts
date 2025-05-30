@@ -1,6 +1,6 @@
 const ContactMap = new Map()
 ContactMap.set('email', 'samifdesigns@gmail.com')
-ContactMap.set('linkedin', 'www.linkedin.com/in/sami-fares812')
+ContactMap.set('linkedin', 'https://www.linkedin.com/in/sami-fares812')
 
 const NavigationMap = new Map()
 NavigationMap.set('home', { label: '', id: 'home' })
