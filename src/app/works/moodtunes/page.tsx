@@ -1,3 +1,5 @@
+'use client'
+
 import WorkHero from '@/components/caseStudy/WorkHero'
 import ProblemFraming from '@/components/caseStudy/ProblemFraming'
 import ProjectOverview from '@/components/caseStudy/ProjectOverview'

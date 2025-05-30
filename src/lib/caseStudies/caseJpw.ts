@@ -123,7 +123,7 @@ const finalReflections = {
     'Final development is currently in progress. All designs shown reflect approved deliverables, and I’m actively collaborating with the developer to bring them to life.'
   ],
   subHeader: 'Final Designs',
-  url: 'www.jonespressurewashingnj.com',
+  url: 'https://www.jonespressurewashingnj.com',
   achievments: [
     'Created a scalable site structure designed to grow with the business',
     'Built a clean, professional brand presence from the ground up',

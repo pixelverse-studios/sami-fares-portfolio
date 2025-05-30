@@ -37,7 +37,7 @@ Notes:
 ------
 - Some files may have been excluded based on .gitignore rules and Repomix's configuration
 - Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
-- Only files matching these patterns are included: src/components/navbar.tsx, src/lib/constants.ts, src/components/home/HomeHero.tsx, src/components/AppNavbar.tsx
+- Only files matching these patterns are included: src/app/page.tsx, src/components/home/FeaturedWorks.tsx, src/components/home/AboutMe.tsx, src/components/home/HomeHero.tsx
 - Files matching patterns in .gitignore are excluded
 - Files matching default ignore patterns are excluded
 - Files are sorted by Git change count (files with more changes are at the bottom)
@@ -47,43 +47,73 @@ Notes:
 Directory Structure
 ================================================================
 src/
+  app/
+    page.tsx
   components/
     home/
+      AboutMe.tsx
+      FeaturedWorks.tsx
       HomeHero.tsx
-    AppNavbar.tsx
-    navbar.tsx
-  lib/
-    constants.ts
 
 ================================================================
 Files
 ================================================================
 
 ================
-File: src/components/AppNavbar.tsx
+File: src/app/page.tsx
 ================
-// components/AppNavbar.tsx
-'use client'
+import HomeHero from '@/components/home/HomeHero'
+import FeaturedWorks from '@/components/home/FeaturedWorks'
+import AboutMe from '@/components/home/AboutMe'
 
-import { useMemo } from 'react'
-import { usePathname } from 'next/navigation'
-import { Navbar } from '@/components/navbar'
-// import type { NavItem } from '@/lib/constants'
-
-export default function AppNavbar({
-  navItems,
-  caseItems
-}: {
-  navItems: any
-  caseItems: any
-}) {
-  const pathname = usePathname()
-  const items = useMemo(
-    () => (pathname === '/' ? navItems : caseItems),
-    [pathname, navItems, caseItems]
+export default function Home() {
+  return (
+    <main>
+      <HomeHero />
+      <FeaturedWorks />
+      <AboutMe />
+    </main>
   )
+}
 
-  return <Navbar items={items} />
+================
+File: src/components/home/AboutMe.tsx
+================
+export default function AboutMe() {
+  return (
+    <section id="about" className="halfPage">
+      <div className="section grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article className="flex flex-col gap-8 justify-center">
+          <h2 className="mb-6">
+            About <span className="text-primary">Me</span>
+          </h2>
+          <p>
+            I’ve always been a creative, and my path to design started in music.
+            Writing and producing for recording artists taught me how to
+            brainstorm, collaborate, and turn ideas into something people could
+            connect with. Music showed me how to create for people—and that’s
+            what drew me to UX as well: the idea that creativity can shape
+            experiences people actually enjoy and use. Transitioning into design
+            felt like a natural extension of the work I was already doing. Now,
+            I bring that same mindset to every project: thoughtful, hands-on,
+            and focused on creating something that truly works for the people
+            using it—because like the music, it was made for them.
+          </p>
+          <p>
+            When I’m not designing, you can probably find me outside fishing—a
+            hobby that gets me away from screens and helps clear my mind.
+          </p>
+        </article>
+        <div className="flex-1 bg-background-section p-10 rounded-xl h-full w-auto mx-auto">
+          <img
+            src="/assets/Home_About.png"
+            alt="Creative designs and headphones sketch"
+            className="rounded-xl"
+          />
+        </div>
+      </div>
+    </section>
+  )
 }
 
 ================
@@ -110,175 +140,20 @@ export default function HomeHero() {
 }
 
 ================
-File: src/lib/constants.ts
-================
-const ContactMap = new Map()
-ContactMap.set('email', 'samifdesigns@gmail.com')
-ContactMap.set('linkedin', 'https://www.linkedin.com/in/sami-fares812')
-
-const NavigationMap = new Map()
-NavigationMap.set('home', { label: '', id: 'home' })
-NavigationMap.set('work', { label: 'Work', id: 'work' })
-NavigationMap.set('about', { label: 'About', id: 'about' })
-NavigationMap.set('contact', { label: 'Contact', id: 'contact' })
-
-const CasesMap = new Map()
-CasesMap.set(0, { label: 'Problem', id: 'Problem' })
-CasesMap.set(1, { label: 'Overview', id: 'Overview' })
-CasesMap.set(2, { label: 'Challenges', id: 'Challenges' })
-CasesMap.set(3, { label: 'Research', id: 'Research' })
-CasesMap.set(4, { label: 'Strategy', id: 'Strategy' })
-CasesMap.set(5, { label: 'Final', id: 'Final' })
-
-export { ContactMap, NavigationMap, CasesMap }
-
-================
-File: src/components/navbar.tsx
+File: src/components/home/FeaturedWorks.tsx
 ================
 'use client'
 
-import { useMemo, useState } from 'react'
-import { useRouter, usePathname } from 'next/navigation'
-import Link from 'next/link'
-import { FaBars } from 'react-icons/fa6'
+import AvailableCases from '../caseStudy/AvailableCases'
 
-import {
-  NavigationMenu,
-  NavigationMenuList,
-  NavigationMenuItem,
-  NavigationMenuLink
-} from '@/components/ui/navigation-menu'
-import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { useSmoothScroll } from '@/lib/hooks/useSmoothScroll'
-import { cn } from '@/lib/utils'
-import { ThemeToggle } from './themeToggle'
-
-interface NavItem {
-  label: string
-  id: string
-}
-interface NavProps {
-  items: NavItem[]
-}
-
-export const Navbar = ({ items }: NavProps) => {
-  const pathname = usePathname()
-  const router = useRouter()
-  const { handleNavClick, scrollToPosition } = useSmoothScroll()
-
-  const [open, setOpen] = useState(false)
-  const [active, setActive] = useState('')
-
-  const isHome = useMemo(() => pathname === '/', [pathname])
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, to: string) => {
-    handleNavClick(e, to, {
-      behavior: 'smooth',
-      block: 'start'
-    })
-    setOpen(false)
-    setActive(to)
-  }
-
-  const handleLogoClick = () => {
-    if (isHome) {
-      scrollToPosition(0)
-    } else {
-      router.push('/')
-    }
-
-    setActive('')
-    return setOpen(false)
-  }
-
+export default function FeaturedWorks() {
   return (
-    <header className="bg-background fixed top-0 w-full">
-      <div className="max-w-custom h-16 mx-auto flex items-center justify-between py-y-4 px-x-gap border-b border-b-primary">
-        <span
-          onClick={handleLogoClick}
-          className={cn('text-lg font-bold text-primary cursor-pointer')}>
-          Sami Fares
-        </span>
-
-        <nav className={cn('hidden', isHome ? 'md:block' : 'lg:block')}>
-          <NavigationMenu>
-            <NavigationMenuList className="flex gap-8">
-              {items.map(item => {
-                if (item.id === 'home') return null
-                return (
-                  <NavigationMenuItem
-                    className={cn(
-                      'navLink',
-                      active === item.id ? 'active-navLink' : ''
-                    )}
-                    key={item.id}>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        key={item.id}
-                        href={item.id}
-                        onClick={e => handleClick(e, item.id)}>
-                        {item.label}
-                      </Link>
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                )
-              })}
-              <ThemeToggle />
-            </NavigationMenuList>
-          </NavigationMenu>
-        </nav>
-
-        {/* Mobile Navigation */}
-        <div className={isHome ? 'md:hidden' : 'lg:hidden'}>
-          <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                aria-label="Open menu"
-                className="text-primary">
-                <FaBars />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="top" className="text-xl">
-              <span
-                onClick={handleLogoClick}
-                className="cursor-pointer text-2xl font-bold text-primary">
-                Sami Fares
-              </span>
-              <nav className="mt-6">
-                <NavigationMenu>
-                  <NavigationMenuList className="flex flex-col gap-4 items-start">
-                    {items.map(item => {
-                      if (item.id === 'home') return null
-                      return (
-                        <NavigationMenuItem
-                          className={cn(
-                            'navLink',
-                            active === item.id ? 'active-navLink' : ''
-                          )}
-                          key={item.id}>
-                          <NavigationMenuLink asChild>
-                            <Link
-                              key={item.id}
-                              href={item.id}
-                              onClick={e => handleClick(e, item.id)}>
-                              {item.label}
-                            </Link>
-                          </NavigationMenuLink>
-                        </NavigationMenuItem>
-                      )
-                    })}
-                    <ThemeToggle />
-                  </NavigationMenuList>
-                </NavigationMenu>
-              </nav>
-            </SheetContent>
-          </Sheet>
-        </div>
+    <section id="work" className="halfPage">
+      <div className="section">
+        <h3>Featured Work</h3>
+        <AvailableCases current="" showHeader={false} />
       </div>
-    </header>
+    </section>
   )
 }
 

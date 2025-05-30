@@ -33,43 +33,64 @@ export const Navbar = ({ items }: NavProps) => {
   const [open, setOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('')
 
-  console.log('activeSection: ', activeSection)
   const isHome = useMemo(() => pathname === '/', [pathname])
 
-  // Scroll spy effect
   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: '-20% 0px -70% 0px', // Trigger when section is 20% from top
-      threshold: 0
-    }
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100 // Offset for fixed header
 
-    const observerCallback = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const sectionId = entry.target.id
-          setActiveSection(sectionId)
+      // Get all sections and their positions
+      const sectionElements = items
+        .map(item => ({
+          id: item.id,
+          element: document.getElementById(item.id)
+        }))
+        .filter(item => item.element)
+
+      // Find which section we're currently in
+      let currentSection = ''
+
+      for (let i = 0; i < sectionElements.length; i++) {
+        const section = sectionElements[i]
+        const rect = section.element!.getBoundingClientRect()
+        const sectionTop = window.scrollY + rect.top
+        const sectionBottom = sectionTop + rect.height
+
+        // Check if scroll position is within this section
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          currentSection = section.id
+          break
         }
-      })
+
+        // If we're past all sections, highlight the last one
+        if (i === sectionElements.length - 1 && scrollPosition >= sectionTop) {
+          currentSection = section.id
+        }
+      }
+
+      if (currentSection && currentSection !== activeSection) {
+        setActiveSection(currentSection)
+      }
     }
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions)
+    // Initial check
+    handleScroll()
 
-    // Observe all sections
-    const sections = items
-      .map(item => document.getElementById(item.id))
-      .filter(Boolean)
-    sections.forEach(section => {
-      if (section) observer.observe(section)
-    })
-
-    // Cleanup
-    return () => {
-      sections.forEach(section => {
-        if (section) observer.unobserve(section)
-      })
+    // Add scroll listener with throttling
+    let ticking = false
+    const throttledScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll()
+          ticking = false
+        })
+        ticking = true
+      }
     }
-  }, [items, isHome])
+
+    window.addEventListener('scroll', throttledScroll)
+    return () => window.removeEventListener('scroll', throttledScroll)
+  }, [items, isHome, activeSection])
 
   // Handle manual navigation clicks
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, to: string) => {

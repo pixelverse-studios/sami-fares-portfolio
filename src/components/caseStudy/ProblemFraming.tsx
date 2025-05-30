@@ -1,5 +1,8 @@
+'use client'
+
 import { SectionTitle } from './SectionTitle'
 import { CasesMap } from '@/lib/constants'
+import { SlideInSection } from '../animations'
 
 const id = CasesMap.get(0).id
 
@@ -15,9 +18,9 @@ export default function ProblemFraming({ items, header }: ProblemFramingProps) {
         <SectionTitle position="0.0" header={header} />
         <div className="space-y-4">
           {items.map(text => (
-            <p className="text-sm" key={text}>
-              {text}
-            </p>
+            <SlideInSection key={text}>
+              <p className="text-sm">{text}</p>
+            </SlideInSection>
           ))}
         </div>
       </div>
