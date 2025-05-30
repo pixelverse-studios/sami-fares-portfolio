@@ -2,7 +2,8 @@
 
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import { FaSun, FaMoon } from 'react-icons/fa6'
+import { MdLightMode, MdDarkMode } from 'react-icons/md'
+
 import { cn } from '@/lib/utils'
 
 export function ThemeToggle() {
@@ -23,16 +24,16 @@ export function ThemeToggle() {
       <div
         className={cn(
           'relative w-16 h-8 rounded-full transition-all duration-300 flex items-center cursor-pointer',
-          isDark ? 'bg-slate-600' : 'bg-slate-300'
+          'bg-slate-600'
         )}
         onClick={() => setTheme(isDark ? 'light' : 'dark')}>
-        <FaSun
+        <MdLightMode
           className={cn(
             'absolute left-2 h-3 w-3 transition-colors duration-300',
             !isDark ? 'text-text-body' : 'text-primary-light'
           )}
         />
-        <FaMoon
+        <MdDarkMode
           className={cn(
             'absolute right-2 h-3 w-3 transition-colors duration-300',
             isDark ? 'text-text-body' : 'text-primary-light'
@@ -46,9 +47,9 @@ export function ThemeToggle() {
               : 'bg-primary-light transform translate-x-0'
           )}>
           {isDark ? (
-            <FaMoon className="h-3 w-3 text-primary-dark" />
+            <MdDarkMode className="h-3 w-3 text-primary-dark" />
           ) : (
-            <FaSun className="h-3 w-3 text-primary-dark" />
+            <MdLightMode className="h-3 w-3 text-primary-dark" />
           )}
         </div>
       </div>
