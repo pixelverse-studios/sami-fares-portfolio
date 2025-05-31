@@ -92,6 +92,8 @@ export const Navbar = ({ items }: NavProps) => {
     return () => window.removeEventListener('scroll', throttledScroll)
   }, [items, isHome, activeSection])
 
+  useEffect(() => setActiveSection(''), [pathname])
+
   // Handle manual navigation clicks
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, to: string) => {
     handleNavClick(e, to, {
