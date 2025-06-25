@@ -14,7 +14,7 @@ const allCases = [
     destination: '/works/jones-pressure-washing'
   },
   {
-    img: '/assets/Home_360.png',
+    img: '/assets/360 case/360HomeMock.png',
     label: '360 Degree Care',
     description:
       'Designed a multi-page website for a new home health care provider launching online for the first time. Balanced client-driven visual preferences with user-centered UX to build trust, deliver clarity, and support long-term growth.',

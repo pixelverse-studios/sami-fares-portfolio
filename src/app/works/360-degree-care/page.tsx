@@ -13,7 +13,7 @@ export default function Works360Degree() {
   return (
     <main className="text-text-body">
       <WorkHero
-        img="/assets/360 case/Hero.png"
+        img="/assets/360 case/HomeMockDesktop.png"
         header="360 Degree Care - UX Case Study"
         descriptor="Designing a user-centered home care website while balancing evolving client preferences"
       />

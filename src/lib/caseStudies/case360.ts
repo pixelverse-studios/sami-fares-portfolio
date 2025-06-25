@@ -91,11 +91,10 @@ const strategyAndDesign = {
   mockups: [
     {
       imgs: [
-        '/assets/360 case/NursingMock.png',
-        '/assets/360 case/AidesMock.png'
+        '/assets/360 case/PersonalCareMock1.png',
+        '/assets/360 case/PersonalCareMock2.png'
       ],
-      explanation:
-        'Mockups showing the Nursing Services page layout and the Home Health Aide page'
+      explanation: 'Mockups highlighting the Personal Care Service Page'
     }
   ]
 }
@@ -123,7 +122,7 @@ const finalReflections = {
   feedback:
     '"I’m really happy with how everything turned out. You were flexible, patient, and always found a way to make my ideas work. I appreciate how you took the time to explain things and still delivered something polished, and easy to use. Couldn’t have done it without you."',
   client: 'Owner, 360 Degree Care',
-  img: ['/assets/360 case/360_FinalMock.png']
+  img: ['/assets/360 case/360HomeMock.png']
 }
 
 export default {
