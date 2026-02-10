@@ -7,12 +7,11 @@ export default function HomeHero() {
       <div className="section grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center md:justify-items-end">
         <SlideInSection className="flex flex-col gap-6 justify-center">
           <h2>
-            Hi, I’m <span className="text-primary">Sami</span> — a UX/UI
-            designer who makes digital experiences both easy to use and hard to
-            ignore.
+            Hi, I'm <span className="text-primary">Sami</span>.
           </h2>
           <p className="text-text-body">
-            I design interfaces your users will appreciate.
+            I design digital experiences with people in mind and intention
+            behind the details.
           </p>
         </SlideInSection>
         <SlideInSection direction="right">
