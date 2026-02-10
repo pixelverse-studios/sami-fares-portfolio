@@ -1,9 +1,11 @@
-const allCases = [
+import { CaseStudy } from '../types'
+
+const allCases: CaseStudy[] = [
   {
     img: '/assets/MoodTunes/HomeScreen.png',
     label: 'MoodTunes',
     description:
-      'Created a mobile music app that generates playlists based on a user’s current mood, energy, or activity. Designed a context-aware flow that makes discovery feel instant and intuitive — while subtly spotlighting local artists.',
+      'Created a mobile music app that generates playlists based on a user's current mood, energy, or activity. Designed a context-aware flow that makes discovery feel instant and intuitive — while subtly spotlighting local artists.',
     destination: '/works/moodtunes'
   },
   {
