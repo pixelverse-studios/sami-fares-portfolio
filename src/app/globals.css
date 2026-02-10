@@ -16,6 +16,17 @@
   --light-green: #86efac;
   --green: #6be28c;
   --dark-green: #16a34a;
+
+  /* Warning/Caution colors */
+  --warning: #fbbf24;
+  --warning-text: #fef3c7;
+
+  /* Border colors */
+  --border-subtle: #374151;
+
+  /* Toggle control */
+  --toggle-bg: #475569;
+  --toggle-bg-hover: #64748b;
 }
 
 [data-theme='light'] {
@@ -32,6 +43,17 @@
   --light-green: #22c55e;
   --green: #3ba66b;
   --dark-green: #15803d;
+
+  /* Warning/Caution colors */
+  --warning: #f59e0b;
+  --warning-text: #92400e;
+
+  /* Border colors */
+  --border-subtle: #e5e7eb;
+
+  /* Toggle control */
+  --toggle-bg: #64748b;
+  --toggle-bg-hover: #475569;
 }
 
 @layer utilities {
