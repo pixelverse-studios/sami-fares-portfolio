@@ -24,7 +24,7 @@ export function ThemeToggle() {
       <div
         className={cn(
           'relative w-16 h-8 rounded-full transition-all duration-300 flex items-center cursor-pointer',
-          'bg-slate-600'
+          'bg-[var(--toggle-bg)] hover:bg-[var(--toggle-bg-hover)]'
         )}
         onClick={() => setTheme(isDark ? 'light' : 'dark')}>
         <MdLightMode

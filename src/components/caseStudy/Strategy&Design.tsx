@@ -50,7 +50,7 @@ export default function StrategyAndDesign({
             }
             return (
               <SlideInSection key={header}>
-                <div className="flex flex-col gap-4 bg-background-section border border-white rounded-lg p-6 h-full">
+                <div className="flex flex-col gap-4 bg-background-section border border-[var(--border-subtle)] rounded-lg p-6 h-full">
                   <div className="flex items-center space-x-2">
                     <div className="rounded-full bg-background-subtle p-2">
                       <IconComponent size={16} className="text-primary" />
