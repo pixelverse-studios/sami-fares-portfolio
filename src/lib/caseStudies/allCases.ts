@@ -2,13 +2,6 @@ import { CaseStudy } from '../types'
 
 const allCases: CaseStudy[] = [
   {
-    img: '/assets/MoodTunes/HomeScreen.png',
-    label: 'MoodTunes',
-    description:
-      'Created a mobile music app that generates playlists based on a user\'s current mood, energy, or activity. Designed a context-aware flow that makes discovery feel instant and intuitive - while subtly spotlighting local artists.',
-    destination: '/works/moodtunes'
-  },
-  {
     img: '/assets/Home_JPW.png',
     label: 'Jones Pressure Washing',
     category: 'Commercial UX - Trust & Decision Clarity',
@@ -23,6 +16,14 @@ const allCases: CaseStudy[] = [
     description:
       'Shaped a trust-focused digital experience for families navigating high-stakes care decisions. Led UX and content strategy to support emotionally stressed users through clear information hierarchy, accessibility controls, and calm, confidence-building interaction patterns.',
     destination: '/works/360-degree-care'
+  },
+  {
+    img: '/assets/MoodTunes/HomeScreen.png',
+    label: 'MoodTunes',
+    category: 'Conceptual Product UX - Interaction Design',
+    description:
+      'Explored a mood-first approach to music discovery that prioritizes how users feel in the moment over listening history. Designed a lightweight interaction model focused on reducing friction at entry, limiting choice to maintain momentum, and surfacing discovery without overwhelming users.',
+    destination: '/works/moodtunes'
   }
 ]
 
