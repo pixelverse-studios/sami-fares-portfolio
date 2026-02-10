@@ -28,30 +28,30 @@
   --toggle-bg: #475569;
   --toggle-bg-hover: #64748b;
 
-  /* Domani Sub-Theme - Light Mode */
-  --domani-sage-primary: #7D9B8A;
-  --domani-sage-dark: #5A7765;
-  --domani-sage-light: #A3BFB0;
+  /* Domani Sub-Theme - Dark Mode */
+  --domani-bg-cream: #2B2926;
+  --domani-bg-cream-light: #353330;
+  --domani-bg-sage-tint: #3A4340;
+  --domani-bg-card: #353330;
 
-  --domani-text-primary: #3D4A44;
-  --domani-text-secondary: #6B7265;
-  --domani-text-accent: #5A7765;
+  --domani-sage-primary: #8FAC9D;
+  --domani-sage-dark: #A3BFB0;
+  --domani-sage-light: #6B8575;
 
-  --domani-bg-cream: #FAF8F5;
-  --domani-bg-cream-light: #F5F2ED;
-  --domani-bg-sage-tint: #E8EDE9;
-  --domani-bg-card: #FFFFFF;
+  --domani-text-primary: #E8EDE9;
+  --domani-text-secondary: #B8BFB9;
+  --domani-text-accent: #A3BFB0;
 
-  --domani-border-light: #E8E4DD;
+  --domani-border-light: #4A4845;
 
-  --domani-priority-high: #D77A61;
-  --domani-priority-high-dark: #B65F49;
-  --domani-priority-medium: #E8B86D;
-  --domani-priority-medium-dark: #C9762A;
+  --domani-priority-high: #E88A72;
+  --domani-priority-high-dark: #C97060;
+  --domani-priority-medium: #F0C67E;
+  --domani-priority-medium-dark: #D8904A;
 
-  --domani-sage-5: rgba(125, 155, 138, 0.05);
-  --domani-sage-10: rgba(125, 155, 138, 0.10);
-  --domani-sage-20: rgba(125, 155, 138, 0.20);
+  --domani-sage-5: rgba(143, 172, 157, 0.05);
+  --domani-sage-10: rgba(143, 172, 157, 0.10);
+  --domani-sage-20: rgba(143, 172, 157, 0.20);
 
   --domani-white-10: rgba(255, 255, 255, 0.10);
   --domani-white-20: rgba(255, 255, 255, 0.20);
@@ -83,6 +83,35 @@
   /* Toggle control */
   --toggle-bg: #64748b;
   --toggle-bg-hover: #475569;
+
+  /* Domani Sub-Theme - Light Mode */
+  --domani-sage-primary: #7D9B8A;
+  --domani-sage-dark: #5A7765;
+  --domani-sage-light: #A3BFB0;
+
+  --domani-text-primary: #3D4A44;
+  --domani-text-secondary: #6B7265;
+  --domani-text-accent: #5A7765;
+
+  --domani-bg-cream: #FAF8F5;
+  --domani-bg-cream-light: #F5F2ED;
+  --domani-bg-sage-tint: #E8EDE9;
+  --domani-bg-card: #FFFFFF;
+
+  --domani-border-light: #E8E4DD;
+
+  --domani-priority-high: #D77A61;
+  --domani-priority-high-dark: #B65F49;
+  --domani-priority-medium: #E8B86D;
+  --domani-priority-medium-dark: #C9762A;
+
+  --domani-sage-5: rgba(125, 155, 138, 0.05);
+  --domani-sage-10: rgba(125, 155, 138, 0.10);
+  --domani-sage-20: rgba(125, 155, 138, 0.20);
+
+  --domani-white-10: rgba(255, 255, 255, 0.10);
+  --domani-white-20: rgba(255, 255, 255, 0.20);
+  --domani-white-60: rgba(255, 255, 255, 0.60);
 }
 
 @layer utilities {
