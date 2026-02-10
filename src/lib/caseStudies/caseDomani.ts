@@ -7,7 +7,7 @@
 const problemFraming = [
   'Many people struggle with decision fatigue when planning their day. Traditional planning apps either overwhelm users with too many options or fail to separate the planning mindset from the execution mindset, leading to abandoned plans and incomplete tasks.',
   'Domani needed to create a calm, focused planning experience that reduces cognitive load and helps users follow through on their daily intentions without feeling paralyzed by choice or distracted during execution.',
-At its core, this project was about designing interaction models that respect the user's mental energy and create clear boundaries between thoughtful planning and focused doing.
+  "At its core, this project was about designing interaction models that respect the user's mental energy and create clear boundaries between thoughtful planning and focused doing."
 ]
 
 const projectOverview = {
@@ -44,7 +44,7 @@ const goalsAndChallenges = {
     'Avoiding feature bloat common in productivity apps'
   ],
   description: [
-The challenge wasn't just to create another planning app - it was to fundamentally rethink how planning tools support human cognition. Most productivity apps assume more features equals more value, but Domani needed to prove that intentional constraints and thoughtful interaction design could be more effective than endless options and configurations.
+    "The challenge wasn't just to create another planning app - it was to fundamentally rethink how planning tools support human cognition. Most productivity apps assume more features equals more value, but Domani needed to prove that intentional constraints and thoughtful interaction design could be more effective than endless options and configurations."
   ]
 }
 
