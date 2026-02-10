@@ -19,8 +19,9 @@ const allCases: CaseStudy[] = [
   {
     img: '/assets/360 case/360HomeMock.png',
     label: '360 Degree Care',
+    category: 'Emotional UX - Accessibility & Reassurance',
     description:
-      'Designed a multi-page website for a new home health care provider launching online for the first time. Balanced client-driven visual preferences with user-centered UX to build trust, deliver clarity, and support long-term growth.',
+      'Shaped a trust-focused digital experience for families navigating high-stakes care decisions. Led UX and content strategy to support emotionally stressed users through clear information hierarchy, accessibility controls, and calm, confidence-building interaction patterns.',
     destination: '/works/360-degree-care'
   }
 ]
