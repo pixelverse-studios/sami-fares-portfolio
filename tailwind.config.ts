@@ -60,6 +60,34 @@ const config: Config = {
           '3': 'hsl(var(--chart-3))',
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))'
+        },
+        // Domani Sub-Theme
+        domani: {
+          sage: {
+            primary: 'var(--domani-sage-primary)',
+            dark: 'var(--domani-sage-dark)',
+            light: 'var(--domani-sage-light)'
+          },
+          text: {
+            primary: 'var(--domani-text-primary)',
+            secondary: 'var(--domani-text-secondary)',
+            accent: 'var(--domani-text-accent)'
+          },
+          bg: {
+            cream: 'var(--domani-bg-cream)',
+            'cream-light': 'var(--domani-bg-cream-light)',
+            'sage-tint': 'var(--domani-bg-sage-tint)',
+            card: 'var(--domani-bg-card)'
+          },
+          priority: {
+            high: 'var(--domani-priority-high)',
+            'high-dark': 'var(--domani-priority-high-dark)',
+            medium: 'var(--domani-priority-medium)',
+            'medium-dark': 'var(--domani-priority-medium-dark)'
+          },
+          border: {
+            light: 'var(--domani-border-light)'
+          }
         }
       },
       borderRadius: {
@@ -77,6 +105,13 @@ const config: Config = {
       spacing: {
         'x-gap': '1.5rem',
         'y-gap': '2.5rem'
+      },
+      backgroundImage: {
+        // Domani Sub-Theme Gradients
+        'domani-hero': 'var(--domani-gradient-hero)',
+        'domani-sage': 'var(--domani-gradient-sage)',
+        'domani-dark': 'var(--domani-gradient-dark)',
+        'domani-card-placeholder': 'var(--domani-gradient-card-placeholder)'
       }
     }
   },
