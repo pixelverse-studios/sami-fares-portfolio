@@ -18,7 +18,8 @@ const config: Config = {
         },
         text: {
           heading: 'var(--text-heading)',
-          body: 'var(--text-body)'
+          body: 'var(--text-body)',
+          accent: 'var(--text-accent)'
         },
         foreground: {
           DEFAULT: 'var(--fg)',
@@ -31,9 +32,9 @@ const config: Config = {
           foreground: 'hsl(var(--popover-foreground))'
         },
         primary: {
-          DEFAULT: 'var(--green)',
-          light: 'var(--light-green)',
-          dark: 'var(--dark-green)'
+          DEFAULT: 'var(--primary)',
+          light: 'var(--primary-light)',
+          dark: 'var(--primary-dark)'
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
@@ -61,33 +62,11 @@ const config: Config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))'
         },
-        // Domani Sub-Theme
-        domani: {
-          sage: {
-            primary: 'var(--domani-sage-primary)',
-            dark: 'var(--domani-sage-dark)',
-            light: 'var(--domani-sage-light)'
-          },
-          text: {
-            primary: 'var(--domani-text-primary)',
-            secondary: 'var(--domani-text-secondary)',
-            accent: 'var(--domani-text-accent)'
-          },
-          bg: {
-            cream: 'var(--domani-bg-cream)',
-            'cream-light': 'var(--domani-bg-cream-light)',
-            'sage-tint': 'var(--domani-bg-sage-tint)',
-            card: 'var(--domani-bg-card)'
-          },
-          priority: {
-            high: 'var(--domani-priority-high)',
-            'high-dark': 'var(--domani-priority-high-dark)',
-            medium: 'var(--domani-priority-medium)',
-            'medium-dark': 'var(--domani-priority-medium-dark)'
-          },
-          border: {
-            light: 'var(--domani-border-light)'
-          }
+        priority: {
+          high: 'var(--priority-high)',
+          'high-dark': 'var(--priority-high-dark)',
+          medium: 'var(--priority-medium)',
+          'medium-dark': 'var(--priority-medium-dark)'
         }
       },
       borderRadius: {
@@ -107,11 +86,10 @@ const config: Config = {
         'y-gap': '2.5rem'
       },
       backgroundImage: {
-        // Domani Sub-Theme Gradients
-        'domani-hero': 'var(--domani-gradient-hero)',
-        'domani-sage': 'var(--domani-gradient-sage)',
-        'domani-dark': 'var(--domani-gradient-dark)',
-        'domani-card-placeholder': 'var(--domani-gradient-card-placeholder)'
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-sage': 'var(--gradient-sage)',
+        'gradient-dark': 'var(--gradient-dark)',
+        'gradient-card-placeholder': 'var(--gradient-card-placeholder)'
       }
     }
   },

@@ -2,16 +2,12 @@
  * Domani Case Study - Reusable Class Constants
  *
  * Provides consistent class combinations for Domani case study components.
- * Uses Tailwind utilities created in PVS-295 (colors) and PVS-297 (gradients).
- *
- * Integration Pattern (Option B: Explicit Component Classes):
- * Components import and explicitly apply classes, maintaining full control
- * over styling while benefiting from centralized constant management.
+ * Uses core theme utilities (primary, background, text, priority).
  *
  * @example
  * import { domaniClasses, domaniGradients } from '@/lib/caseStudies/caseDomani'
  *
- * // Section with Domani background
+ * // Section with theme background
  * <section className={domaniClasses.section}>
  *
  * // Hero with gradient
@@ -29,45 +25,45 @@
 
 export const domaniClasses = {
   // Section Variants
-  section: 'bg-domani-bg-cream text-domani-text-primary',
-  sectionAlt: 'bg-domani-bg-cream-light text-domani-text-primary',
-  sectionSage: 'bg-domani-bg-sage-tint text-domani-text-primary',
-  sectionDark: 'bg-domani-dark text-white',
+  section: 'bg-background text-text-heading',
+  sectionAlt: 'bg-background-section text-text-heading',
+  sectionSage: 'bg-background-subtle text-text-heading',
+  sectionDark: 'bg-gradient-dark text-white',
 
   // Cards
-  card: 'bg-domani-bg-card border border-domani-border-light rounded-xl',
+  card: 'bg-background-section border border-[var(--border-subtle)] rounded-xl',
   cardGlass:
-    'bg-[var(--domani-white-60)] backdrop-blur border border-[var(--domani-white-20)] rounded-xl',
+    'bg-[var(--white-60)] backdrop-blur border border-[var(--white-20)] rounded-xl',
 
   // Typography
-  heading: 'text-domani-text-primary',
-  body: 'text-domani-text-secondary',
-  accent: 'text-domani-sage-primary',
+  heading: 'text-text-heading',
+  body: 'text-text-body',
+  accent: 'text-primary',
 
   // Badges & Tags
   badge:
-    'bg-[var(--domani-sage-10)] text-domani-sage-dark border border-[var(--domani-sage-20)] rounded-full px-3 py-1',
-  badgeSage: 'bg-domani-sage text-white rounded-full px-3 py-1',
+    'bg-[var(--sage-10)] text-primary-dark border border-[var(--sage-20)] rounded-full px-3 py-1',
+  badgeSage: 'bg-gradient-sage text-white rounded-full px-3 py-1',
 
   // Decision Cards
   decisionCard: {
     container:
-      'bg-domani-bg-card border border-domani-border-light rounded-xl p-6',
+      'bg-background-section border border-[var(--border-subtle)] rounded-xl p-6',
     numberBadge:
-      'bg-domani-sage text-white rounded-full w-10 h-10 flex items-center justify-center font-bold',
+      'bg-gradient-sage text-white rounded-full w-10 h-10 flex items-center justify-center font-bold',
     decisionTag:
-      'bg-[var(--domani-sage-10)] text-domani-sage-dark px-3 py-1 rounded text-sm font-medium',
+      'bg-[var(--sage-10)] text-primary-dark px-3 py-1 rounded text-sm font-medium',
     whyTag:
-      'bg-[rgba(232,184,109,0.10)] text-domani-priority-medium-dark px-3 py-1 rounded text-sm font-medium',
+      'bg-[rgba(232,184,109,0.10)] text-priority-medium-dark px-3 py-1 rounded text-sm font-medium',
     howTag:
-      'bg-[rgba(215,122,97,0.10)] text-domani-priority-high-dark px-3 py-1 rounded text-sm font-medium'
+      'bg-[rgba(215,122,97,0.10)] text-priority-high-dark px-3 py-1 rounded text-sm font-medium'
   }
 }
 
 // Gradient helper
 export const domaniGradients = {
-  hero: 'bg-domani-hero',
-  sage: 'bg-domani-sage',
-  dark: 'bg-domani-dark',
-  cardPlaceholder: 'bg-domani-card-placeholder'
+  hero: 'bg-gradient-hero',
+  sage: 'bg-gradient-sage',
+  dark: 'bg-gradient-dark',
+  cardPlaceholder: 'bg-gradient-card-placeholder'
 }

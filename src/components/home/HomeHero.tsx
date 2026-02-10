@@ -9,7 +9,7 @@ export default function HomeHero() {
           <h2>
             Hi, I'm <span className="text-primary">Sami</span>.
           </h2>
-          <p className="text-text-body">
+          <p className="text-text-body text-[1.2rem] font-normal">
             I design digital experiences with people in mind and intention
             behind the details.
           </p>
