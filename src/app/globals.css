@@ -56,6 +56,12 @@
   --domani-white-10: rgba(255, 255, 255, 0.10);
   --domani-white-20: rgba(255, 255, 255, 0.20);
   --domani-white-60: rgba(255, 255, 255, 0.60);
+
+  /* Domani Gradients - Dark Mode */
+  --domani-gradient-hero: linear-gradient(135deg, var(--domani-bg-cream) 0%, var(--domani-bg-cream-light) 50%, var(--domani-bg-sage-tint) 100%);
+  --domani-gradient-sage: linear-gradient(135deg, var(--domani-sage-primary) 0%, var(--domani-sage-light) 100%);
+  --domani-gradient-dark: linear-gradient(135deg, #1F1E1C 0%, var(--domani-bg-sage-tint) 100%);
+  --domani-gradient-card-placeholder: linear-gradient(135deg, var(--domani-bg-cream-light) 0%, var(--domani-border-light) 100%);
 }
 
 [data-theme='light'] {
@@ -112,6 +118,12 @@
   --domani-white-10: rgba(255, 255, 255, 0.10);
   --domani-white-20: rgba(255, 255, 255, 0.20);
   --domani-white-60: rgba(255, 255, 255, 0.60);
+
+  /* Domani Gradients - Light Mode */
+  --domani-gradient-hero: linear-gradient(135deg, var(--domani-bg-cream) 0%, var(--domani-bg-cream-light) 50%, var(--domani-bg-sage-tint) 100%);
+  --domani-gradient-sage: linear-gradient(135deg, var(--domani-sage-primary) 0%, var(--domani-sage-dark) 100%);
+  --domani-gradient-dark: linear-gradient(135deg, var(--domani-text-primary) 0%, var(--domani-sage-dark) 100%);
+  --domani-gradient-card-placeholder: linear-gradient(135deg, var(--domani-bg-cream-light) 0%, var(--domani-border-light) 100%);
 }
 
 @layer utilities {
