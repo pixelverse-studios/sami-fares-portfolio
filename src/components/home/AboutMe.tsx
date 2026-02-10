@@ -14,23 +14,28 @@ export default function AboutMe() {
           </SlideInSection>
           <SlideInSection>
             <p>
-              I’ve always been a creative, and my path to design started in
+              I've always been a creative, and my path to design started in
               music. Writing and producing for recording artists taught me how
-              to brainstorm, collaborate, and turn ideas into something people
-              could connect with. Music showed me how to create for people—and
-              that’s what drew me to UX as well: the idea that creativity can
-              shape experiences people actually enjoy and use. Transitioning
-              into design felt like a natural extension of the work I was
-              already doing. Now, I bring that same mindset to every project:
-              thoughtful, hands-on, and focused on creating something that truly
-              works for the people using it—because like the music, it was made
-              for them.
+              to explore ideas, collaborate closely, and turn concepts into
+              something people could connect with. Music showed me how to create
+              for people—and that's what drew me to UX as well: the idea that
+              creativity can shape experiences people actually enjoy and use.
             </p>
           </SlideInSection>
           <SlideInSection>
             <p>
-              When I’m not designing, you can probably find me outside fishing—a
-              hobby that gets me away from screens and helps clear my mind.
+              Today, I design with clarity and purpose. My goal is to reduce
+              friction, support decision-making, and make things feel good to
+              use. I bring that same mindset to every project: thoughtful,
+              hands-on, and focused on creating something that truly works for
+              the people using it.
+            </p>
+          </SlideInSection>
+          <SlideInSection>
+            <p>
+              When I'm not designing, you can probably find me outside fishing.
+              It's how I step away from screens, reset, and come back with a
+              clearer head.
             </p>
           </SlideInSection>
         </article>

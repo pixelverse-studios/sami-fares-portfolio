@@ -42,8 +42,13 @@ export default function AvailableCases({
                 />
               </div>
               <div className="bg-background-subtle rounded-b-xl h-full">
-                <div className="h-full px-6 py-8 grid grid-rows-[2rem_1fr_2rem] gap-4 items-start justify-items-start">
+                <div className="h-full px-6 py-8 grid grid-rows-[2rem_auto_1fr_2rem] gap-4 items-start justify-items-start">
                   <h3>{item.label}</h3>
+                  {item.category && (
+                    <p className="text-sm text-text-body font-medium">
+                      {item.category}
+                    </p>
+                  )}
                   <p>{item.description}</p>
                   <Link
                     className="pl-0 flex gap-3 items-center text-primary group relative overflow-hidden px-4 py-2 rounded-lg transition-all duration-200 hover:text-background-section hover:pl-4 cursor-pointer"

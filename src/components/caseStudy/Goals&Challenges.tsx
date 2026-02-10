@@ -57,7 +57,10 @@ export default function GoalsAndChallenges({
               {challenges.map(challenge => (
                 <SlideInSection key={challenge}>
                   <div className="grid grid-cols-[2rem_1fr] gap-4 items-start">
-                    <FaBan size={16} className="text-[var(--warning)] w-8 mt-1" />{' '}
+                    <FaBan
+                      size={16}
+                      className="text-[var(--warning)] w-8 mt-1"
+                    />{' '}
                     <p>{challenge}</p>
                   </div>
                 </SlideInSection>

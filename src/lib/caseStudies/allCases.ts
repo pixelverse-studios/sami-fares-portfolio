@@ -1,24 +1,37 @@
-const allCases = [
+import { CaseStudy } from '../types'
+
+const allCases: CaseStudy[] = [
   {
-    img: '/assets/MoodTunes/HomeScreen.png',
-    label: 'MoodTunes',
+    img: '/assets/Domani/HomeMock.png',
+    label: 'Domani',
+    category: 'Product UX - Systems & Iteration',
     description:
-      'Created a mobile music app that generates playlists based on a user’s current mood, energy, or activity. Designed a context-aware flow that makes discovery feel instant and intuitive — while subtly spotlighting local artists.',
-    destination: '/works/moodtunes'
+      'Designed a calm, habit-building planning app focused on reducing decision fatigue and helping users follow through on daily intentions. Led product UX from concept through iterative refinement, shaping core interaction models that separate planning from execution and lower cognitive load. Currently in public beta and evolving toward launch.',
+    destination: '/works/domani'
   },
   {
     img: '/assets/Home_JPW.png',
     label: 'Jones Pressure Washing',
+    category: 'Commercial UX - Trust & Decision Clarity',
     description:
-      'Designed a full website for a local pressure washing business previously operating with only a single landing page. Led all UX, visual design, and copywriting — with a focus on local SEO, conversion-oriented content, and a premium brand presence built to scale in a competitive market.',
+      'Helped a new local service business earn user trust without reviews or brand recognition. Led UX strategy, information architecture, and content decisions to reduce perceived risk, clarify services quickly, and guide high-intent homeowners toward confident quote requests in a competitive market.',
     destination: '/works/jones-pressure-washing'
   },
   {
     img: '/assets/360 case/360HomeMock.png',
     label: '360 Degree Care',
+    category: 'Emotional UX - Accessibility & Reassurance',
     description:
-      'Designed a multi-page website for a new home health care provider launching online for the first time. Balanced client-driven visual preferences with user-centered UX to build trust, deliver clarity, and support long-term growth.',
+      'Shaped a trust-focused digital experience for families navigating high-stakes care decisions. Led UX and content strategy to support emotionally stressed users through clear information hierarchy, accessibility controls, and calm, confidence-building interaction patterns.',
     destination: '/works/360-degree-care'
+  },
+  {
+    img: '/assets/MoodTunes/HomeScreen.png',
+    label: 'MoodTunes',
+    category: 'Conceptual Product UX - Interaction Design',
+    description:
+      'Explored a mood-first approach to music discovery that prioritizes how users feel in the moment over listening history. Designed a lightweight interaction model focused on reducing friction at entry, limiting choice to maintain momentum, and surfacing discovery without overwhelming users.',
+    destination: '/works/moodtunes'
   }
 ]
 
