@@ -33,6 +33,7 @@
   --domani-bg-cream-light: #353330;
   --domani-bg-sage-tint: #3A4340;
   --domani-bg-card: #353330;
+  --domani-bg-dark-accent: #1F1E1C;
 
   --domani-sage-primary: #8FAC9D;
   --domani-sage-dark: #A3BFB0;
@@ -60,7 +61,7 @@
   /* Domani Gradients - Dark Mode */
   --domani-gradient-hero: linear-gradient(135deg, var(--domani-bg-cream) 0%, var(--domani-bg-cream-light) 50%, var(--domani-bg-sage-tint) 100%);
   --domani-gradient-sage: linear-gradient(135deg, var(--domani-sage-primary) 0%, var(--domani-sage-light) 100%);
-  --domani-gradient-dark: linear-gradient(135deg, #1F1E1C 0%, var(--domani-bg-sage-tint) 100%);
+  --domani-gradient-dark: linear-gradient(135deg, var(--domani-bg-dark-accent) 0%, var(--domani-bg-sage-tint) 100%);
   --domani-gradient-card-placeholder: linear-gradient(135deg, var(--domani-bg-cream-light) 0%, var(--domani-border-light) 100%);
 }
 
