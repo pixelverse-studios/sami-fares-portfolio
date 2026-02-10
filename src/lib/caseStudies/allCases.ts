@@ -2,6 +2,14 @@ import { CaseStudy } from '../types'
 
 const allCases: CaseStudy[] = [
   {
+    img: '/assets/Domani/HomeMock.png',
+    label: 'Domani',
+    category: 'Product UX - Systems & Iteration',
+    description:
+      'Designed a calm, habit-building planning app focused on reducing decision fatigue and helping users follow through on daily intentions. Led product UX from concept through iterative refinement, shaping core interaction models that separate planning from execution and lower cognitive load. Currently in public beta and evolving toward launch.',
+    destination: '/works/domani'
+  },
+  {
     img: '/assets/Home_JPW.png',
     label: 'Jones Pressure Washing',
     category: 'Commercial UX - Trust & Decision Clarity',
