@@ -11,8 +11,9 @@ const allCases: CaseStudy[] = [
   {
     img: '/assets/Home_JPW.png',
     label: 'Jones Pressure Washing',
+    category: 'Commercial UX • Trust & Decision Clarity',
     description:
-      'Designed a full website for a local pressure washing business previously operating with only a single landing page. Led all UX, visual design, and copywriting — with a focus on local SEO, conversion-oriented content, and a premium brand presence built to scale in a competitive market.',
+      'Helped a new local service business earn user trust without reviews or brand recognition. Led UX strategy, information architecture, and content decisions to reduce perceived risk, clarify services quickly, and guide high-intent homeowners toward confident quote requests in a competitive market.',
     destination: '/works/jones-pressure-washing'
   },
   {
