@@ -105,6 +105,13 @@ const config: Config = {
       spacing: {
         'x-gap': '1.5rem',
         'y-gap': '2.5rem'
+      },
+      backgroundImage: {
+        // Domani Sub-Theme Gradients
+        'domani-hero': 'var(--domani-gradient-hero)',
+        'domani-sage': 'var(--domani-gradient-sage)',
+        'domani-dark': 'var(--domani-gradient-dark)',
+        'domani-card-placeholder': 'var(--domani-gradient-card-placeholder)'
       }
     }
   },
