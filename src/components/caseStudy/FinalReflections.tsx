@@ -88,7 +88,7 @@ export default function FinalReflections({
           <div className="space-y-4">
             <SlideInSection>
               <h4 className="flex text-lg text-primary gap-2 items-center">
-                <FaLightbulb size={18} className="text-yellow-500" />
+                <FaLightbulb size={18} className="text-[var(--warning)]" />
                 Lessons Learned
               </h4>
             </SlideInSection>
@@ -111,7 +111,7 @@ export default function FinalReflections({
           </SlideInSection>
         )}
         <div>
-          <div className="h-[1px] w-full bg-white mt-20" />
+          <div className="h-[1px] w-full bg-[var(--border-subtle)] mt-20" />
         </div>
       </div>
     </section>
