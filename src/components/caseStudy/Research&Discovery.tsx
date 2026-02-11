@@ -37,12 +37,14 @@ export default function ResearchAndDiscovery({
           ))}
           {quote === '' ? null : (
             <SlideInSection>
-              <div className="border-l-4 border-l-primary p-8 bg-background-section shadow-md rounded-r-lg space-y-4">
+              <blockquote className="border-l-4 border-l-primary p-6 bg-background-section shadow-md rounded-r-lg space-y-4">
                 <p className="text-lg italic text-text-heading leading-relaxed">
-                  "{quote}"
+                  {quote}
                 </p>
-                <p className="text-sm text-text-body font-medium">— {author}</p>
-              </div>
+                <footer className="text-sm text-text-body font-medium">
+                  <cite>— {author}</cite>
+                </footer>
+              </blockquote>
             </SlideInSection>
           )}
         </article>
