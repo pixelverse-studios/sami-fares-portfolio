@@ -23,10 +23,7 @@ export default function KeyUXDecisions({ decisions }: KeyUXDecisionsProps) {
   return (
     <section id={id} className="halfPage text-sm">
       <div className="section space-y-8">
-        <SectionTitle
-          position="0.4"
-          header="Key UX Decisions & Tradeoffs"
-        />
+        <SectionTitle position="0.4" header="Key UX Decisions & Tradeoffs" />
 
         <div className="space-y-8">
           {decisions.map((decision, index) => (
@@ -43,9 +40,7 @@ export default function KeyUXDecisions({ decisions }: KeyUXDecisionsProps) {
 
                 <div className="space-y-4 pl-11">
                   <div>
-                    <h4 className="text-primary font-semibold mb-2">
-                      Problem
-                    </h4>
+                    <h4 className="text-primary font-semibold mb-2">Problem</h4>
                     <p className="text-text-body">{decision.problem}</p>
                   </div>
 
