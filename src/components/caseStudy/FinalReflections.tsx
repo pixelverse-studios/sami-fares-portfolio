@@ -6,7 +6,7 @@ import { SectionTitle } from './SectionTitle'
 import { CasesMap } from '@/lib/constants'
 import { SlideInSection } from '../animations'
 
-const id = CasesMap.get(5).id
+const id = CasesMap.get(6).id
 
 interface FinalReflectionsProps {
   achievments: string[]
