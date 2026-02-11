@@ -13,7 +13,8 @@ CasesMap.set(0, { label: 'Problem', id: 'Problem' })
 CasesMap.set(1, { label: 'Overview', id: 'Overview' })
 CasesMap.set(2, { label: 'Challenges', id: 'Challenges' })
 CasesMap.set(3, { label: 'Research', id: 'Research' })
-CasesMap.set(4, { label: 'Strategy', id: 'Strategy' })
-CasesMap.set(5, { label: 'Final', id: 'Final' })
+CasesMap.set(4, { label: 'Key Decisions', id: 'KeyDecisions' })
+CasesMap.set(5, { label: 'Strategy', id: 'Strategy' })
+CasesMap.set(6, { label: 'Final', id: 'Final' })
 
 export { ContactMap, NavigationMap, CasesMap }
