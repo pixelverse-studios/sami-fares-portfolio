@@ -16,7 +16,7 @@ export default function Works360Degree() {
       <WorkHero
         img="/assets/360 case/HomeMockDesktop.png"
         header="360 Degree Care - UX Case Study"
-        descriptor="Designing a user-centered home care website while balancing evolving client preferences"
+        descriptor="Designing a trust-focused digital experience for families navigating high-stakes in-home care decisions"
       />
       <ProblemFraming
         header="Problem Framing - Creating Digital Trust for a New Care Brand"
