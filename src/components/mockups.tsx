@@ -17,13 +17,15 @@ export default function Mockups({
           <div className="flex flex-wrap justify-center gap-6 pb-10">
             {mockup.imgs.map((src, index) => (
               <SlideInSection key={src}>
-                <img
-                  src={src}
-                  alt="Mockup image"
-                  className="max-w-[90vw] h-auto max-h-[50vh] object-contain
-                   sm:w-[clamp(20rem,30vw,32rem)] sm:max-h-[clamp(24rem,50vh,48rem)]"
-                  loading={index >= 2 ? 'lazy' : 'eager'}
-                />
+                <div className="perspective-1000">
+                  <img
+                    src={src}
+                    alt="Mockup image"
+                    className="max-w-[90vw] h-auto max-h-[50vh] object-contain transform-3d shadow-2xl
+                     sm:w-[clamp(20rem,30vw,32rem)] sm:max-h-[clamp(24rem,50vh,48rem)]"
+                    loading={index >= 2 ? 'lazy' : 'eager'}
+                  />
+                </div>
               </SlideInSection>
             ))}
           </div>

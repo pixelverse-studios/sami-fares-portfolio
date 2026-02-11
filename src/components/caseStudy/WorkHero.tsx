@@ -17,12 +17,14 @@ export default function WorkHero({ img, header, descriptor }: WorkHeroProps) {
           <p>{descriptor}</p>
         </SlideInSection>
         <SlideInSection>
-          <img
-            src={img}
-            alt={`${header} mockup`}
-            className="h-[60vh] w-full object-contain"
-            loading="eager"
-          />
+          <div className="perspective-1000">
+            <img
+              src={img}
+              alt={`${header} mockup`}
+              className="h-[60vh] w-full object-contain transform-3d shadow-2xl"
+              loading="eager"
+            />
+          </div>
         </SlideInSection>
       </div>
     </section>
