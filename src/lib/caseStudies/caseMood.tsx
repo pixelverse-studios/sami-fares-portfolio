@@ -123,7 +123,7 @@ const finalReflections = {
   ],
   subHeader: 'Final Designs',
   url: '',
-  achievments: [
+  achievements: [
     'Developed a complete user flow from onboarding to playlist discovery to artist exploration',
     'Created wireframes and high-fidelity mockups across mobile',
     'Built a scalable system for mood-based curation and discovery',
