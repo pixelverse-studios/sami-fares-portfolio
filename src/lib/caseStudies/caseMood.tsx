@@ -150,6 +150,7 @@ export default {
   projectOverview,
   goalsAndChallenges,
   researchAndDiscovery,
+  keyUXDecisions: [], // Content to be added in future ticket
   strategyAndDesign,
   finalReflections
 }

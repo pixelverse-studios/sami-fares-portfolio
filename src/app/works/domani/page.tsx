@@ -2,10 +2,11 @@ import WorkHero from '@/components/caseStudy/WorkHero'
 import ProblemFraming from '@/components/caseStudy/ProblemFraming'
 import ProjectOverview from '@/components/caseStudy/ProjectOverview'
 import GoalsAndChallenges from '@/components/caseStudy/Goals&Challenges'
+import ResearchAndDiscovery from '@/components/caseStudy/Research&Discovery'
+import KeyUXDecisions from '@/components/caseStudy/KeyUXDecisions'
 import StrategyAndDesign from '@/components/caseStudy/Strategy&Design'
 import FinalReflections from '@/components/caseStudy/FinalReflections'
 import AvailableCases from '@/components/caseStudy/AvailableCases'
-import ResearchAndDiscovery from '@/components/caseStudy/Research&Discovery'
 
 import caseDomani from '@/lib/caseStudies/caseDomani'
 
@@ -24,6 +25,9 @@ export default function WorksDomani() {
       <ProjectOverview {...caseDomani.projectOverview} />
       <GoalsAndChallenges {...caseDomani.goalsAndChallenges} />
       <ResearchAndDiscovery {...caseDomani.researchAndDiscovery} />
+      {caseDomani.keyUXDecisions && caseDomani.keyUXDecisions.length > 0 && (
+        <KeyUXDecisions decisions={caseDomani.keyUXDecisions} />
+      )}
       <StrategyAndDesign {...caseDomani.strategyAndDesign} />
       <FinalReflections {...caseDomani.finalReflections} />
       <AvailableCases current="Domani" showHeader />
