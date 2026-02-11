@@ -4,10 +4,11 @@ import WorkHero from '@/components/caseStudy/WorkHero'
 import ProblemFraming from '@/components/caseStudy/ProblemFraming'
 import ProjectOverview from '@/components/caseStudy/ProjectOverview'
 import GoalsAndChallenges from '@/components/caseStudy/Goals&Challenges'
+import ResearchAndDiscovery from '@/components/caseStudy/Research&Discovery'
+import KeyUXDecisions from '@/components/caseStudy/KeyUXDecisions'
 import StrategyAndDesign from '@/components/caseStudy/Strategy&Design'
 import FinalReflections from '@/components/caseStudy/FinalReflections'
 import AvailableCases from '@/components/caseStudy/AvailableCases'
-import ResearchAndDiscovery from '@/components/caseStudy/Research&Discovery'
 
 import caseMood from '@/lib/caseStudies/caseMood'
 
@@ -26,6 +27,9 @@ export default function WorksMoodTunes() {
       <ProjectOverview {...caseMood.projectOverview} />
       <GoalsAndChallenges {...caseMood.goalsAndChallenges} />
       <ResearchAndDiscovery {...caseMood.researchAndDiscovery} />
+      {caseMood.keyUXDecisions && caseMood.keyUXDecisions.length > 0 && (
+        <KeyUXDecisions decisions={caseMood.keyUXDecisions} />
+      )}
       <StrategyAndDesign {...caseMood.strategyAndDesign} />
       <FinalReflections {...caseMood.finalReflections} />
       <AvailableCases current="MoodTunes" showHeader />
