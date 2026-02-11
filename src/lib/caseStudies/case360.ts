@@ -105,7 +105,7 @@ const finalReflections = {
   ],
   subHeader: 'Final Homepage Design',
   url: 'https://www.360degreecare.net',
-  achievments: [
+  achievements: [
     'Launched a fully responsive, multi-page website on a tight 5-week timeline',
     'Led UX structure and content strategy to support trust-building and clarity',
     'Developed high-fidelity designs tailored to mobile and desktop audiences',

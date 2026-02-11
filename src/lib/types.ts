@@ -101,7 +101,7 @@ export interface FinalReflections {
   description: string[]
   subHeader: string
   url: string
-  achievments: string[]
+  achievements: string[]
   lessons: string[]
   feedback: string
   client: string

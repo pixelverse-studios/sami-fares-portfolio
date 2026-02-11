@@ -123,7 +123,7 @@ const finalReflections = {
   ],
   subHeader: 'Final Designs',
   url: 'https://www.jonespressurewashingnj.com',
-  achievments: [
+  achievements: [
     'Created a scalable site structure designed to grow with the business',
     'Built a clean, professional brand presence from the ground up',
     'Delivered a responsive, mobile-first layout with strong conversion intent',

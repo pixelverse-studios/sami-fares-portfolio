@@ -3,17 +3,9 @@
 import { SectionTitle } from './SectionTitle'
 import { CasesMap } from '@/lib/constants'
 import { SlideInSection } from '../animations'
+import { UXDecision } from '@/lib/types'
 
 const id = CasesMap.get(4).id
-
-interface UXDecision {
-  title: string
-  problem: string
-  risk: string
-  decision: string
-  solution: string
-  tradeoff: string
-}
 
 interface KeyUXDecisionsProps {
   decisions: UXDecision[]
