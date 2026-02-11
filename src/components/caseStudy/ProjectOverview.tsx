@@ -30,7 +30,7 @@ export default function ProjectOverview({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <SlideInSection direction="left" delay={200}>
-            <article className="space-y-6">
+            <article className="space-y-4">
               <div>
                 <h4 className="text-primary mb-3 text-lg">Context</h4>
                 <div className="space-y-4">
@@ -58,7 +58,7 @@ export default function ProjectOverview({
           </SlideInSection>
 
           <SlideInSection direction="right" delay={400}>
-            <article className="space-y-6">
+            <article className="space-y-4">
               <div>
                 <h4 className="text-primary mb-3 text-lg">Timeline</h4>
                 <p>{timeline}</p>
