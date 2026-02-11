@@ -32,7 +32,7 @@ export default function FinalReflections({
   return (
     <section id={id}>
       <div className="section text-sm text-text-body space-y-4">
-        <SectionTitle position="" header="Final Designs & Reflection" />
+        <SectionTitle position="0.5" header="Final Designs & Reflection" />
         <article className="space-y-4">
           {description.map(text => (
             <SlideInSection key={text}>
