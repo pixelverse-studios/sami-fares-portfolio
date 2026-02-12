@@ -15,6 +15,7 @@ export type CaseStudy = {
   description: string
   destination: string
   category?: string
+  tags?: string[]
 }
 
 /**
