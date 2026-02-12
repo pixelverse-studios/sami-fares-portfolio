@@ -1,7 +1,7 @@
 const problemFraming = [
-  '360 Degree Care was a newly established home health care agency in New Jersey. With no digital presence, they were virtually invisible to families searching online for in-home support. In a highly sensitive industry built on trust, that lack of visibility became a major barrier to growth.',
-  'The client needed a professional website that could both inform and reassure their target audience: adults researching care options for aging parents or loved ones. The goal wasn’t just to generate leads — it was to build trust at a glance, answer common questions, and help users take that emotionally difficult first step.',
-  'The design challenge was to combine emotional clarity with an easy-to-navigate information structure tailored to anxious, time-sensitive users making high-stakes decisions.'
+  '360 Degree Care was a newly established in-home care provider in New Jersey with no digital presence, no online reviews, and no reputation in the market. For families searching online for trusted care, the brand was essentially invisible.',
+  'The core challenge was not just building a website. It was creating a digital experience that could establish trust quickly—for a brand with zero digital footprint—in an industry where families are making high-stakes, emotionally charged decisions about their loved ones\' safety and wellbeing.',
+  'Poor UX in this context would not simply frustrate users. Confusion or uncertainty could delay critical care decisions, erode trust before it was even built, or cause families to abandon the site entirely in favor of competitors with stronger digital credibility.'
 ]
 
 const projectOverview = {
