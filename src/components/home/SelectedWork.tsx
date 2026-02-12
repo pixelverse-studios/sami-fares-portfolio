@@ -1,8 +1,10 @@
 'use client'
 
 import Link from 'next/link'
+import { FaArrowRight } from 'react-icons/fa6'
 import allCases from '@/lib/caseStudies/allCases'
 import { SlideInSection } from '../animations'
+import { Button } from '../ui/button'
 import { CaseStudy } from '@/lib/types'
 
 /**
@@ -82,12 +84,17 @@ function CaseStudyRow({ caseStudy, imageOnLeft, index }: CaseStudyRowProps) {
           </p>
         </div>
 
-        {/* CTA Link - basic styling, will be enhanced in next ticket */}
-        <Link
-          href={caseStudy.destination}
-          className="text-primary hover:underline w-fit">
-          View Case Study →
-        </Link>
+        {/* CTA Button */}
+        <Button
+          asChild
+          variant="ghost"
+          size="lg"
+          className="w-fit group border-2">
+          <Link href={caseStudy.destination}>
+            VIEW CASE STUDY
+            <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
+        </Button>
       </SlideInSection>
     </div>
   )
