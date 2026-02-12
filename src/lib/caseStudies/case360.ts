@@ -118,7 +118,7 @@ const finalReflections = {
     'Applied qualitative research insights to concrete UX decisions under real constraints'
   ],
   feedback:
-    '"I'm really happy with how everything turned out. You were flexible, patient, and always found a way to make my ideas work. I appreciate how you took the time to explain things and still delivered something polished and easy to use."',
+    '"I\'m really happy with how everything turned out. You were flexible, patient, and always found a way to make my ideas work. I appreciate how you took the time to explain things and still delivered something polished and easy to use."',
   client: 'Owner, 360 Degree Care',
   img: ['/assets/360 case/360HomeMock.png']
 }
