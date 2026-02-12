@@ -92,9 +92,14 @@ function CaseStudyRow({ caseStudy, imageOnLeft, index }: CaseStudyRowProps) {
           variant="ghost"
           size="lg"
           className="w-fit group border-2">
-          <Link href={caseStudy.destination} aria-label={`View ${caseStudy.label} case study`}>
+          <Link
+            href={caseStudy.destination}
+            aria-label={`View ${caseStudy.label} case study`}>
             VIEW CASE STUDY
-            <FaArrowRight aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1" />
+            <FaArrowRight
+              aria-hidden="true"
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
           </Link>
         </Button>
       </SlideInSection>
