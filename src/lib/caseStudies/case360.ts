@@ -1,42 +1,32 @@
 const problemFraming = [
-  '360 Degree Care was a newly established home health care agency in New Jersey. With no digital presence, they were virtually invisible to families searching online for in-home support. In a highly sensitive industry built on trust, that lack of visibility became a major barrier to growth.',
-  'The client needed a professional website that could both inform and reassure their target audience: adults researching care options for aging parents or loved ones. The goal wasn’t just to generate leads — it was to build trust at a glance, answer common questions, and help users take that emotionally difficult first step.',
-  'The design challenge was to combine emotional clarity with an easy-to-navigate information structure tailored to anxious, time-sensitive users making high-stakes decisions.'
+  '360 Degree Care was a newly established in-home care provider in New Jersey with no digital presence. In a crowded and highly sensitive industry, families searching online had no reviews, reputation, or existing brand signals to rely on.',
+  'The core challenge was not just building a website. It was creating a digital experience that could establish trust quickly, communicate care quality clearly, and support users making emotionally difficult decisions under time pressure.',
+  'Poor UX in this context would not simply frustrate users. Confusion or uncertainty could delay decisions or prevent families from reaching out at all.'
 ]
 
 const projectOverview = {
   context: [
-    '360 Degree Care approached me to design and launch their first website. I led the full UX and design process — including site architecture, content strategy, and high-fidelity mockups — and worked closely with the client to align on structure and flow. While the final visual style reflected strong client preferences, I ensured the user experience remained clear, accessible, and emotionally resonant throughout.',
-    'I also collaborated with the developer from the earliest stages to keep implementation aligned with both the design and evolving client input. This helped us stay nimble and avoid rework as decisions shifted.'
+    '360 Degree Care needed its first website to establish legitimacy, communicate services clearly, and support early lead generation. I led the UX and design process from discovery through execution, working closely with the client and developer to balance user needs, accessibility, and strong stakeholder preferences.'
   ],
-  roles: ['UX Designer', 'Copywriter'],
-  client: '360 Degree Care - Home Health Services (NJ)',
-  deliverables: [
-    'Designs for all web pages',
-    'Brand Assets',
-    'Contact page with multiple forms',
-    'Empathetic Copy'
-  ],
-  timeline: '8 Weeks',
-  tools: ['Figma', 'Web Research', 'Google Docs', 'Linear']
+  roles: ['UX Designer', 'Content Strategy', 'UI Design'],
+  client: '360 Degree Care, New Jersey',
+  timeline: '8 weeks',
+  tools: ['Figma', 'Google Docs', 'Competitive Research']
 }
 
 const goalsAndChallenges = {
   goals: [
-    'Establish legitimacy as a licensed care provider',
-    'Emphasize dignity and active lifestyles in imagery',
-    'Explain services clearly and in detail',
-    'Communicate with transparency and warmth'
+    'Establish credibility for a new care provider',
+    'Clearly communicate services, coverage areas, and next steps',
+    'Support emotionally stressed users with calm, readable content',
+    'Encourage contact without aggressive sales pressure'
   ],
   challenges: [
-    'Limited content available and short timeline',
-    'Client insisted on oversized typography for readability',
-    'Client rejected proposed calming color palette',
-    'Non-standard layout and styling requests'
-  ],
-  description: [
-    "The client's primary goal was to establish a digital presence quickly and start building trust with families in need of in-home care. While they had experience in traditional marketing, they were less familiar with the nuances of digital UX and web strategy. The project required thoughtful communication to align user-centered design decisions with a visually driven brand vision.",
-    'I focused early efforts on educating the client about effective UX principles — including content hierarchy, scannability, and what builds trust for first-time visitors — while ensuring the final site honored their preferences and goals.'
+    'No prior digital presence or social proof',
+    'Strong stakeholder preference for oversized typography',
+    'Limited time and content availability',
+    'Accessibility considerations across a wide age range',
+    'Client-driven visual direction that evolved throughout the project'
   ]
 }
 
@@ -49,11 +39,10 @@ const researchAndDiscovery = {
     '"When you are in a position where you need to find care for a loved one, it can be scary. It feels like you are trusting the person you hire with their life".',
   author: 'Mario G',
   takeaways: [
-    'Most competitors used calming color palettes and soft, reassuring imagery',
-    'Sites with clear FAQs and multiple contact options instilled more trust',
-    'Visitors scanned for key info like insurance accepted, service areas, and 24/7 availability',
-    'Overly modern or salesy designs felt cold and disconnected from user needs',
-    "CTAs needed to be visible early and often — visitors shouldn't have to search to reach out"
+    'Visitors scan quickly for clarity around services, availability, and location',
+    'Calm imagery and empathetic language increase trust',
+    'Clear FAQs and repeated contact opportunities reduce hesitation',
+    'Overly sales-driven or modern designs can feel cold in this context'
   ]
 }
 
@@ -101,26 +90,25 @@ const strategyAndDesign = {
 
 const finalReflections = {
   description: [
-    'Despite a tight timeline and strong client direction on visuals, I delivered a responsive, multi-page website that remained grounded in UX best practices. The final design performed well in early user feedback, with clear navigation paths, emotionally calibrated copy, and locally relevant content that built instant credibility.'
+    'This project focused on designing a digital experience that could establish trust quickly for families making emotionally difficult care decisions. Under a tight timeline and strong client-driven visual preferences, the final experience prioritized clarity, emotional reassurance, and accessibility to support confident decision-making in a high-trust industry.',
+    'The resulting site provides a calm, legible, and structured experience that helps users understand services, assess legitimacy, and take next steps without pressure.'
   ],
   subHeader: 'Final Homepage Design',
   url: 'https://www.360degreecare.net',
   achievements: [
-    'Launched a fully responsive, multi-page website on a tight 5-week timeline',
-    'Led UX structure and content strategy to support trust-building and clarity',
-    'Developed high-fidelity designs tailored to mobile and desktop audiences',
-    'Created localized, SEO-aware content to increase visibility across NJ markets',
-    'Collaborated closely with a developer to efficiently implement shifting client feedback'
+    'Established a credible digital presence for a new in-home care provider',
+    'Improved user understanding of services, coverage areas, and next steps',
+    'Reduced hesitation through clear content hierarchy and repeated contact opportunities',
+    'Supported ongoing lead generation through calls and form submissions'
   ],
   lessons: [
-    'Advocated for UX while respecting a strongly client-led brand vision',
-    'Improved communication techniques with non-technical stakeholders',
-    'Reinforced the importance of flexible thinking under aesthetic constraints',
-    'Practiced translating emotion-rich research into actionable design decision',
-    'Gained experience designing for high-empathy use cases where trust is critical'
+    'Strengthened communication and alignment with non-technical stakeholders',
+    'Practiced balancing strong client preferences with user-centered design principles',
+    'Reinforced the importance of accessibility in emotionally sensitive decision contexts',
+    'Applied qualitative research insights to concrete UX decisions under real constraints'
   ],
   feedback:
-    '"I’m really happy with how everything turned out. You were flexible, patient, and always found a way to make my ideas work. I appreciate how you took the time to explain things and still delivered something polished, and easy to use. Couldn’t have done it without you."',
+    '"I\'m really happy with how everything turned out. You were flexible, patient, and always found a way to make my ideas work. I appreciate how you took the time to explain things and still delivered something polished and easy to use."',
   client: 'Owner, 360 Degree Care',
   img: ['/assets/360 case/360HomeMock.png']
 }
@@ -130,7 +118,44 @@ export default {
   projectOverview,
   goalsAndChallenges,
   researchAndDiscovery,
-  keyUXDecisions: [], // Content to be added in future ticket
+  keyUXDecisions: [
+    {
+      title: 'Supporting diverse readability needs through user control',
+      problem:
+        'Families researching in-home care include users with varying visual abilities and comfort levels with digital content, creating competing readability needs.',
+      risk: 'Making large typography the default could improve accessibility for some users while introducing hierarchy breakdowns, excessive scrolling, and visual fatigue for others.',
+      decision:
+        'Avoid enforcing a single readability standard and instead allow users to control how content is presented.',
+      solution:
+        'I worked with the developer to implement a global accessibility control that allows users to: Increase or decrease text size, Enable high-contrast and negative contrast modes, Apply grayscale and light background modes, Switch to a readable font option, Reset preferences at any time. User preferences are stored locally so accessibility settings persist across visits.',
+      tradeoff:
+        'This added implementation complexity, but preserved clarity and hierarchy while supporting a wider range of accessibility needs.'
+    },
+    {
+      title: 'Prioritizing information hierarchy to reduce cognitive load',
+      problem:
+        'Users evaluating care options need to quickly understand services, coverage, and next steps without processing dense or unstructured information.',
+      risk: 'Unclear hierarchy or excessive content density could increase cognitive load and slow decision-making.',
+      decision:
+        'Design the information architecture to surface essential details early and guide users toward action without pressure.',
+      solution:
+        'Content was structured to support fast scanning by: Breaking services into clearly labeled sections, Using concise headings and scannable content blocks, Repeating primary CTAs at natural decision points, Making service scope, availability, and next steps immediately visible',
+      tradeoff:
+        'This limited visual experimentation, but improved comprehension and ease of navigation for first-time visitors.'
+    },
+    {
+      title: 'Establishing trust through local relevance and legitimacy cues',
+      problem:
+        'With no reviews or established digital footprint, users lacked external validation signals when evaluating the provider.',
+      risk: 'Without clear indicators of legitimacy, users could hesitate or delay outreach despite understanding the services offered.',
+      decision:
+        'Use visible local context and transparent service explanations to establish credibility within the experience itself.',
+      solution:
+        'Trust was reinforced by: Clearly explaining services and care approach, Surfacing service areas and availability early, Integrating location-specific references, Maintaining a calm, empathetic tone across key pages',
+      tradeoff:
+        'Emphasizing clarity and locality required disciplined content decisions, but reduced hesitation and increased user confidence.'
+    }
+  ],
   strategyAndDesign,
   finalReflections
 }

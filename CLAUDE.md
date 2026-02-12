@@ -11,10 +11,10 @@
 
 ## ⚠️ CRITICAL: Development Server
 
-- Start dev server as needed: `npm run dev`
+- **DO NOT start or restart the dev server** — the user always has it running locally
 - Default port: 3000
-- Always check if port is in use before starting a new server
-- Kill existing processes on port 3000 if needed: `lsof -ti:3000 | xargs kill`
+- The user reviews all changes in real-time in their browser
+- Only verify page loads with `curl` if explicitly requested
 
 ## ⚠️ CRITICAL: Deployment Tracking
 
