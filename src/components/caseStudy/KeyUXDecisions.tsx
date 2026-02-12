@@ -37,7 +37,7 @@ export default function KeyUXDecisions({ decisions }: KeyUXDecisionsProps) {
                   </div>
 
                   <div>
-                    <h4 className="text-warning font-semibold mb-2">Risk</h4>
+                    <h4 className="text-primary font-semibold mb-2">Risk</h4>
                     <p className="text-text-body">{decision.risk}</p>
                   </div>
 
