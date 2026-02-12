@@ -6,19 +6,19 @@ const problemFraming = [
 
 const projectOverview = {
   context: [
-    '360 Degree Care approached me to design and launch their first website. I led the full UX and design process — including site architecture, content strategy, and high-fidelity mockups — and worked closely with the client to align on structure and flow. While the final visual style reflected strong client preferences, I ensured the user experience remained clear, accessible, and emotionally resonant throughout.',
-    'I also collaborated with the developer from the earliest stages to keep implementation aligned with both the design and evolving client input. This helped us stay nimble and avoid rework as decisions shifted.'
+    'As the UX designer for 360 Degree Care\'s first website, my primary goals were to establish legitimacy for a brand-new care provider with no digital presence, clearly communicate their services and coverage areas, and create a user experience that would support lead generation while building trust with families in high-stakes decision-making moments.',
+    'I conducted competitive research, developed the site architecture and content strategy, designed high-fidelity mockups, and collaborated with a developer to bring the vision to life—balancing strong client preferences with user-centered design principles throughout.'
   ],
-  roles: ['UX Designer', 'Copywriter'],
-  client: '360 Degree Care - Home Health Services (NJ)',
+  roles: ['UX Designer', 'Content Strategy', 'UI Design'],
+  client: '360 Degree Care, New Jersey',
   deliverables: [
-    'Designs for all web pages',
-    'Brand Assets',
-    'Contact page with multiple forms',
-    'Empathetic Copy'
+    'Site architecture & wireframes',
+    'High-fidelity UI designs',
+    'Empathetic, SEO-aware copy',
+    'Brand & visual assets'
   ],
-  timeline: '8 Weeks',
-  tools: ['Figma', 'Web Research', 'Google Docs', 'Linear']
+  timeline: '8 weeks',
+  tools: ['Figma', 'Google Docs', 'Competitive Research']
 }
 
 const goalsAndChallenges = {
