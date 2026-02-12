@@ -43,8 +43,9 @@ function CaseStudyRow({ caseStudy, imageOnLeft, index }: CaseStudyRowProps) {
         <div className="h-[500px] flex items-center justify-center">
           <img
             src={caseStudy.img}
-            alt={`${caseStudy.label} mockup`}
+            alt={`${caseStudy.label} project showcase - ${caseStudy.category || 'UX case study'}`}
             className="w-full h-auto max-h-full object-contain"
+            loading={index === 0 ? 'eager' : 'lazy'}
           />
         </div>
       </SlideInSection>
@@ -91,9 +92,9 @@ function CaseStudyRow({ caseStudy, imageOnLeft, index }: CaseStudyRowProps) {
           variant="ghost"
           size="lg"
           className="w-fit group border-2">
-          <Link href={caseStudy.destination}>
+          <Link href={caseStudy.destination} aria-label={`View ${caseStudy.label} case study`}>
             VIEW CASE STUDY
-            <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+            <FaArrowRight aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </Button>
       </SlideInSection>
