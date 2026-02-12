@@ -23,7 +23,7 @@ export default function GoalsAndChallenges({
       <div className="section space-y-4">
         <SectionTitle
           position="0.2"
-          header="Project Goals and Challenges"
+          header="Project Goals and Constraints"
           underline
         />
         <article className="space-y-4">

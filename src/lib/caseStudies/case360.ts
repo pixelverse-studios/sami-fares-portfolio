@@ -23,16 +23,16 @@ const projectOverview = {
 
 const goalsAndChallenges = {
   goals: [
-    'Establish legitimacy as a licensed care provider',
-    'Emphasize dignity and active lifestyles in imagery',
-    'Explain services clearly and in detail',
-    'Communicate with transparency and warmth'
+    'Establish credibility for a new care provider',
+    'Clearly communicate services, coverage areas, and next steps',
+    'Support emotionally stressed users with calm, readable content',
+    'Encourage contact without aggressive sales pressure'
   ],
   challenges: [
-    'Limited content available and short timeline',
-    'Client insisted on oversized typography for readability',
-    'Client rejected proposed calming color palette',
-    'Non-standard layout and styling requests'
+    'No prior digital presence or social proof',
+    'Strong stakeholder preference for oversized typography',
+    'Limited time and content availability',
+    'Accessibility considerations across a wide age range'
   ],
   description: [
     "The client's primary goal was to establish a digital presence quickly and start building trust with families in need of in-home care. While they had experience in traditional marketing, they were less familiar with the nuances of digital UX and web strategy. The project required thoughtful communication to align user-centered design decisions with a visually driven brand vision.",
