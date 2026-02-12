@@ -9,7 +9,7 @@ const id = CasesMap.get(1).id
 interface ProjectOverviewProps {
   client: string
   context: string[]
-  deliverables: string[]
+  deliverables?: string[]
   roles: string[]
   timeline: string
   tools: string[]
@@ -67,14 +67,16 @@ export default function ProjectOverview({
                 <h4 className="text-primary mb-3 text-lg">Tools</h4>
                 <p>{tools.join().replaceAll(',', ', ')}</p>
               </div>
-              <div>
-                <h4 className="text-primary mb-3 text-lg">Deliverables</h4>
-                <div className="space-y-2">
-                  {deliverables.map(deliverable => (
-                    <p key={deliverable}>{deliverable}</p>
-                  ))}
+              {deliverables && deliverables.length > 0 && (
+                <div>
+                  <h4 className="text-primary mb-3 text-lg">Deliverables</h4>
+                  <div className="space-y-2">
+                    {deliverables.map(deliverable => (
+                      <p key={deliverable}>{deliverable}</p>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
             </article>
           </SlideInSection>
         </div>
