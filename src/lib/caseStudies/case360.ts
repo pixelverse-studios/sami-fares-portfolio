@@ -1,22 +1,15 @@
 const problemFraming = [
-  '360 Degree Care was a newly established in-home care provider in New Jersey with no digital presence, no online reviews, and no reputation in the market. For families searching online for trusted care, the brand was essentially invisible.',
-  'The core challenge was not just building a website. It was creating a digital experience that could establish trust quickly—for a brand with zero digital footprint—in an industry where families are making high-stakes, emotionally charged decisions about their loved ones\' safety and wellbeing.',
-  'Poor UX in this context would not simply frustrate users. Confusion or uncertainty could delay critical care decisions, erode trust before it was even built, or cause families to abandon the site entirely in favor of competitors with stronger digital credibility.'
+  '360 Degree Care was a newly established in-home care provider in New Jersey with no digital presence. In a crowded and highly sensitive industry, families searching online had no reviews, reputation, or existing brand signals to rely on.',
+  'The core challenge was not just building a website. It was creating a digital experience that could establish trust quickly, communicate care quality clearly, and support users making emotionally difficult decisions under time pressure.',
+  'Poor UX in this context would not simply frustrate users. Confusion or uncertainty could delay decisions or prevent families from reaching out at all.'
 ]
 
 const projectOverview = {
   context: [
-    'As the UX designer for 360 Degree Care\'s first website, my primary goals were to establish legitimacy for a brand-new care provider with no digital presence, clearly communicate their services and coverage areas, and create a user experience that would support lead generation while building trust with families in high-stakes decision-making moments.',
-    'I conducted competitive research, developed the site architecture and content strategy, designed high-fidelity mockups, and collaborated with a developer to bring the vision to life—balancing strong client preferences with user-centered design principles throughout.'
+    '360 Degree Care needed its first website to establish legitimacy, communicate services clearly, and support early lead generation. I led the UX and design process from discovery through execution, working closely with the client and developer to balance user needs, accessibility, and strong stakeholder preferences.'
   ],
   roles: ['UX Designer', 'Content Strategy', 'UI Design'],
   client: '360 Degree Care, New Jersey',
-  deliverables: [
-    'Site architecture & wireframes',
-    'High-fidelity UI designs',
-    'Empathetic, SEO-aware copy',
-    'Brand & visual assets'
-  ],
   timeline: '8 weeks',
   tools: ['Figma', 'Google Docs', 'Competitive Research']
 }
@@ -32,11 +25,8 @@ const goalsAndChallenges = {
     'No prior digital presence or social proof',
     'Strong stakeholder preference for oversized typography',
     'Limited time and content availability',
-    'Accessibility considerations across a wide age range'
-  ],
-  description: [
-    "The client's primary goal was to establish a digital presence quickly and start building trust with families in need of in-home care. While they had experience in traditional marketing, they were less familiar with the nuances of digital UX and web strategy. The project required thoughtful communication to align user-centered design decisions with a visually driven brand vision.",
-    'I focused early efforts on educating the client about effective UX principles — including content hierarchy, scannability, and what builds trust for first-time visitors — while ensuring the final site honored their preferences and goals.'
+    'Accessibility considerations across a wide age range',
+    'Client-driven visual direction that evolved throughout the project'
   ]
 }
 
@@ -49,11 +39,10 @@ const researchAndDiscovery = {
     '"When you are in a position where you need to find care for a loved one, it can be scary. It feels like you are trusting the person you hire with their life".',
   author: 'Mario G',
   takeaways: [
-    'Most competitors used calming color palettes and soft, reassuring imagery',
-    'Sites with clear FAQs and multiple contact options instilled more trust',
-    'Visitors scanned for key info like insurance accepted, service areas, and 24/7 availability',
-    'Overly modern or salesy designs felt cold and disconnected from user needs',
-    "CTAs needed to be visible early and often — visitors shouldn't have to search to reach out"
+    'Visitors scan quickly for clarity around services, availability, and location',
+    'Calm imagery and empathetic language increase trust',
+    'Clear FAQs and repeated contact opportunities reduce hesitation',
+    'Overly sales-driven or modern designs can feel cold in this context'
   ]
 }
 
@@ -101,7 +90,8 @@ const strategyAndDesign = {
 
 const finalReflections = {
   description: [
-    'Despite a tight timeline and strong client direction on visuals, I delivered a responsive, multi-page website that remained grounded in UX best practices. The final design performed well in early user feedback, with clear navigation paths, emotionally calibrated copy, and locally relevant content that built instant credibility.'
+    'This project focused on designing a digital experience that could establish trust quickly for families making emotionally difficult care decisions. Under a tight timeline and strong client-driven visual preferences, the final experience prioritized clarity, emotional reassurance, and accessibility to support confident decision-making in a high-trust industry.',
+    'The resulting site provides a calm, legible, and structured experience that helps users understand services, assess legitimacy, and take next steps without pressure.'
   ],
   subHeader: 'Final Homepage Design',
   url: 'https://www.360degreecare.net',
@@ -132,38 +122,38 @@ export default {
     {
       title: 'Supporting diverse readability needs through user control',
       problem:
-        'Families navigating care decisions include users with varying visual abilities, from aging adults with declining vision to younger family members researching on behalf of parents.',
-      risk: 'Defaulting to oversized typography could break visual hierarchy and make content harder to scan, while small text could exclude users who need larger fonts.',
+        'Families researching in-home care include users with varying visual abilities and comfort levels with digital content, creating competing readability needs.',
+      risk: 'Making large typography the default could improve accessibility for some users while introducing hierarchy breakdowns, excessive scrolling, and visual fatigue for others.',
       decision:
-        'Rather than forcing a single typography size, design the site to allow users to control how content is presented to them.',
+        'Avoid enforcing a single readability standard and instead allow users to control how content is presented.',
       solution:
-        'Implemented global accessibility controls including adjustable text size, high-contrast modes, and font options—ensuring readability across a wide range of visual needs.',
+        'I worked with the developer to implement a global accessibility control that allows users to: Increase or decrease text size, Enable high-contrast and negative contrast modes, Apply grayscale and light background modes, Switch to a readable font option, Reset preferences at any time. User preferences are stored locally so accessibility settings persist across visits.',
       tradeoff:
-        'Added implementation complexity and required careful testing across configurations, but ultimately served a broader audience more effectively.'
+        'This added implementation complexity, but preserved clarity and hierarchy while supporting a wider range of accessibility needs.'
     },
     {
       title: 'Prioritizing information hierarchy to reduce cognitive load',
       problem:
-        'Users in emotional distress need to quickly understand what services are offered, which areas are covered, and how to take the next step—without being overwhelmed by dense blocks of text.',
-      risk: 'Presenting too much information at once increases cognitive load and may cause users to abandon the site before finding what they need.',
+        'Users evaluating care options need to quickly understand services, coverage, and next steps without processing dense or unstructured information.',
+      risk: 'Unclear hierarchy or excessive content density could increase cognitive load and slow decision-making.',
       decision:
-        'Design the information architecture to surface the most essential details early and allow progressive disclosure for users who want more depth.',
+        'Design the information architecture to surface essential details early and guide users toward action without pressure.',
       solution:
-        'Created scannable content blocks with clear section headings, visual breathing room, and repeated calls-to-action throughout the experience.',
+        'Content was structured to support fast scanning by: Breaking services into clearly labeled sections, Using concise headings and scannable content blocks, Repeating primary CTAs at natural decision points, Making service scope, availability, and next steps immediately visible',
       tradeoff:
-        'Limited opportunities for visual experimentation in favor of clarity and scannability—prioritizing function over form.'
+        'This limited visual experimentation, but improved comprehension and ease of navigation for first-time visitors.'
     },
     {
       title: 'Establishing trust through local relevance and legitimacy cues',
       problem:
-        'As a newly established provider with no online reviews or digital footprint, 360 Degree Care lacked the external validation signals users typically rely on when evaluating care providers.',
-      risk: 'Without social proof or third-party credibility markers, users might hesitate to reach out or choose a competitor with more established online presence.',
+        'With no reviews or established digital footprint, users lacked external validation signals when evaluating the provider.',
+      risk: 'Without clear indicators of legitimacy, users could hesitate or delay outreach despite understanding the services offered.',
       decision:
-        'Build trust through hyper-local context and transparent, empathetic service explanations rather than relying on reviews or testimonials that didn\'t yet exist.',
+        'Use visible local context and transparent service explanations to establish credibility within the experience itself.',
       solution:
-        'Emphasized specific coverage areas throughout the site, clearly outlined services with approachable language, and maintained a calm, reassuring tone that acknowledged the emotional weight of care decisions.',
+        'Trust was reinforced by: Clearly explaining services and care approach, Surfacing service areas and availability early, Integrating location-specific references, Maintaining a calm, empathetic tone across key pages',
       tradeoff:
-        'Emphasizing locality and specificity required disciplined content decisions and limited the ability to appeal broadly—but deepened trust with the target New Jersey audience.'
+        'Emphasizing clarity and locality required disciplined content decisions, but reduced hesitation and increased user confidence.'
     }
   ],
   strategyAndDesign,
