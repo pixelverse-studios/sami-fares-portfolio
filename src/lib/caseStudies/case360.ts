@@ -130,7 +130,44 @@ export default {
   projectOverview,
   goalsAndChallenges,
   researchAndDiscovery,
-  keyUXDecisions: [], // Content to be added in future ticket
+  keyUXDecisions: [
+    {
+      title: 'Supporting diverse readability needs through user control',
+      problem:
+        'Families navigating care decisions include users with varying visual abilities, from aging adults with declining vision to younger family members researching on behalf of parents.',
+      risk: 'Defaulting to oversized typography could break visual hierarchy and make content harder to scan, while small text could exclude users who need larger fonts.',
+      decision:
+        'Rather than forcing a single typography size, design the site to allow users to control how content is presented to them.',
+      solution:
+        'Implemented global accessibility controls including adjustable text size, high-contrast modes, and font options—ensuring readability across a wide range of visual needs.',
+      tradeoff:
+        'Added implementation complexity and required careful testing across configurations, but ultimately served a broader audience more effectively.'
+    },
+    {
+      title: 'Prioritizing information hierarchy to reduce cognitive load',
+      problem:
+        'Users in emotional distress need to quickly understand what services are offered, which areas are covered, and how to take the next step—without being overwhelmed by dense blocks of text.',
+      risk: 'Presenting too much information at once increases cognitive load and may cause users to abandon the site before finding what they need.',
+      decision:
+        'Design the information architecture to surface the most essential details early and allow progressive disclosure for users who want more depth.',
+      solution:
+        'Created scannable content blocks with clear section headings, visual breathing room, and repeated calls-to-action throughout the experience.',
+      tradeoff:
+        'Limited opportunities for visual experimentation in favor of clarity and scannability—prioritizing function over form.'
+    },
+    {
+      title: 'Establishing trust through local relevance and legitimacy cues',
+      problem:
+        'As a newly established provider with no online reviews or digital footprint, 360 Degree Care lacked the external validation signals users typically rely on when evaluating care providers.',
+      risk: 'Without social proof or third-party credibility markers, users might hesitate to reach out or choose a competitor with more established online presence.',
+      decision:
+        'Build trust through hyper-local context and transparent, empathetic service explanations rather than relying on reviews or testimonials that didn\'t yet exist.',
+      solution:
+        'Emphasized specific coverage areas throughout the site, clearly outlined services with approachable language, and maintained a calm, reassuring tone that acknowledged the emotional weight of care decisions.',
+      tradeoff:
+        'Emphasizing locality and specificity required disciplined content decisions and limited the ability to appeal broadly—but deepened trust with the target New Jersey audience.'
+    }
+  ],
   strategyAndDesign,
   finalReflections
 }
