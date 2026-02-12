@@ -10,17 +10,18 @@ import { CaseStudy } from '@/lib/types'
 /**
  * SelectedWork Component
  *
- * Displays case studies in a vertical layout with alternating image/content sides.
+ * Displays case studies in a vertical layout with consistent image-left, content-right structure.
  * Includes responsive design and scroll-triggered animations.
  *
  * Animations (PVS-316):
  * - Section header: SlideInSection with default direction
- * - Image/content: Alternating SlideInSection directions based on layout
+ * - Image: Slides in from left
+ * - Content: Slides in from right
  * - Triggers at 0.1 threshold for smooth scroll experience
  *
  * Responsive Behavior (PVS-316):
  * - Mobile (< md): Vertical stack (image top, content bottom)
- * - Desktop (≥ md): Two-column grid with alternating sides
+ * - Desktop (≥ md): Two-column grid (image left, content right)
  */
 
 interface CaseStudyRowProps {
@@ -113,7 +114,7 @@ export default function SelectedWork() {
             <CaseStudyRow
               key={caseStudy.label}
               caseStudy={caseStudy}
-              imageOnLeft={index % 2 === 0}
+              imageOnLeft={true}
               index={index}
             />
           ))}
