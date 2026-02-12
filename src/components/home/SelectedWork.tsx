@@ -5,6 +5,22 @@ import allCases from '@/lib/caseStudies/allCases'
 import { SlideInSection } from '../animations'
 import { CaseStudy } from '@/lib/types'
 
+/**
+ * SelectedWork Component
+ *
+ * Displays case studies in a vertical layout with alternating image/content sides.
+ * Includes responsive design and scroll-triggered animations.
+ *
+ * Animations (PVS-316):
+ * - Section header: SlideInSection with default direction
+ * - Image/content: Alternating SlideInSection directions based on layout
+ * - Triggers at 0.1 threshold for smooth scroll experience
+ *
+ * Responsive Behavior (PVS-316):
+ * - Mobile (< md): Vertical stack (image top, content bottom)
+ * - Desktop (≥ md): Two-column grid with alternating sides
+ */
+
 interface CaseStudyRowProps {
   caseStudy: CaseStudy
   imageOnLeft: boolean
