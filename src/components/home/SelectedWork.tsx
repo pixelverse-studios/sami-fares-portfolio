@@ -39,11 +39,11 @@ function CaseStudyRow({ caseStudy, imageOnLeft, index }: CaseStudyRowProps) {
       <SlideInSection
         direction={imageOnLeft ? 'left' : 'right'}
         className={imageOnLeft ? '' : 'md:col-start-2'}>
-        <div className="bg-background-section p-8 rounded-xl h-full flex items-center justify-center">
+        <div className="bg-background-section p-8 rounded-xl h-96 flex items-center justify-center">
           <img
             src={caseStudy.img}
             alt={`${caseStudy.label} mockup`}
-            className="w-full h-auto object-contain"
+            className="w-full h-auto max-h-full object-contain"
           />
         </div>
       </SlideInSection>
