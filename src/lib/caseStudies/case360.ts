@@ -106,21 +106,19 @@ const finalReflections = {
   subHeader: 'Final Homepage Design',
   url: 'https://www.360degreecare.net',
   achievements: [
-    'Launched a fully responsive, multi-page website on a tight 5-week timeline',
-    'Led UX structure and content strategy to support trust-building and clarity',
-    'Developed high-fidelity designs tailored to mobile and desktop audiences',
-    'Created localized, SEO-aware content to increase visibility across NJ markets',
-    'Collaborated closely with a developer to efficiently implement shifting client feedback'
+    'Established a credible digital presence for a new in-home care provider',
+    'Improved user understanding of services, coverage areas, and next steps',
+    'Reduced hesitation through clear content hierarchy and repeated contact opportunities',
+    'Supported ongoing lead generation through calls and form submissions'
   ],
   lessons: [
-    'Advocated for UX while respecting a strongly client-led brand vision',
-    'Improved communication techniques with non-technical stakeholders',
-    'Reinforced the importance of flexible thinking under aesthetic constraints',
-    'Practiced translating emotion-rich research into actionable design decision',
-    'Gained experience designing for high-empathy use cases where trust is critical'
+    'Strengthened communication and alignment with non-technical stakeholders',
+    'Practiced balancing strong client preferences with user-centered design principles',
+    'Reinforced the importance of accessibility in emotionally sensitive decision contexts',
+    'Applied qualitative research insights to concrete UX decisions under real constraints'
   ],
   feedback:
-    '"I’m really happy with how everything turned out. You were flexible, patient, and always found a way to make my ideas work. I appreciate how you took the time to explain things and still delivered something polished, and easy to use. Couldn’t have done it without you."',
+    '"I'm really happy with how everything turned out. You were flexible, patient, and always found a way to make my ideas work. I appreciate how you took the time to explain things and still delivered something polished and easy to use."',
   client: 'Owner, 360 Degree Care',
   img: ['/assets/360 case/360HomeMock.png']
 }
