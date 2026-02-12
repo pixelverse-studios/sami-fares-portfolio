@@ -10,7 +10,7 @@ const id = CasesMap.get(2).id
 interface GoalsAndChallengesProps {
   goals: string[]
   challenges: string[]
-  description: string[]
+  description?: string[]
 }
 
 export default function GoalsAndChallenges({
@@ -26,13 +26,15 @@ export default function GoalsAndChallenges({
           header="Project Goals and Constraints"
           underline
         />
-        <article className="space-y-4">
-          {description.map(section => (
-            <SlideInSection key={section}>
-              <p>{section}</p>
-            </SlideInSection>
-          ))}
-        </article>
+        {description && description.length > 0 && (
+          <article className="space-y-4">
+            {description.map(section => (
+              <SlideInSection key={section}>
+                <p>{section}</p>
+              </SlideInSection>
+            ))}
+          </article>
+        )}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <article>
             <SlideInSection>

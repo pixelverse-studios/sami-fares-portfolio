@@ -16,6 +16,14 @@
 - The user reviews all changes in real-time in their browser
 - Only verify page loads with `curl` if explicitly requested
 
+## ⚠️ CRITICAL: Build Verification
+
+- **ALWAYS run the build after completing each work scope** to ensure no errors
+- Command: `npm run build`
+- Build must pass successfully before moving to the next task
+- Fix any build errors immediately before proceeding
+- Never leave the codebase in a non-building state
+
 ## ⚠️ CRITICAL: Deployment Tracking
 
 Before pushing to main, update `docs/deployment_summary.md`:
@@ -33,6 +41,30 @@ PVS_WEBSITE_ID=d875f076-3023-4098-a2ce-fc40e0aea93d
 PVS_API_URL=https://pvs-server-62hx7.ondigitalocean.app
 PVS_BASE_URL=https://samifares.com
 ```
+
+## Recent Updates (Updated: 2026-02-12)
+
+### 360 Degree Care Case Study Content Refresh (Epic PVS-266)
+- ✅ Updated all case study sections (0.0-0.5) with client-approved copy
+- ✅ Added KeyUXDecisions section (0.4) with 3 major UX decisions
+- ✅ Updated hero subheader to trust-focused messaging
+- ✅ Simplified Project Overview context and made deliverables optional
+- ✅ Changed "Challenges" terminology to "Constraints"
+- ✅ Updated Research & Discovery takeaways (4 focused items)
+- ✅ Updated Final Reflections with new outcomes and lessons
+
+### New Components
+- **KeyUXDecisions.tsx**: New section component for documenting UX decision-making process with Problem/Risk/Decision/Solution/Tradeoff structure
+- **SelectedWork.tsx**: Redesigned homepage featured work section replacing FeaturedWorks component
+
+### Component Updates
+- **ProjectOverview**: Made `deliverables` field optional to support different case study formats
+- **Goals&Challenges**: Updated section header from "Challenges" to "Constraints"
+- All case study pages now include KeyUXDecisions section (conditionally rendered)
+
+### Type System
+- Added comprehensive TypeScript interfaces for case study data structures
+- New types: `UXDecision`, `CaseStudyData`, and related interfaces in `src/lib/types.ts`
 
 ## Project Overview
 
@@ -256,17 +288,18 @@ export const caseStudyGradients = {
 
   /components
     /caseStudy/            # Reusable case study sections
-      WorkHero.tsx         # Hero section (0.0)
-      ProblemFraming.tsx   # Problem statement
+      WorkHero.tsx         # Hero section
+      ProblemFraming.tsx   # Problem statement (0.0)
       ProjectOverview.tsx  # Metadata grid (0.1)
       Goals&Challenges.tsx # Goals/constraints (0.2)
       Research&Discovery.tsx # Research findings (0.3)
+      KeyUXDecisions.tsx   # UX decision documentation (0.4, optional)
       Strategy&Design.tsx  # Strategy + mockups (0.4)
       FinalReflections.tsx # Wrap-up (0.5)
       AvailableCases.tsx   # Cross-linking component
     /home/                 # Homepage sections
       HomeHero.tsx
-      FeaturedWorks.tsx
+      SelectedWork.tsx     # Featured case studies
       AboutMe.tsx
     /ui/                   # shadcn/ui components
       button.tsx
@@ -305,16 +338,19 @@ export const caseStudyGradients = {
 ## Case Study Architecture
 
 ### Section Numbering System (0.0-0.5)
-Each case study follows a consistent structure with 6 main sections:
+Each case study follows a consistent structure with these main sections:
 
 | Position | Component | Purpose |
 |----------|-----------|---------|
 | 0.0 | ProblemFraming | Textual problem statement |
-| 0.1 | ProjectOverview | Client, tools, timeline, roles |
+| 0.1 | ProjectOverview | Client, tools, timeline, roles, context (deliverables optional) |
 | 0.2 | GoalsAndChallenges | Goals and constraints |
 | 0.3 | ResearchAndDiscovery | Findings, quotes, takeaways |
+| 0.4 | KeyUXDecisions | Major UX decisions with Problem/Risk/Decision/Solution/Tradeoff (optional) |
 | 0.4 | StrategyAndDesign | Strategy highlights + mockups |
 | 0.5 | FinalReflections | Achievements, lessons, testimonial |
+
+**Note:** KeyUXDecisions section is optional and only rendered if the case study includes `keyUXDecisions` data. It documents major UX decisions with transparent reasoning and tradeoffs.
 
 ### Data-Driven Pattern
 - Content lives in `/lib/caseStudies/*.ts` modules
