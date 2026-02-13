@@ -1,21 +1,26 @@
 const problemFraming = [
-  'Jones Pressure Washing was a brand-new company entering the competitive home services market in New Jersey. With no website, reviews, or digital footprint, they faced a major challenge: earning trust from customers who rely on online credibility to make quick decisions.',
-  'The client needed more than a basic website—they needed a professional, trustworthy brand presence that could stand out locally and convert visitors into leads. The design had to clearly communicate services, professionalism, and local relevance, while remaining simple enough to manage for a small team.',
-  'At its core, this project was about crafting legitimacy from scratch in an industry where visual trust, clarity, and local SEO directly impact business growth.'
+  'Jones Pressure Washing was a brand-new company entering the competitive home services market in New Jersey. With no website, reviews, or digital footprint, the business faced a core challenge: earning trust quickly from homeowners who rely on online signals to make fast, high-stakes decisions.',
+  'The problem was not simply the absence of a website. Prospective customers needed to feel confident inviting a new service provider onto their property without the reassurance of testimonials, brand recognition, or past work examples. Any digital experience had to reduce uncertainty, clearly explain services, and make the next step feel safe and worthwhile.',
+  'At its core, this project focused on establishing legitimacy from the ground up in an industry where clarity, perceived professionalism, and local relevance shape user trust.'
 ]
 
 const projectOverview = {
   context: [
-    'Jones Pressure Washing is a residential and commercial exterior washing company based in New Jersey. At the start of the project, they had a basic one-page site that lacked clear structure, hierarchy, or branding. Their goal was to elevate their digital presence with a professional website that could build trust, attract local leads, and support long-term growth.',
-    'I led the UX strategy, responsive design, content planning, and SEO foundation. I collaborated closely with a developer to ensure every custom-coded component was implemented as designed. The result is a clean, mobile-friendly experience built to establish credibility and drive conversions — even without existing reviews or a visual portfolio.'
+    'Jones Pressure Washing is a residential and commercial exterior washing company based in New Jersey. At the start of the project, the business had a minimal one-page site that lacked clear structure, hierarchy, and messaging.',
+    'The goal was to design a scalable website that could support service clarity and long-term local growth.'
   ],
-  roles: ['UX Designer', 'Content Strategist', 'Copywriter'],
+  roles: [
+    'UX Design',
+    'Information Architecture',
+    'Content Strategy',
+    'Copywriting'
+  ],
   client: 'Jones Pressure Washing (Local Home Service - NJ)',
   deliverables: [
-    'Full homepage',
-    'Services overview and detail pages',
-    'Contact page',
-    'SEO-focused copywriting'
+    'Responsive homepage designed to support lead requests',
+    'Service overview and detail pages with clear hierarchy',
+    'Contact and lead capture experience',
+    'SEO-informed copywriting to support local discovery'
   ],
   timeline: '6 Weeks',
   tools: ['Figma', 'Web Research', 'Google Docs', 'Linear']
@@ -23,37 +28,35 @@ const projectOverview = {
 
 const goalsAndChallenges = {
   goals: [
-    'Establish a professional and trustworthy digital presence',
-    'Generate leads through clear, action-oriented CTAs',
-    'Clearly explain core services to first-time visitors',
-    'Rank well for local search terms in New Jersey',
-    "Appear as the 'elite' provider of this service"
+    'Reduce perceived risk for first-time visitors by establishing trust and legitimacy',
+    'Help homeowners quickly understand services and determine fit without additional clarification',
+    'Guide users toward requesting a quote through clear, confidence-building calls to action',
+    'Support local search visibility across New Jersey',
+    'Position the business as a reliable, premium option relative to local competitors'
   ],
-  challenges: [
-    'No brand identity, portfolio, or testimonials',
-    'Limited visual assets or content at kickoff',
-    'Highly competitive local market',
-    'Tight timeline: 6 weeks from start to delivery'
-  ],
-  description: [
-    "With no content, brand identity, or online credibility in place, Jones Pressure Washing needed more than a visual facelift — they needed a foundation. Rather than rehash the limitations, I focused on building a site that could earn trust quickly through clarity, visual professionalism, and strong local signals. The challenge wasn't just to make something look good — it was to design a conversion engine for a brand without a track record."
+  constraints: [
+    'No existing brand identity, service portfolio, or customer testimonials',
+    'Limited visual assets and written content at project kickoff',
+    'Highly competitive local home services landscape',
+    'Fixed timeline of six weeks from kickoff to launch'
   ]
 }
 
 const researchAndDiscovery = {
   description: [
-    'I conducted a competitive review of pressure washing businesses across Northern New Jersey, analyzing how they structured content, implemented SEO, and approached layout across desktop and mobile. I also read through Google and Yelp reviews to understand what customers cared about most — from communication and pricing to before-and-after results.',
-    'Because the client lacked testimonials and a visual portfolio, I explored how to build trust without traditional social proof. I supplemented my research by speaking with homeowners in my network to better understand how they choose service providers. These informal conversations revealed a strong reliance on first impressions, location visibility, and quick clarity about services and pricing.'
+    'To understand how homeowners evaluate and select pressure washing services, I conducted a competitive review of local businesses across Northern New Jersey. This research focused on how competitors communicated credibility, structured service information, and surfaced trust signals through messaging, local SEO presence, and visual professionalism.',
+    'I also reviewed Google and Yelp feedback to identify recurring decision drivers, including responsiveness, pricing clarity, professionalism, and visible results. Because the client lacked testimonials and a visual portfolio at launch, a key focus of this research was understanding how trust is established when traditional social proof is limited or absent.',
+    'To supplement this analysis, I spoke informally with homeowners in my network about how they typically choose local service providers. These conversations reinforced a consistent pattern: decisions are often made quickly, based on first impressions, perceived professionalism, and how easily users can understand services and take action.'
   ],
   quote:
-    '"Honestly I just google the service, look at the first couple options and whichever company looks more professional I usually call first"',
+    '"Honestly, I just Google the service, look at the first couple options, and whichever company looks more professional I usually call first."',
   author: 'Tyler B',
   takeaways: [
-    'Sites must establish trust within the first few seconds of landing',
-    'Services should be broken down into short, scannable chunks',
-    'Local SEO (county and town names) plays a major role in discovery',
-    'Mobile-first layouts are critical for on-the-go, last-minute searches',
-    'CTAs should appear early and often — users shouldn’t have to search for ways to take action'
+    'Trust is often established within the first few seconds of landing, especially for first-time visitors',
+    'Homeowners scan quickly to understand services, coverage areas, and pricing expectations',
+    'Local signals such as county and town references strongly influence perceived legitimacy',
+    'Many service searches occur on mobile, often under time pressure',
+    'Users expect clear next steps without needing to search or scroll excessively'
   ]
 }
 
@@ -118,27 +121,27 @@ const strategyAndDesign = {
 
 const finalReflections = {
   description: [
-    'This project demonstrated how thoughtful UX strategy can establish credibility from the ground up — even for a brand with no content, reviews, or digital footprint. By designing for where the business was headed, not just where it was at launch, I helped the client establish a polished digital presence they could confidently grow into.',
-    'Final development is currently in progress. All designs shown reflect approved deliverables, and I’m actively collaborating with the developer to bring them to life.'
+    'This project demonstrates how UX strategy can establish credibility for a new local service business without reviews, testimonials, or an existing digital footprint. Rather than optimizing solely for launch, the experience was intentionally structured to remain clear, trustworthy, and scalable as the business grows.',
+    'The final designs emphasize clarity, perceived professionalism, and ease of action. The experience helps first-time visitors quickly understand services, assess legitimacy, and move confidently toward requesting a quote within a competitive local market.'
   ],
   subHeader: 'Final Designs',
   url: 'https://www.jonespressurewashingnj.com',
-  achievements: [
-    'Created a scalable site structure designed to grow with the business',
-    'Built a clean, professional brand presence from the ground up',
-    'Delivered a responsive, mobile-first layout with strong conversion intent',
-    'Designed an SEO-ready architecture with localized content and page structure',
-    'Developed strategic content in the absence of branding, portfolio, or testimonials'
+  outcomes: [
+    'Established a clear, scalable information structure that can grow alongside the business',
+    'Created a professional digital presence without relying on testimonials or portfolio imagery',
+    'Supported fast, confident decision-making through a mobile-first experience',
+    'Designed an SEO-informed information architecture to strengthen local discovery',
+    'Reduced user hesitation through intentional content hierarchy and repeated next steps'
   ],
   lessons: [
-    'Starting with user needs leads to stronger outcomes than chasing visual trends',
-    'Content strategy can bridge gaps when visual assets are limited',
-    'Clear information architecture is essential for service-based websites',
-    'Local SEO considerations should shape site structure from the beginning',
-    'Designing for future growth requires conscious, scalable decisions early on'
+    'Designing for user confidence can offset the absence of traditional trust signals',
+    'Clear information architecture plays a critical role in service-based decision-making',
+    'Content structure and hierarchy can substitute for missing brand assets in early-stage businesses',
+    'Local context should inform both messaging and structural decisions from the outset',
+    'Planning for growth requires balancing immediate clarity with long-term scalability'
   ],
   feedback:
-    '"The website is everything I envisioned it to be. I understood the challenges during this process but ultimately I am extremely happy with how it all turned out. The website is currently being developed and I am confident once it rolls out business will pick up for us."',
+    '"The website is everything I envisioned it to be. I understood the challenges during this process, but I\'m extremely happy with how it turned out. I\'m confident the site will help the business continue to grow."',
   client: 'Owner, Jones Pressure Washing',
   img: ['/assets/JPW case/JPW_FinalMocks.png']
 }
@@ -156,7 +159,56 @@ export default {
   projectOverview,
   goalsAndChallenges,
   researchAndDiscovery,
-  keyUXDecisions: [], // Content to be added in future ticket
+  keyUXDecisions: [
+    {
+      title: 'Establishing trust without social proof or brand history',
+      problem:
+        'As a new local service business, Jones Pressure Washing had no reviews, testimonials, or visual portfolio. Homeowners needed to assess legitimacy quickly before deciding whether to request a quote.',
+      risk: 'Without recognizable trust signals, users could hesitate, compare competitors that appeared more established, or abandon the experience entirely.',
+      decision:
+        'Signal credibility through clarity, professionalism, and consistency rather than relying on unavailable social proof.',
+      solution:
+        'Trust was reinforced by:\n\n• Prioritizing clear, descriptive service explanations over promotional language\n• Using a strong information hierarchy to surface key details immediately\n• Applying a restrained, professional visual system to convey reliability\n• Making the primary call to action visible early and consistently',
+      tradeoff:
+        'Limiting expressive branding reduced early visual flexibility but lowered perceived risk and supported faster, more confident decisions.'
+    },
+    {
+      title: 'Supporting fast decision-making for high-intent users',
+      problem:
+        'Homeowners searching for pressure washing services often do so with immediate intent and limited patience, frequently comparing multiple providers at once.',
+      risk: 'If users had to search for key information or next steps, they could delay action or choose a competitor with a clearer path forward.',
+      decision:
+        'Design the experience to support rapid scanning and action within seconds of landing.',
+      solution:
+        'Fast decision-making was supported by:\n\n• Breaking services into short, scannable sections\n• Grouping offerings logically with access to deeper detail when needed\n• Repeating the primary "Request Your Free Estimate" call to action at natural decision points\n• Avoiding dense content blocks that slow evaluation',
+      tradeoff:
+        'Reducing depth on top-level pages required careful prioritization, but improved clarity and reduced friction for first-time visitors.'
+    },
+    {
+      title: 'Reinforcing local relevance in a competitive market',
+      problem:
+        'In a crowded local services landscape, homeowners rely heavily on geographic cues to judge relevance and legitimacy.',
+      risk: 'Without strong local signals, the business could appear generic or less trustworthy than nearby competitors.',
+      decision:
+        'Integrate location-based context throughout the experience to reinforce regional relevance and authority.',
+      solution:
+        'Local credibility was strengthened by:\n\n• Incorporating county and town references across key pages\n• Aligning service language with regional search intent\n• Structuring content to support both user understanding and local discovery',
+      tradeoff:
+        'Balancing geographic specificity with clean, readable content required restraint, but increased perceived legitimacy.'
+    },
+    {
+      title: 'Designing for mobile-first, on-the-go usage',
+      problem:
+        'Many pressure washing searches occur on mobile devices, often during time-sensitive or last-minute situations.',
+      risk: 'Dense layouts, small tap targets, or buried calls to action could prevent users from acting quickly on mobile.',
+      decision:
+        'Optimize the experience for mobile-first usability and ease of interaction.',
+      solution:
+        'Mobile usability was improved by:\n\n• Stacking content vertically for easier scanning\n• Enlarging tap targets and spacing interactive elements\n• Ensuring calls to action remained accessible without excessive navigation',
+      tradeoff:
+        'Simplifying some desktop layouts improved consistency and usability across devices.'
+    }
+  ],
   strategyAndDesign,
   finalReflections,
   additionalCases

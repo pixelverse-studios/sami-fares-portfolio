@@ -36,7 +36,7 @@ const goalsAndChallenges = {
     'Help users follow through on their intentions',
     'Build sustainable daily planning habits'
   ],
-  challenges: [
+  constraints: [
     'Balancing simplicity with enough functionality to be useful',
     'Designing for different planning styles and preferences',
     'Creating habit-forming patterns without manipulation',
@@ -129,7 +129,7 @@ const finalReflections = {
   ],
   subHeader: 'Current Beta Status',
   url: 'https://domani.app',
-  achievements: [
+  outcomes: [
     'Created distinct planning and execution modes that respect user mental states',
     'Designed interaction models that reduce decision fatigue through intentional constraints',
     'Built a calm, focused visual system that supports concentration',

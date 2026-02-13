@@ -16,11 +16,11 @@ export default function WorksJPW() {
       <WorkHero
         img="/assets/JPW case/JPW_Hero.png"
         header="Jones Pressure Washing - UX Case Study"
-        descriptor="Designing scalable, trust-focused website for a new exterior washing company in New Jersey"
+        descriptor="Designing a trust-driven digital experience that helps homeowners confidently request quotes from a new local service business"
       />
       <ProblemFraming
         items={caseJpw.problemFraming}
-        header="Problem Framing - New Local Business with No Credibility"
+        header="Problem Framing: Establishing Trust Without Social Proof"
       />
       <ProjectOverview {...caseJpw.projectOverview} />
       <GoalsAndChallenges {...caseJpw.goalsAndChallenges} />
