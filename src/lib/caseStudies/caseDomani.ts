@@ -9,8 +9,17 @@
 // Product Context & Design Challenge
 // ============================================================================
 const productContext = {
-  paragraphs: [] as string[], // 3 paragraphs
-  challenges: [] as string[] // 4-bullet list
+  paragraphs: [
+    'Users want to feel calm, focused, and in control as they plan their day. However, many planning and productivity tools emphasize task density, reminders, and rigid workflows, which can increase stress rather than reduce it.',
+    'Domani was created to explore a different approach to planning — one that prioritizes emotional clarity, intentionality, and trust over constant optimization.',
+    'The challenge was to design a system that:'
+  ],
+  challenges: [
+    'Helps users make decisions without overthinking',
+    'Encourages follow-through without pressure',
+    'Separates planning from execution to reduce cognitive load',
+    'Feels supportive rather than demanding'
+  ]
 }
 
 // ============================================================================
