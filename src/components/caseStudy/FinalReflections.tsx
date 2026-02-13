@@ -9,7 +9,7 @@ import { SlideInSection } from '../animations'
 const id = CasesMap.get(6).id
 
 interface FinalReflectionsProps {
-  achievements: string[]
+  outcomes: string[]
   client: string
   description: string[]
   feedback: string
@@ -20,7 +20,7 @@ interface FinalReflectionsProps {
 }
 
 export default function FinalReflections({
-  achievements,
+  outcomes,
   client,
   description,
   feedback,
@@ -74,13 +74,13 @@ export default function FinalReflections({
             <SlideInSection>
               <h4 className="flex text-lg text-primary gap-2 items-center">
                 <FaSquareCheck size={18} className="text-primary" />
-                Key Achievements
+                Key Outcomes
               </h4>
             </SlideInSection>
             <ul className="space-y-3 list-disc pl-4">
-              {achievements.map(achievement => (
-                <SlideInSection key={achievement}>
-                  <li>{achievement}</li>
+              {outcomes.map(outcome => (
+                <SlideInSection key={outcome}>
+                  <li>{outcome}</li>
                 </SlideInSection>
               ))}
             </ul>

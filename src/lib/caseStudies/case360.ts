@@ -95,7 +95,7 @@ const finalReflections = {
   ],
   subHeader: 'Final Homepage Design',
   url: 'https://www.360degreecare.net',
-  achievements: [
+  outcomes: [
     'Established a credible digital presence for a new in-home care provider',
     'Improved user understanding of services, coverage areas, and next steps',
     'Reduced hesitation through clear content hierarchy and repeated contact opportunities',

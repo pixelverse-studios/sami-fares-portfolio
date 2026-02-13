@@ -129,7 +129,7 @@ const finalReflections = {
   ],
   subHeader: 'Current Beta Status',
   url: 'https://domani.app',
-  achievements: [
+  outcomes: [
     'Created distinct planning and execution modes that respect user mental states',
     'Designed interaction models that reduce decision fatigue through intentional constraints',
     'Built a calm, focused visual system that supports concentration',
