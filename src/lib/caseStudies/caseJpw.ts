@@ -6,16 +6,21 @@ const problemFraming = [
 
 const projectOverview = {
   context: [
-    'Jones Pressure Washing is a residential and commercial exterior washing company based in New Jersey. At the start of the project, they had a basic one-page site that lacked clear structure, hierarchy, or branding. Their goal was to elevate their digital presence with a professional website that could build trust, attract local leads, and support long-term growth.',
-    'I led the UX strategy, responsive design, content planning, and SEO foundation. I collaborated closely with a developer to ensure every custom-coded component was implemented as designed. The result is a clean, mobile-friendly experience built to establish credibility and drive conversions — even without existing reviews or a visual portfolio.'
+    'Jones Pressure Washing is a residential and commercial exterior washing company based in New Jersey. At the start of the project, the business had a minimal one-page site that lacked clear structure, hierarchy, and messaging.',
+    'The goal was to design a scalable website that could support service clarity and long-term local growth.'
   ],
-  roles: ['UX Designer', 'Content Strategist', 'Copywriter'],
+  roles: [
+    'UX Design',
+    'Information Architecture',
+    'Content Strategy',
+    'Copywriting'
+  ],
   client: 'Jones Pressure Washing (Local Home Service - NJ)',
   deliverables: [
-    'Full homepage',
-    'Services overview and detail pages',
-    'Contact page',
-    'SEO-focused copywriting'
+    'Responsive homepage designed to support lead requests',
+    'Service overview and detail pages with clear hierarchy',
+    'Contact and lead capture experience',
+    'SEO-informed copywriting to support local discovery'
   ],
   timeline: '6 Weeks',
   tools: ['Figma', 'Web Research', 'Google Docs', 'Linear']
@@ -116,27 +121,27 @@ const strategyAndDesign = {
 
 const finalReflections = {
   description: [
-    'This project demonstrated how thoughtful UX strategy can establish credibility from the ground up — even for a brand with no content, reviews, or digital footprint. By designing for where the business was headed, not just where it was at launch, I helped the client establish a polished digital presence they could confidently grow into.',
-    'Final development is currently in progress. All designs shown reflect approved deliverables, and I’m actively collaborating with the developer to bring them to life.'
+    'This project demonstrates how UX strategy can establish credibility for a new local service business without reviews, testimonials, or an existing digital footprint. Rather than optimizing solely for launch, the experience was intentionally structured to remain clear, trustworthy, and scalable as the business grows.',
+    'The final designs emphasize clarity, perceived professionalism, and ease of action. The experience helps first-time visitors quickly understand services, assess legitimacy, and move confidently toward requesting a quote within a competitive local market.'
   ],
   subHeader: 'Final Designs',
   url: 'https://www.jonespressurewashingnj.com',
-  achievements: [
-    'Created a scalable site structure designed to grow with the business',
-    'Built a clean, professional brand presence from the ground up',
-    'Delivered a responsive, mobile-first layout with strong conversion intent',
-    'Designed an SEO-ready architecture with localized content and page structure',
-    'Developed strategic content in the absence of branding, portfolio, or testimonials'
+  outcomes: [
+    'Established a clear, scalable information structure that can grow alongside the business',
+    'Created a professional digital presence without relying on testimonials or portfolio imagery',
+    'Supported fast, confident decision-making through a mobile-first experience',
+    'Designed an SEO-informed information architecture to strengthen local discovery',
+    'Reduced user hesitation through intentional content hierarchy and repeated next steps'
   ],
   lessons: [
-    'Starting with user needs leads to stronger outcomes than chasing visual trends',
-    'Content strategy can bridge gaps when visual assets are limited',
-    'Clear information architecture is essential for service-based websites',
-    'Local SEO considerations should shape site structure from the beginning',
-    'Designing for future growth requires conscious, scalable decisions early on'
+    'Designing for user confidence can offset the absence of traditional trust signals',
+    'Clear information architecture plays a critical role in service-based decision-making',
+    'Content structure and hierarchy can substitute for missing brand assets in early-stage businesses',
+    'Local context should inform both messaging and structural decisions from the outset',
+    'Planning for growth requires balancing immediate clarity with long-term scalability'
   ],
   feedback:
-    '"The website is everything I envisioned it to be. I understood the challenges during this process but ultimately I am extremely happy with how it all turned out. The website is currently being developed and I am confident once it rolls out business will pick up for us."',
+    '"The website is everything I envisioned it to be. I understood the challenges during this process, but I\'m extremely happy with how it turned out. I\'m confident the site will help the business continue to grow."',
   client: 'Owner, Jones Pressure Washing',
   img: ['/assets/JPW case/JPW_FinalMocks.png']
 }
