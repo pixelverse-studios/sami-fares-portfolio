@@ -101,7 +101,13 @@ const challengesLearnings = {
 // What This Project Demonstrates
 // ============================================================================
 const projectDemonstrates = {
-  capabilities: [] as string[] // 5 items
+  capabilities: [
+    'Product-level UX thinking beyond surface UI',
+    'Comfort designing without complete data or validation',
+    'Strong judgment around scope and restraint',
+    'Ability to design systems that support behavior, not just features',
+    'Emotional awareness in interaction design'
+  ]
 }
 
 // ============================================================================
