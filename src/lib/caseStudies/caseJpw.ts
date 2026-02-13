@@ -6,16 +6,21 @@ const problemFraming = [
 
 const projectOverview = {
   context: [
-    'Jones Pressure Washing is a residential and commercial exterior washing company based in New Jersey. At the start of the project, they had a basic one-page site that lacked clear structure, hierarchy, or branding. Their goal was to elevate their digital presence with a professional website that could build trust, attract local leads, and support long-term growth.',
-    'I led the UX strategy, responsive design, content planning, and SEO foundation. I collaborated closely with a developer to ensure every custom-coded component was implemented as designed. The result is a clean, mobile-friendly experience built to establish credibility and drive conversions — even without existing reviews or a visual portfolio.'
+    'Jones Pressure Washing is a residential and commercial exterior washing company based in New Jersey. At the start of the project, the business had a minimal one-page site that lacked clear structure, hierarchy, and messaging.',
+    'The goal was to design a scalable website that could support service clarity and long-term local growth.'
   ],
-  roles: ['UX Designer', 'Content Strategist', 'Copywriter'],
+  roles: [
+    'UX Design',
+    'Information Architecture',
+    'Content Strategy',
+    'Copywriting'
+  ],
   client: 'Jones Pressure Washing (Local Home Service - NJ)',
   deliverables: [
-    'Full homepage',
-    'Services overview and detail pages',
-    'Contact page',
-    'SEO-focused copywriting'
+    'Responsive homepage designed to support lead requests',
+    'Service overview and detail pages with clear hierarchy',
+    'Contact and lead capture experience',
+    'SEO-informed copywriting to support local discovery'
   ],
   timeline: '6 Weeks',
   tools: ['Figma', 'Web Research', 'Google Docs', 'Linear']
