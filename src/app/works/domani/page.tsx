@@ -1,14 +1,8 @@
 import WorkHero from '@/components/caseStudy/WorkHero'
-import ProblemFraming from '@/components/caseStudy/ProblemFraming'
-import ProjectOverview from '@/components/caseStudy/ProjectOverview'
-import GoalsAndChallenges from '@/components/caseStudy/Goals&Challenges'
-import ResearchAndDiscovery from '@/components/caseStudy/Research&Discovery'
-import KeyUXDecisions from '@/components/caseStudy/KeyUXDecisions'
-import StrategyAndDesign from '@/components/caseStudy/Strategy&Design'
-import FinalReflections from '@/components/caseStudy/FinalReflections'
 import AvailableCases from '@/components/caseStudy/AvailableCases'
 
-import caseDomani from '@/lib/caseStudies/caseDomani'
+// Custom components will be added in future tickets
+// This is a placeholder until PVS-331 epic custom components are implemented
 
 export default function WorksDomani() {
   return (
@@ -18,18 +12,21 @@ export default function WorksDomani() {
         header="Domani - UX Case Study"
         descriptor="Designing a calm, habit-building planning app that reduces decision fatigue and helps users follow through on daily intentions"
       />
-      <ProblemFraming
-        items={caseDomani.problemFraming}
-        header="Problem Framing - Planning Without Execution"
-      />
-      <ProjectOverview {...caseDomani.projectOverview} />
-      <GoalsAndChallenges {...caseDomani.goalsAndChallenges} />
-      <ResearchAndDiscovery {...caseDomani.researchAndDiscovery} />
-      {caseDomani.keyUXDecisions && caseDomani.keyUXDecisions.length > 0 && (
-        <KeyUXDecisions decisions={caseDomani.keyUXDecisions} />
-      )}
-      <StrategyAndDesign {...caseDomani.strategyAndDesign} />
-      <FinalReflections {...caseDomani.finalReflections} />
+
+      {/* Placeholder section - Custom components coming soon */}
+      <section className="section text-center py-20">
+        <div className="max-w-2xl mx-auto space-y-4">
+          <h2 className="text-2xl font-bold text-text-heading">
+            Custom Case Study Coming Soon
+          </h2>
+          <p className="text-text-body">
+            Domani uses a custom case study structure with 7 unique components.
+            These components are currently being developed as part of the
+            PVS-331 epic.
+          </p>
+        </div>
+      </section>
+
       <AvailableCases current="Domani" showHeader />
     </main>
   )
