@@ -36,19 +36,48 @@ const productHypothesis = {
 // Key UX Decisions & Iterations
 // ============================================================================
 const keyUXDecisions = {
-  intro: '', // Introduction paragraph
-  decisions: [] as Array<{
-    number: number
-    title: string
-    problem?: string
-    explanation?: string
-    solution: string
-    mockupBefore?: string
-    mockupAfter?: string
-    mockup?: string
-    mockupLeft?: string
-    mockupRight?: string
-  }>
+  intro:
+    'Each design decision below reflects a deliberate attempt to balance clarity, emotional tone, and behavioral follow-through.',
+  decisions: [
+    {
+      number: 1,
+      title: 'Moving away from a "tech startup" visual tone',
+      problem:
+        'Early visual explorations leaned toward a dark, high-contrast aesthetic that felt more like a traditional productivity tool. While visually striking, this direction created unnecessary tension and made the experience feel more demanding.',
+      solution:
+        "The visual system evolved toward lighter backgrounds, softer colors, and increased spacing to reinforce calm and approachability. This shift supported Domani's goal of reducing anxiety rather than amplifying it.",
+      mockupBefore: '/assets/Domani/Decision1_Before.png',
+      mockupAfter: '/assets/Domani/Decision1_After.png'
+    },
+    {
+      number: 2,
+      title: 'Evolving the task priority model',
+      problem:
+        'Initial task prioritization relied on traditional importance and urgency markers. During iteration, this approach felt too rigid and encouraged users to over-optimize their day.',
+      solution:
+        'The model was refined to emphasize intentional selection over strict prioritization, allowing users to commit to what matters most without ranking or labeling every task. This reduced decision overhead while still maintaining structure.',
+      mockup: '/assets/Domani/Decision2.png'
+    },
+    {
+      number: 3,
+      title: 'Separating planning from execution',
+      explanation:
+        'One of the core UX decisions was to clearly separate the act of planning from the act of doing. Planning occurs in advance, in a calm context, allowing users to think clearly about their intentions. Execution happens later, with minimal friction, reducing the need for re-decision-making throughout the day.',
+      solution:
+        'This separation helped reinforce trust in prior decisions rather than constantly revisiting them.',
+      mockupLeft: '/assets/Domani/Decision3_Planning.png',
+      mockupRight: '/assets/Domani/Decision3_Execution.png'
+    },
+    {
+      number: 4,
+      title: 'Balancing reminders without increasing anxiety',
+      explanation:
+        'Reminders were designed carefully to avoid feeling intrusive or stressful. Instead of frequent notifications, Domani uses gentle cues that reinforce commitment without creating pressure.',
+      solution:
+        'The goal was to support follow-through while respecting the emotional state of the user.',
+      mockup: '/assets/Domani/Decision4.png'
+    }
+  ]
 }
 
 // ============================================================================
