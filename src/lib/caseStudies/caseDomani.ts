@@ -36,7 +36,7 @@ const goalsAndChallenges = {
     'Help users follow through on their intentions',
     'Build sustainable daily planning habits'
   ],
-  challenges: [
+  constraints: [
     'Balancing simplicity with enough functionality to be useful',
     'Designing for different planning styles and preferences',
     'Creating habit-forming patterns without manipulation',

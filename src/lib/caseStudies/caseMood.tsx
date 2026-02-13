@@ -26,7 +26,7 @@ const goalsAndChallenges = {
     'Balance emotional depth with simplicity, ensuring the design feels reactive and supportive, not overwhelming.',
     'Build a system that introduces local or lesser-known artists in a subtle, non-intrusive way — integrated into the flow, not tacked on.'
   ],
-  challenges: [
+  constraints: [
     'No live user testing was conducted, so design decisions were informed by competitive review, informal feedback, and UX best practices.',
     'Because the app is conceptual, flows were designed to demonstrate clear UX logic and visual consistency, rather than functioning as a fully scoped MVP.'
   ]
