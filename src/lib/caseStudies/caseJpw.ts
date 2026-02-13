@@ -154,7 +154,56 @@ export default {
   projectOverview,
   goalsAndChallenges,
   researchAndDiscovery,
-  keyUXDecisions: [], // Content to be added in future ticket
+  keyUXDecisions: [
+    {
+      title: 'Establishing trust without social proof or brand history',
+      problem:
+        'As a new local service business, Jones Pressure Washing had no reviews, testimonials, or visual portfolio. Homeowners needed to assess legitimacy quickly before deciding whether to request a quote.',
+      risk: 'Without recognizable trust signals, users could hesitate, compare competitors that appeared more established, or abandon the experience entirely.',
+      decision:
+        'Signal credibility through clarity, professionalism, and consistency rather than relying on unavailable social proof.',
+      solution:
+        'Trust was reinforced by:\n\n• Prioritizing clear, descriptive service explanations over promotional language\n• Using a strong information hierarchy to surface key details immediately\n• Applying a restrained, professional visual system to convey reliability\n• Making the primary call to action visible early and consistently',
+      tradeoff:
+        'Limiting expressive branding reduced early visual flexibility but lowered perceived risk and supported faster, more confident decisions.'
+    },
+    {
+      title: 'Supporting fast decision-making for high-intent users',
+      problem:
+        'Homeowners searching for pressure washing services often do so with immediate intent and limited patience, frequently comparing multiple providers at once.',
+      risk: 'If users had to search for key information or next steps, they could delay action or choose a competitor with a clearer path forward.',
+      decision:
+        'Design the experience to support rapid scanning and action within seconds of landing.',
+      solution:
+        'Fast decision-making was supported by:\n\n• Breaking services into short, scannable sections\n• Grouping offerings logically with access to deeper detail when needed\n• Repeating the primary "Request Your Free Estimate" call to action at natural decision points\n• Avoiding dense content blocks that slow evaluation',
+      tradeoff:
+        'Reducing depth on top-level pages required careful prioritization, but improved clarity and reduced friction for first-time visitors.'
+    },
+    {
+      title: 'Reinforcing local relevance in a competitive market',
+      problem:
+        'In a crowded local services landscape, homeowners rely heavily on geographic cues to judge relevance and legitimacy.',
+      risk: 'Without strong local signals, the business could appear generic or less trustworthy than nearby competitors.',
+      decision:
+        'Integrate location-based context throughout the experience to reinforce regional relevance and authority.',
+      solution:
+        'Local credibility was strengthened by:\n\n• Incorporating county and town references across key pages\n• Aligning service language with regional search intent\n• Structuring content to support both user understanding and local discovery',
+      tradeoff:
+        'Balancing geographic specificity with clean, readable content required restraint, but increased perceived legitimacy.'
+    },
+    {
+      title: 'Designing for mobile-first, on-the-go usage',
+      problem:
+        'Many pressure washing searches occur on mobile devices, often during time-sensitive or last-minute situations.',
+      risk: 'Dense layouts, small tap targets, or buried calls to action could prevent users from acting quickly on mobile.',
+      decision:
+        'Optimize the experience for mobile-first usability and ease of interaction.',
+      solution:
+        'Mobile usability was improved by:\n\n• Stacking content vertically for easier scanning\n• Enlarging tap targets and spacing interactive elements\n• Ensuring calls to action remained accessible without excessive navigation',
+      tradeoff:
+        'Simplifying some desktop layouts improved consistency and usability across devices.'
+    }
+  ],
   strategyAndDesign,
   finalReflections,
   additionalCases
