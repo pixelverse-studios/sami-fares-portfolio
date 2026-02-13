@@ -1,7 +1,7 @@
 const problemFraming = [
-  'Jones Pressure Washing was a brand-new company entering the competitive home services market in New Jersey. With no website, reviews, or digital footprint, they faced a major challenge: earning trust from customers who rely on online credibility to make quick decisions.',
-  'The client needed more than a basic website—they needed a professional, trustworthy brand presence that could stand out locally and convert visitors into leads. The design had to clearly communicate services, professionalism, and local relevance, while remaining simple enough to manage for a small team.',
-  'At its core, this project was about crafting legitimacy from scratch in an industry where visual trust, clarity, and local SEO directly impact business growth.'
+  'Jones Pressure Washing was a brand-new company entering the competitive home services market in New Jersey. With no website, reviews, or digital footprint, the business faced a core challenge: earning trust quickly from homeowners who rely on online signals to make fast, high-stakes decisions.',
+  'The problem was not simply the absence of a website. Prospective customers needed to feel confident inviting a new service provider onto their property without the reassurance of testimonials, brand recognition, or past work examples. Any digital experience had to reduce uncertainty, clearly explain services, and make the next step feel safe and worthwhile.',
+  'At its core, this project focused on establishing legitimacy from the ground up in an industry where clarity, perceived professionalism, and local relevance shape user trust.'
 ]
 
 const projectOverview = {
