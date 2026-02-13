@@ -108,7 +108,8 @@ const projectDemonstrates = {
 // What's Next
 // ============================================================================
 const whatsNext = {
-  paragraph: '' // Forward-looking paragraph
+  paragraph:
+    'Domani continues to evolve as a real-world concept, with future iterations focused on refining execution flows, reducing friction further, and preparing the experience for broader release.'
 }
 
 // ============================================================================
