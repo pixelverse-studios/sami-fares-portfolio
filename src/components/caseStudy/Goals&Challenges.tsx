@@ -9,13 +9,13 @@ const id = CasesMap.get(2).id
 
 interface GoalsAndChallengesProps {
   goals: string[]
-  challenges: string[]
+  constraints: string[]
   description?: string[]
 }
 
 export default function GoalsAndChallenges({
   goals,
-  challenges,
+  constraints,
   description
 }: GoalsAndChallengesProps) {
   return (
@@ -56,14 +56,14 @@ export default function GoalsAndChallenges({
               <h4 className="text-primary mb-3 text-lg">Constraints</h4>
             </SlideInSection>
             <div className="flex flex-col gap-2">
-              {challenges.map(challenge => (
-                <SlideInSection key={challenge}>
+              {constraints.map(constraint => (
+                <SlideInSection key={constraint}>
                   <div className="grid grid-cols-[2rem_1fr] gap-4 items-start">
                     <FaBan
                       size={16}
                       className="text-[var(--warning)] w-8 mt-1"
                     />{' '}
-                    <p>{challenge}</p>
+                    <p>{constraint}</p>
                   </div>
                 </SlideInSection>
               ))}

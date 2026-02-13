@@ -23,20 +23,17 @@ const projectOverview = {
 
 const goalsAndChallenges = {
   goals: [
-    'Establish a professional and trustworthy digital presence',
-    'Generate leads through clear, action-oriented CTAs',
-    'Clearly explain core services to first-time visitors',
-    'Rank well for local search terms in New Jersey',
-    "Appear as the 'elite' provider of this service"
+    'Reduce perceived risk for first-time visitors by establishing trust and legitimacy',
+    'Help homeowners quickly understand services and determine fit without additional clarification',
+    'Guide users toward requesting a quote through clear, confidence-building calls to action',
+    'Support local search visibility across New Jersey',
+    'Position the business as a reliable, premium option relative to local competitors'
   ],
-  challenges: [
-    'No brand identity, portfolio, or testimonials',
-    'Limited visual assets or content at kickoff',
-    'Highly competitive local market',
-    'Tight timeline: 6 weeks from start to delivery'
-  ],
-  description: [
-    "With no content, brand identity, or online credibility in place, Jones Pressure Washing needed more than a visual facelift — they needed a foundation. Rather than rehash the limitations, I focused on building a site that could earn trust quickly through clarity, visual professionalism, and strong local signals. The challenge wasn't just to make something look good — it was to design a conversion engine for a brand without a track record."
+  constraints: [
+    'No existing brand identity, service portfolio, or customer testimonials',
+    'Limited visual assets and written content at project kickoff',
+    'Highly competitive local home services landscape',
+    'Fixed timeline of six weeks from kickoff to launch'
   ]
 }
 
