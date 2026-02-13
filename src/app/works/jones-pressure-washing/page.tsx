@@ -20,7 +20,7 @@ export default function WorksJPW() {
       />
       <ProblemFraming
         items={caseJpw.problemFraming}
-        header="Problem Framing - New Local Business with No Credibility"
+        header="Problem Framing: Establishing Trust Without Social Proof"
       />
       <ProjectOverview {...caseJpw.projectOverview} />
       <GoalsAndChallenges {...caseJpw.goalsAndChallenges} />
