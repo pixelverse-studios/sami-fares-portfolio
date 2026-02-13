@@ -39,18 +39,19 @@ const goalsAndChallenges = {
 
 const researchAndDiscovery = {
   description: [
-    'I conducted a competitive review of pressure washing businesses across Northern New Jersey, analyzing how they structured content, implemented SEO, and approached layout across desktop and mobile. I also read through Google and Yelp reviews to understand what customers cared about most — from communication and pricing to before-and-after results.',
-    'Because the client lacked testimonials and a visual portfolio, I explored how to build trust without traditional social proof. I supplemented my research by speaking with homeowners in my network to better understand how they choose service providers. These informal conversations revealed a strong reliance on first impressions, location visibility, and quick clarity about services and pricing.'
+    'To understand how homeowners evaluate and select pressure washing services, I conducted a competitive review of local businesses across Northern New Jersey. This research focused on how competitors communicated credibility, structured service information, and surfaced trust signals through messaging, local SEO presence, and visual professionalism.',
+    'I also reviewed Google and Yelp feedback to identify recurring decision drivers, including responsiveness, pricing clarity, professionalism, and visible results. Because the client lacked testimonials and a visual portfolio at launch, a key focus of this research was understanding how trust is established when traditional social proof is limited or absent.',
+    'To supplement this analysis, I spoke informally with homeowners in my network about how they typically choose local service providers. These conversations reinforced a consistent pattern: decisions are often made quickly, based on first impressions, perceived professionalism, and how easily users can understand services and take action.'
   ],
   quote:
-    '"Honestly I just google the service, look at the first couple options and whichever company looks more professional I usually call first"',
+    '"Honestly, I just Google the service, look at the first couple options, and whichever company looks more professional I usually call first."',
   author: 'Tyler B',
   takeaways: [
-    'Sites must establish trust within the first few seconds of landing',
-    'Services should be broken down into short, scannable chunks',
-    'Local SEO (county and town names) plays a major role in discovery',
-    'Mobile-first layouts are critical for on-the-go, last-minute searches',
-    'CTAs should appear early and often — users shouldn’t have to search for ways to take action'
+    'Trust is often established within the first few seconds of landing, especially for first-time visitors',
+    'Homeowners scan quickly to understand services, coverage areas, and pricing expectations',
+    'Local signals such as county and town references strongly influence perceived legitimacy',
+    'Many service searches occur on mobile, often under time pressure',
+    'Users expect clear next steps without needing to search or scroll excessively'
   ]
 }
 
