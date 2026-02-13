@@ -26,7 +26,10 @@ const productContext = {
 // Product Hypothesis
 // ============================================================================
 const productHypothesis = {
-  hypothesis: [] as string[] // 2 paragraphs
+  hypothesis: [
+    'If users are encouraged to plan tomorrow intentionally, in advance, and without urgency, they will feel more confident in their decisions and more likely to follow through.',
+    'By shifting planning to a calm, reflective moment and limiting how and when tasks are surfaced, Domani aims to reduce decision fatigue while still supporting daily accountability.'
+  ]
 }
 
 // ============================================================================
