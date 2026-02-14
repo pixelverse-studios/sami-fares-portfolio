@@ -84,7 +84,8 @@ const keyUXDecisions = {
 // Reflection
 // ============================================================================
 const reflection = {
-  paragraph: '' // Single reflection paragraph
+  paragraph:
+    "Domani reinforced the importance of designing systems that respect a user's mental and emotional state, not just their productivity goals. Working without formal analytics or large-scale testing required making thoughtful tradeoffs and relying on UX judgment rather than optimization metrics. This project emphasized restraint, clarity, and intentional scope — designing only what was necessary to support the core experience."
 }
 
 // ============================================================================
