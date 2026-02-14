@@ -74,8 +74,7 @@ const keyUXDecisions = {
       explanation:
         'Reminders were designed carefully to avoid feeling intrusive or stressful. Instead of frequent notifications, Domani uses gentle cues that reinforce commitment without creating pressure.',
       solution:
-        'The goal was to support follow-through while respecting the emotional state of the user.',
-      mockup: '/assets/Domani/Decision4.png'
+        'The goal was to support follow-through while respecting the emotional state of the user.'
     }
   ]
 }
