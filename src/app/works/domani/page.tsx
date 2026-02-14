@@ -1,33 +1,31 @@
 import WorkHero from '@/components/caseStudy/WorkHero'
+import ProductContext from '@/components/caseStudy/domani/ProductContext'
+import ProductHypothesis from '@/components/caseStudy/domani/ProductHypothesis'
+import DomaniDecisions from '@/components/caseStudy/domani/DomaniDecisions'
+import DomaniReflection from '@/components/caseStudy/domani/DomaniReflection'
+import ChallengesLearnings from '@/components/caseStudy/domani/ChallengesLearnings'
+import ProjectDemonstrates from '@/components/caseStudy/domani/ProjectDemonstrates'
+import WhatsNext from '@/components/caseStudy/domani/WhatsNext'
 import AvailableCases from '@/components/caseStudy/AvailableCases'
 
-// Custom components will be added in future tickets
-// This is a placeholder until PVS-331 epic custom components are implemented
+import caseDomani from '@/lib/caseStudies/caseDomani'
 
 export default function WorksDomani() {
   return (
-    <main className="text-text-body">
+    <>
       <WorkHero
         img="/assets/Domani/DomaniHero.png"
-        header="Domani - UX Case Study"
-        descriptor="Designing a calm, habit-building planning app that reduces decision fatigue and helps users follow through on daily intentions"
+        header="Domani"
+        descriptor="A calm, habit-focused planning app designed to help users trust tomorrow's decisions."
       />
-
-      {/* Placeholder section - Custom components coming soon */}
-      <section className="section text-center py-20">
-        <div className="max-w-2xl mx-auto space-y-4">
-          <h2 className="text-2xl font-bold text-text-heading">
-            Custom Case Study Coming Soon
-          </h2>
-          <p className="text-text-body">
-            Domani uses a custom case study structure with 7 unique components.
-            These components are currently being developed as part of the
-            PVS-331 epic.
-          </p>
-        </div>
-      </section>
-
+      <ProductContext {...caseDomani.productContext} />
+      <ProductHypothesis {...caseDomani.productHypothesis} />
+      <DomaniDecisions {...caseDomani.keyUXDecisions} />
+      <DomaniReflection {...caseDomani.reflection} />
+      <ChallengesLearnings {...caseDomani.challengesLearnings} />
+      <ProjectDemonstrates {...caseDomani.projectDemonstrates} />
+      <WhatsNext {...caseDomani.whatsNext} />
       <AvailableCases current="Domani" showHeader />
-    </main>
+    </>
   )
 }
