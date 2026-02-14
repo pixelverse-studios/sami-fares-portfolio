@@ -92,10 +92,18 @@ const reflection = {
 // Key Challenges & Learnings
 // ============================================================================
 const challengesLearnings = {
-  challenges: [] as Array<{
-    title: string
-    description: string
-  }>
+  challenges: [
+    {
+      title: 'Learning to separate solutions from habits',
+      description:
+        'Designing behavior-focused products requires resisting the urge to over-engineer solutions. Simplicity often supports consistency better than flexibility.'
+    },
+    {
+      title: 'Re-centering on the experience of time',
+      description:
+        "Planning tools don't just manage tasks — they shape how users feel about their future time. Small interface decisions can meaningfully influence that perception."
+    }
+  ]
 }
 
 // ============================================================================
