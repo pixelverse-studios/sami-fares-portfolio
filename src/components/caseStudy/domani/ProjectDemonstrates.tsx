@@ -12,11 +12,11 @@ export default function ProjectDemonstrates({
   capabilities
 }: ProjectDemonstratesProps) {
   return (
-    <section className={`halfPage ${domaniGradients.dark}`}>
+    <section className={`halfPage ${domaniGradients.dark} text-white`}>
       <div className="section space-y-8">
         {/* Header */}
         <SlideInSection>
-          <h3 className="text-white text-xl font-semibold">
+          <h3 className="text-xl font-semibold">
             What This Project Demonstrates
           </h3>
         </SlideInSection>
@@ -29,9 +29,7 @@ export default function ProjectDemonstrates({
                 <span className="mt-1 flex-shrink-0">
                   <FaCheck className="text-primary w-4 h-4" />
                 </span>
-                <span className="text-white text-sm leading-relaxed">
-                  {capability}
-                </span>
+                <span className="text-sm leading-relaxed">{capability}</span>
               </li>
             ))}
           </ul>
