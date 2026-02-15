@@ -41,7 +41,10 @@ export default function WorksMoodTunes() {
         />
       )}
       <StrategyAndDesign {...caseMood.strategyAndDesign} />
-      <FinalReflections {...caseMood.finalReflections} />
+      <FinalReflections
+        {...caseMood.finalReflections}
+        outcomesHeader="What This Project Demonstrates"
+      />
       <AvailableCases current="MoodTunes" showHeader />
     </main>
   )
