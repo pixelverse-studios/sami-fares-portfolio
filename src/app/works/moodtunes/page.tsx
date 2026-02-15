@@ -23,7 +23,7 @@ export default function WorksMoodTunes() {
       />
       <ProblemFraming
         items={caseMood.problemFraming}
-        header="Problem Framing - Music that Matches the Moment"
+        header="Problem Framing – Music That Matches the Moment"
       />
       <ProjectOverview {...caseMood.projectOverview} />
       <GoalsAndChallenges {...caseMood.goalsAndChallenges} />

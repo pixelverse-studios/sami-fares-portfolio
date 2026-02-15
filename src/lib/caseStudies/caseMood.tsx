@@ -1,6 +1,7 @@
 const problemFraming = [
-  'Users often feel disconnected from the music recommendations they receive. Traditional streaming algorithms focus on past behavior and general taste — but don’t account for real-time context like mood, energy level, or activity. As a result, users find themselves replaying the same playlists for workouts, focus, or relaxation, and are rarely exposed to new or local artists.',
-  'Moodtunes addresses this by letting users select how they feel in the moment and generating playlists that match that energy — while subtly surfacing local artists they might otherwise miss.'
+  'Music streaming platforms are highly effective at recommending content based on past listening behavior. Over time, this creates familiarity, but it often limits discovery and emotional relevance.',
+  'Users frequently return to the same playlists for focus, workouts, or relaxation because existing systems are optimized around history, not real-time context. When mood, energy, or intent changes, users are left to manually search, filter, or settle for music that only partially fits the moment.',
+  "This project explores a different approach to music discovery, one that starts with how a user feels right now, rather than what they've listened to before."
 ]
 
 const projectOverview = {
