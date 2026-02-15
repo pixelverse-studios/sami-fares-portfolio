@@ -12,10 +12,11 @@ const id = CasesMap.get(3).id
 
 interface ResearchAndDiscoveryProps {
   description: string[] | ReactNode[]
-  quote: string
-  author: string
-  takeaways: string[]
+  quote?: string
+  author?: string
+  takeaways?: string[]
   mockups?: Mockup[]
+  header?: string
 }
 
 export default function ResearchAndDiscovery({
@@ -23,44 +24,56 @@ export default function ResearchAndDiscovery({
   quote,
   author,
   takeaways,
-  mockups
+  mockups,
+  header
 }: ResearchAndDiscoveryProps) {
   return (
     <section id={id} className="halfPage text-sm">
       <div className="section space-y-4">
-        <SectionTitle position="0.3" header="Research & Discovery" />
+        <SectionTitle
+          position="0.3"
+          header={header || 'Research & Discovery'}
+        />
         <article className="space-y-4">
           {description.map((p, key) => (
             <SlideInSection key={key}>
               <div>{p}</div>
             </SlideInSection>
           ))}
-          {quote === '' ? null : (
+          {quote && quote !== '' && (
             <SlideInSection>
               <blockquote className="border-l-4 border-l-primary p-6 bg-background-section shadow-md rounded-r-lg space-y-4">
                 <p className="text-lg italic text-text-heading leading-relaxed">
                   {quote}
                 </p>
-                <footer className="text-sm text-text-body font-medium">
-                  <cite>— {author}</cite>
-                </footer>
+                {author && (
+                  <footer className="text-sm text-text-body font-medium">
+                    <cite>— {author}</cite>
+                  </footer>
+                )}
               </blockquote>
             </SlideInSection>
           )}
         </article>
-        <SlideInSection>
-          <h4 className="text-primary mb-3 text-lg">Key Research Takeaways</h4>
-        </SlideInSection>
-        <article className="space-y-4">
-          {takeaways.map(item => (
-            <SlideInSection key={item}>
-              <div className="flex gap-4 items-start">
-                <FaLightbulb size={16} className="text-primary w-8 mt-1" />
-                <p>{item}</p>
-              </div>
+        {takeaways && takeaways.length > 0 && (
+          <>
+            <SlideInSection>
+              <h4 className="text-primary mb-3 text-lg">
+                Key Research Takeaways
+              </h4>
             </SlideInSection>
-          ))}
-        </article>
+            <article className="space-y-4">
+              {takeaways.map(item => (
+                <SlideInSection key={item}>
+                  <div className="flex gap-4 items-start">
+                    <FaLightbulb size={16} className="text-primary w-8 mt-1" />
+                    <p>{item}</p>
+                  </div>
+                </SlideInSection>
+              ))}
+            </article>
+          </>
+        )}
         <Mockups mockups={mockups} />
       </div>
     </section>

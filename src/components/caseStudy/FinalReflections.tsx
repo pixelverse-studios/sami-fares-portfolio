@@ -10,13 +10,15 @@ const id = CasesMap.get(6).id
 
 interface FinalReflectionsProps {
   outcomes: string[]
-  client: string
+  client?: string
   description: string[]
-  feedback: string
-  img: string[]
-  lessons: string[]
-  subHeader: string
-  url: string
+  feedback?: string
+  img?: string[]
+  lessons?: string[]
+  subHeader?: string
+  url?: string
+  outcomesHeader?: string
+  header?: string
 }
 
 export default function FinalReflections({
@@ -27,19 +29,24 @@ export default function FinalReflections({
   img,
   lessons,
   subHeader,
-  url
+  url,
+  outcomesHeader,
+  header
 }: FinalReflectionsProps) {
   return (
     <section id={id}>
       <div className="section text-sm text-text-body space-y-4">
-        <SectionTitle position="0.5" header="Final Designs & Reflection" />
+        <SectionTitle
+          position="0.5"
+          header={header || 'Final Designs & Reflection'}
+        />
         <article className="space-y-4">
           {description.map(text => (
             <SlideInSection key={text}>
               <p>{text}</p>
             </SlideInSection>
           ))}
-          {url === '' ? null : (
+          {url && url !== '' && (
             <SlideInSection>
               <p>
                 Live Website:{' '}
@@ -53,28 +60,33 @@ export default function FinalReflections({
               </p>
             </SlideInSection>
           )}
-          <SlideInSection>
-            <h3 className="text-center pt-8">{subHeader}</h3>
-          </SlideInSection>
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 py-4 pb-20 px-4">
-            {img.map((src, index) => (
-              <SlideInSection key={src}>
-                <img
-                  src={src}
-                  alt={`Design showcase ${index + 1}`}
-                  className="w-full h-auto max-h-[50vh] min-h-[200px] object-contain"
-                  loading={index >= 2 ? 'lazy' : 'eager'}
-                />
-              </SlideInSection>
-            ))}
-          </div>
+          {subHeader && (
+            <SlideInSection>
+              <h3 className="text-center pt-8">{subHeader}</h3>
+            </SlideInSection>
+          )}
+          {img && img.length > 0 && (
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 py-4 pb-20 px-4">
+              {img.map((src, index) => (
+                <SlideInSection key={src}>
+                  <img
+                    src={src}
+                    alt={`Design showcase ${index + 1}`}
+                    className="w-full h-auto max-h-[50vh] min-h-[200px] object-contain"
+                    loading={index >= 2 ? 'lazy' : 'eager'}
+                  />
+                </SlideInSection>
+              ))}
+            </div>
+          )}
         </article>
-        <article className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-20">
+        <article
+          className={`grid grid-cols-1 ${lessons && lessons.length > 0 ? 'md:grid-cols-2' : ''} gap-6 pb-20`}>
           <div className="space-y-4">
             <SlideInSection>
               <h4 className="flex text-lg text-primary gap-2 items-center">
                 <FaSquareCheck size={18} className="text-primary" />
-                Key Outcomes
+                {outcomesHeader || 'Key Outcomes'}
               </h4>
             </SlideInSection>
             <ul className="space-y-3 list-disc pl-4">
@@ -85,28 +97,30 @@ export default function FinalReflections({
               ))}
             </ul>
           </div>
-          <div className="space-y-4">
-            <SlideInSection>
-              <h4 className="flex text-lg text-primary gap-2 items-center">
-                <FaLightbulb size={18} className="text-[var(--warning)]" />
-                Lessons Learned
-              </h4>
-            </SlideInSection>
-            <ul className="space-y-3 list-disc pl-4">
-              {lessons.map(lesson => (
-                <SlideInSection key={lesson}>
-                  <li>{lesson}</li>
-                </SlideInSection>
-              ))}
-            </ul>
-          </div>
+          {lessons && lessons.length > 0 && (
+            <div className="space-y-4">
+              <SlideInSection>
+                <h4 className="flex text-lg text-primary gap-2 items-center">
+                  <FaLightbulb size={18} className="text-[var(--warning)]" />
+                  Lessons Learned
+                </h4>
+              </SlideInSection>
+              <ul className="space-y-3 list-disc pl-4">
+                {lessons.map(lesson => (
+                  <SlideInSection key={lesson}>
+                    <li>{lesson}</li>
+                  </SlideInSection>
+                ))}
+              </ul>
+            </div>
+          )}
         </article>
-        {feedback === '' ? null : (
+        {feedback && feedback !== '' && (
           <SlideInSection>
             <article className="p-6 max-w-4xl bg-background-subtle mx-auto rounded-xl shadow-xl space-y-4">
               <h4 className="text-lg">Client Feedback</h4>
               <p>{feedback}</p>
-              <p>- {client}</p>
+              {client && <p>- {client}</p>}
             </article>
           </SlideInSection>
         )}
