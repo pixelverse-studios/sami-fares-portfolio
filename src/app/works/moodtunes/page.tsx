@@ -35,7 +35,10 @@ export default function WorksMoodTunes() {
         header="Concept Validation & Design Inputs"
       />
       {caseMood.keyUXDecisions && caseMood.keyUXDecisions.length > 0 && (
-        <KeyUXDecisions decisions={caseMood.keyUXDecisions} />
+        <KeyUXDecisions
+          decisions={caseMood.keyUXDecisions}
+          header="Interaction Model & Key Design Decisions"
+        />
       )}
       <StrategyAndDesign {...caseMood.strategyAndDesign} />
       <FinalReflections {...caseMood.finalReflections} />
