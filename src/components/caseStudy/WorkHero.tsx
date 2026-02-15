@@ -7,6 +7,7 @@ interface WorkHeroProps {
   img?: string
   header: string
   descriptor: string
+  subDescriptor?: string
   badgeText?: string
   badgeClassName?: string
   titleClassName?: string
@@ -18,6 +19,7 @@ export default function WorkHero({
   img,
   header,
   descriptor,
+  subDescriptor,
   badgeText,
   badgeClassName,
   titleClassName,
@@ -40,6 +42,9 @@ export default function WorkHero({
           )}
           <h1 className={titleClassName}>{header}</h1>
           <p>{descriptor}</p>
+          {subDescriptor && (
+            <p className="text-sm text-text-body">{subDescriptor}</p>
+          )}
           {tags && tags.length > 0 && (
             <div className="flex flex-wrap justify-center gap-3">
               {tags.map((tag, index) => (
