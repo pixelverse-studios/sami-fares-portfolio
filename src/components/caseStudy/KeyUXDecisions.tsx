@@ -9,13 +9,20 @@ const id = CasesMap.get(4).id
 
 interface KeyUXDecisionsProps {
   decisions: UXDecision[]
+  header?: string
 }
 
-export default function KeyUXDecisions({ decisions }: KeyUXDecisionsProps) {
+export default function KeyUXDecisions({
+  decisions,
+  header
+}: KeyUXDecisionsProps) {
   return (
     <section id={id} className="halfPage text-sm">
       <div className="section space-y-8">
-        <SectionTitle position="0.4" header="Key UX Decisions & Tradeoffs" />
+        <SectionTitle
+          position="0.4"
+          header={header || 'Key UX Decisions & Tradeoffs'}
+        />
 
         <div className="space-y-8">
           {decisions.map((decision, index) => (
@@ -31,15 +38,21 @@ export default function KeyUXDecisions({ decisions }: KeyUXDecisionsProps) {
                 </div>
 
                 <div className="space-y-4 pl-11">
-                  <div>
-                    <h4 className="text-primary font-semibold mb-2">Problem</h4>
-                    <p className="text-text-body">{decision.problem}</p>
-                  </div>
+                  {decision.problem && (
+                    <div>
+                      <h4 className="text-primary font-semibold mb-2">
+                        Problem
+                      </h4>
+                      <p className="text-text-body">{decision.problem}</p>
+                    </div>
+                  )}
 
-                  <div>
-                    <h4 className="text-primary font-semibold mb-2">Risk</h4>
-                    <p className="text-text-body">{decision.risk}</p>
-                  </div>
+                  {decision.risk && (
+                    <div>
+                      <h4 className="text-primary font-semibold mb-2">Risk</h4>
+                      <p className="text-text-body">{decision.risk}</p>
+                    </div>
+                  )}
 
                   <div>
                     <h4 className="text-primary font-semibold mb-2">
@@ -48,19 +61,32 @@ export default function KeyUXDecisions({ decisions }: KeyUXDecisionsProps) {
                     <p className="text-text-body">{decision.decision}</p>
                   </div>
 
-                  <div>
-                    <h4 className="text-primary font-semibold mb-2">
-                      Solution
-                    </h4>
-                    <p className="text-text-body">{decision.solution}</p>
-                  </div>
+                  {decision.solution && (
+                    <div>
+                      <h4 className="text-primary font-semibold mb-2">
+                        Solution
+                      </h4>
+                      <p className="text-text-body">{decision.solution}</p>
+                    </div>
+                  )}
 
-                  <div>
-                    <h4 className="text-text-body font-semibold mb-2">
-                      Tradeoff
-                    </h4>
-                    <p className="text-text-body">{decision.tradeoff}</p>
-                  </div>
+                  {decision.tradeoff && (
+                    <div>
+                      <h4 className="text-text-body font-semibold mb-2">
+                        Tradeoff
+                      </h4>
+                      <p className="text-text-body">{decision.tradeoff}</p>
+                    </div>
+                  )}
+
+                  {decision.rationale && (
+                    <div>
+                      <h4 className="text-primary font-semibold mb-2">
+                        Rationale
+                      </h4>
+                      <p className="text-text-body">{decision.rationale}</p>
+                    </div>
+                  )}
                 </div>
               </article>
             </SlideInSection>

@@ -110,7 +110,36 @@ export default {
   projectOverview,
   goalsAndChallenges,
   researchAndDiscovery,
-  keyUXDecisions: [], // Content to be added in future ticket
+  keyUXDecisions: [
+    {
+      title: 'Replacing search with a mood-first entry point',
+      decision:
+        'Instead of relying on search, genres, or artist selection, the experience begins with mood and activity inputs.',
+      rationale:
+        'This intentionally removes precision in favor of speed, acknowledging that users often know how they feel faster than they can describe what they want to hear.'
+    },
+    {
+      title: 'Treating energy as a spectrum, not a category',
+      decision:
+        'Energy was designed as a continuous slider rather than preset labels.',
+      rationale:
+        'This avoided forcing users into rigid states and allowed for subtle adjustment without introducing additional controls or decision overhead.'
+    },
+    {
+      title: 'Limiting visible choice after playlist generation',
+      decision:
+        'Once a playlist is created, the interface minimizes visible options.',
+      rationale:
+        'This was a deliberate tradeoff: reducing control in order to encourage listening and maintain momentum, rather than pulling users back into browsing behaviors.'
+    },
+    {
+      title: 'Integrating local artists without dedicated discovery surfaces',
+      decision:
+        'Local artists were surfaced through subtle labels within playlists instead of standalone sections.',
+      rationale:
+        "This allowed discovery to occur passively, without shifting attention away from the user's original intent or reframing the experience around exploration."
+    }
+  ],
   strategyAndDesign,
   finalReflections
 }

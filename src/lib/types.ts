@@ -26,15 +26,17 @@ export interface UXDecision {
   /** Decision title/name */
   title: string
   /** The problem or challenge identified */
-  problem: string
+  problem?: string
   /** Risk if the problem is not addressed */
-  risk: string
+  risk?: string
   /** The decision made to address the problem */
   decision: string
   /** How the solution was implemented */
-  solution: string
+  solution?: string
   /** What was given up or compromised in this decision */
-  tradeoff: string
+  tradeoff?: string
+  /** Short rationale for simplified decision format */
+  rationale?: string
 }
 
 /**
