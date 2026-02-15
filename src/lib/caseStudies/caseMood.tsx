@@ -6,15 +6,19 @@ const problemFraming = [
 
 const projectOverview = {
   context: [
-    'Moodtunes is a conceptual mobile music app designed to improve how users discover playlists that reflect their real-time mood, energy level, or activity. Unlike traditional platforms that rely on taste history or engagement patterns, Moodtunes takes a user-centered approach — letting users guide their listening experience based on how they feel in the moment.',
-    'This project was initiated to expand my portfolio beyond client websites and explore the full product design process. I led all UX and UI design, including research, user flows, wireframes, and high-fidelity mockups. The app also introduces an additional layer of value by subtly promoting local artists, giving them visibility through emotionally aligned playlists.',
-    'Moodtunes allowed me to apply emotional design thinking, mobile-first UX, and product strategy within a realistic scope, while experimenting with new patterns of discovery in the music space.'
+    "Moodtunes is a conceptual mobile music app exploring how music discovery can adapt to a user's current mood, energy level, or activity. Rather than relying primarily on listening history, the concept centers on giving users a simple way to express how they feel in the moment and receive playlists aligned to that context.",
+    'This project was created as a self-initiated product exploration, allowing me to focus on product thinking, emotional UX, and mobile-first interaction design within a deliberately scoped concept.',
+    'Moodtunes served as a way to explore alternative discovery patterns in the music space without attempting to design a fully production-ready application.'
   ],
-  roles: ['UI/UX Designer', 'Copywriter'],
+  roles: ['UI/UX Designer', 'Product Thinking', 'Copywriting'],
   client: 'Conceptual Music App',
-  timeline: '8 Weeks',
-  tools: ['Figma', 'Web Research', 'ChatGPT'],
-  deliverables: ['User Flows', 'Wireframes', 'High-Fidelity Mockups']
+  timeline: '8 weeks',
+  tools: ['Figma', 'Web Research', 'AI-assisted ideation'],
+  deliverables: [
+    'Key user flows',
+    'Conceptual wireframes',
+    'Selected high-fidelity screens'
+  ]
 }
 
 const goalsAndChallenges = {
