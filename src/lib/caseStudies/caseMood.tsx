@@ -78,23 +78,17 @@ const strategyAndDesign = {
 
 const finalReflections = {
   description: [
-    'MoodTunes was designed as a passion project to explore product-focused UX beyond marketing websites. The challenge was to create a more emotionally intelligent music experience — one that responds to how users feel in the moment, not just what they’ve liked in the past.',
-    'Working solo, I handled the full process from concept to UI delivery, using research, user flows, low-fidelity wireframes, and high-fidelity mockups to bring the idea to life. The result is a context-aware listening experience that curates music by energy, mood, and activity — while giving visibility to underrepresented local artists.'
+    'This project reinforced my approach to product UX when working without formal data, testing infrastructure, or production constraints. Rather than attempting to simulate a full build, I focused on making deliberate interaction choices, defining clear boundaries, and designing only what was necessary to support the core experience.',
+    'MoodTunes strengthened my confidence in designing through abstraction, making tradeoffs early, and resisting the urge to over-specify solutions. It also reinforced the importance of aligning interface complexity with user intent, especially in experiences meant to support background or emotional states rather than direct task completion.'
   ],
   subHeader: 'Final Designs',
   url: '',
   outcomes: [
-    'Developed a complete user flow from onboarding to playlist discovery to artist exploration',
-    'Created wireframes and high-fidelity mockups across mobile',
-    'Built a scalable system for mood-based curation and discovery',
-    'Designed lightweight UX elements to highlight local artists without disrupting flow'
-  ],
-  lessons: [
-    'Emotion-based UX benefits from simplified input and high-contrast feedback',
-    'Wireframing complex cases (like label spacing or playlist logic) saved time in high-fi',
-    'Product case studies offer more layered storytelling opportunities than web projects',
-    'Practiced translating emotion-rich research into actionable design decisions',
-    'Solo concept work still benefits from real-world flow prioritization and UX writing'
+    'Ability to make confident design decisions without relying on exhaustive research or metrics',
+    'Strong judgment around scope, restraint, and feature prioritization',
+    'Comfort designing systems based on qualitative reasoning and domain knowledge',
+    'Cross-domain thinking, applying an understanding of sound and emotional response to interaction design',
+    'Ownership of product thinking from concept through interface execution'
   ],
   feedback: '',
   client: '',
