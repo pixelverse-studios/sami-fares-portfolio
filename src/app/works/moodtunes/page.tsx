@@ -30,7 +30,10 @@ export default function WorksMoodTunes() {
         {...caseMood.goalsAndChallenges}
         header="UX Hypothesis: Designing for Mood, Energy, and Intent"
       />
-      <ResearchAndDiscovery {...caseMood.researchAndDiscovery} />
+      <ResearchAndDiscovery
+        {...caseMood.researchAndDiscovery}
+        header="Concept Validation & Design Inputs"
+      />
       {caseMood.keyUXDecisions && caseMood.keyUXDecisions.length > 0 && (
         <KeyUXDecisions decisions={caseMood.keyUXDecisions} />
       )}

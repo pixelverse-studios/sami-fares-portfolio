@@ -32,47 +32,9 @@ const goalsAndChallenges = {
 
 const researchAndDiscovery = {
   description: [
-    'To ground the concept in real user needs, I evaluated how current music platforms approach discovery. I reviewed Spotify, Pandora, and SoundCloud, focusing on how they match music to user context.',
-    <>
-      <ul className="list-disc indentedList">
-        <li>
-          Spotify excels at delivering suggestions based on listening history
-          and algorithmic trends, but it lacks input for current mood or
-          activity, making it feel static when users want something emotionally
-          aligned in the moment.
-        </li>
-        <li>
-          Pandora uses its Music Genome Project to deeply categorize tracks by
-          musical traits, but the user’s emotional or situational context are
-          never directly considered.
-        </li>
-        <li>
-          SoundCloud placed value on exploration and the wide range of emerging
-          artists, but the browsing experience can feel chaotic. There’s no
-          structured way to find music that fits a vibe or intention.
-        </li>
-      </ul>
-    </>,
-    'These gaps revealed a clear opportunity: design a mobile experience that meets users where they are emotionally and mentally — not just musically. By giving users a simple way to express how they feel or what they’re doing, we can help them discover music that’s right for that moment. And by embedding local artist discovery into that flow, Moodtunes offers something that feels personal, fresh, and intentional.'
-  ],
-  takeaways: [
-    'Existing platforms lack contextual awareness in music recommendations.',
-    'Users crave novelty but don’t want to sacrifice relevance or mood alignment.',
-    'There’s a growing interest in discovering local/independent artists, but visibility is low.',
-    'Over-personalization in music platforms leads to repetitive listening habits, reducing discovery over time.',
-    'Users often associate music with productivity, emotion regulation, or identity — but current apps don’t let them signal these needs directly.'
-  ],
-  quote: '',
-  author: '',
-  mockups: [
-    {
-      imgs: [
-        '/assets/MoodTunes/homeWF.png',
-        '/assets/MoodTunes/playlistWF.png'
-      ],
-      explanation:
-        'Early wireframes showcasing the Homepage and personalized mix'
-    }
+    'Rather than conducting formal user research, I used lightweight validation to ground the concept in observable behavior. This included reviewing how existing music platforms approach discovery and identifying where those experiences fall short when users want music that fits their current mood or activity.',
+    'Across platforms, discovery systems are highly optimized for familiarity and past listening behavior, but provide limited ways for users to express intent in the moment. When mood or energy changes, users are often left to manually search, reuse old playlists, or compromise with music that only partially fits how they feel.',
+    'These observations reinforced the direction behind Moodtunes and informed the interaction model. Instead of competing on depth or personalization, the concept focuses on a simple input flow that allows users to quickly signal intent and begin listening.'
   ]
 }
 
