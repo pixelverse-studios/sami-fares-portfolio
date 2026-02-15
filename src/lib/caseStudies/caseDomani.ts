@@ -149,7 +149,8 @@ export const domaniClasses = {
   // Badges & Tags
   badge:
     'bg-[var(--sage-10)] text-primary-dark border border-[var(--sage-20)] rounded-full px-3 py-1',
-  badgeSage: 'bg-gradient-sage text-white rounded-full px-3 py-1',
+  badgeSage:
+    'bg-background-subtle border border-[var(--border-subtle)] rounded-full px-3 py-2 text-[var(--primary-light)]',
 
   // Decision Cards
   decisionCard: {
@@ -163,6 +164,14 @@ export const domaniClasses = {
       'bg-[rgba(232,184,109,0.10)] text-priority-medium-dark px-3 py-1 rounded text-sm font-medium',
     howTag:
       'bg-[rgba(215,122,97,0.10)] text-priority-high-dark px-3 py-1 rounded text-sm font-medium'
+  },
+
+  // Hero
+  hero: {
+    title: 'text-primary',
+    badge:
+      'text-sm text-primary border border-primary bg-[var(--sage-10)] rounded-full px-4 py-1.5',
+    tag: 'flex items-center gap-2 text-sm text-primary border border-primary bg-[var(--bg-card)] rounded-full px-4 py-1.5'
   }
 }
 

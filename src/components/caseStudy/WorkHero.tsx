@@ -1,29 +1,66 @@
 'use client'
 
+import React from 'react'
 import { SlideInSection } from '../animations'
 
 interface WorkHeroProps {
-  img: string
+  img?: string
   header: string
   descriptor: string
+  badgeText?: string
+  badgeClassName?: string
+  titleClassName?: string
+  tagClassName?: string
+  tags?: Array<{ icon: React.ReactNode; label: string }>
 }
 
-export default function WorkHero({ img, header, descriptor }: WorkHeroProps) {
+export default function WorkHero({
+  img,
+  header,
+  descriptor,
+  badgeText,
+  badgeClassName,
+  titleClassName,
+  tagClassName,
+  tags
+}: WorkHeroProps) {
+  const defaultBadge =
+    'text-sm text-text-body border border-[var(--border-subtle)] rounded-full px-4 py-1.5'
+  const defaultTag =
+    'flex items-center gap-2 text-sm text-text-body border border-[var(--border-subtle)] rounded-full px-4 py-1.5'
+
   return (
-    <section className="page">
-      <div className="section flex flex-col gap-6 items-center space-y-4 mt-10">
+    <section className="page min-h-[75vh] flex items-center">
+      <div className="section flex flex-col gap-6 items-center space-y-4">
         <SlideInSection className="text-center space-y-4 flex flex-col gap-6">
-          <h1>{header}</h1>
+          {badgeText && (
+            <span className={`${badgeClassName || defaultBadge} self-center`}>
+              {badgeText}
+            </span>
+          )}
+          <h1 className={titleClassName}>{header}</h1>
           <p>{descriptor}</p>
+          {tags && tags.length > 0 && (
+            <div className="flex flex-wrap justify-center gap-3">
+              {tags.map((tag, index) => (
+                <span key={index} className={tagClassName || defaultTag}>
+                  {tag.icon}
+                  {tag.label}
+                </span>
+              ))}
+            </div>
+          )}
         </SlideInSection>
-        <SlideInSection>
-          <img
-            src={img}
-            alt={`${header} mockup`}
-            className="h-[60vh] w-full object-contain"
-            loading="eager"
-          />
-        </SlideInSection>
+        {img && (
+          <SlideInSection>
+            <img
+              src={img}
+              alt={`${header} mockup`}
+              className="h-[60vh] w-full object-contain"
+              loading="eager"
+            />
+          </SlideInSection>
+        )}
       </div>
     </section>
   )

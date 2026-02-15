@@ -4,34 +4,34 @@
 
 :root {
   /* Backgrounds - warm, muted earth tones */
-  --bg-main: #1C1B19;
+  --bg-main: #1c1b19;
   --bg-section: #252422;
-  --bg-subtle: #2D2C2A;
+  --bg-subtle: #2d2c2a;
   --bg-card: #252422;
-  --bg-dark-accent: #0F0E0D;
+  --bg-dark-accent: #0f0e0d;
 
   /* Text - off-whites with sage tint */
-  --text-heading: #E8EDE9;
-  --text-body: #B8BFB9;
-  --text-accent: #A3BFB0;
+  --text-heading: #e8ede9;
+  --text-body: #b8bfb9;
+  --text-accent: #a3bfb0;
 
   /* Primary (Sage) - lighter for dark mode */
-  --primary-light: #B8CFC1;
-  --primary: #A3BFB0;
-  --primary-dark: #8FAC9D;
+  --primary-light: #b8cfc1;
+  --primary: #a3bfb0;
+  --primary-dark: #8fac9d;
 
   /* Priority colors - slightly muted for dark mode */
-  --priority-high: #E88A72;
-  --priority-high-dark: #D77A61;
-  --priority-medium: #F0C67E;
-  --priority-medium-dark: #E8B86D;
+  --priority-high: #e88a72;
+  --priority-high-dark: #d77a61;
+  --priority-medium: #f0c67e;
+  --priority-medium-dark: #e8b86d;
 
   /* Warning/Caution colors */
   --warning: #fbbf24;
   --warning-text: #fef3c7;
 
   /* Border colors */
-  --border-subtle: #3A3835;
+  --border-subtle: #3a3835;
 
   /* Toggle control */
   --toggle-bg: #475569;
@@ -39,49 +39,66 @@
 
   /* Opacity utilities */
   --sage-5: rgba(163, 191, 176, 0.05);
-  --sage-10: rgba(163, 191, 176, 0.10);
-  --sage-20: rgba(163, 191, 176, 0.20);
-  --white-10: rgba(255, 255, 255, 0.10);
-  --white-20: rgba(255, 255, 255, 0.20);
-  --white-60: rgba(255, 255, 255, 0.60);
+  --sage-10: rgba(163, 191, 176, 0.1);
+  --sage-20: rgba(163, 191, 176, 0.2);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-20: rgba(255, 255, 255, 0.2);
+  --white-60: rgba(255, 255, 255, 0.6);
 
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-section) 50%, var(--bg-subtle) 100%);
-  --gradient-sage: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-  --gradient-dark: linear-gradient(135deg, var(--bg-dark-accent) 0%, var(--bg-subtle) 100%);
-  --gradient-card-placeholder: linear-gradient(135deg, var(--bg-section) 0%, var(--border-subtle) 100%);
+  --gradient-hero: linear-gradient(
+    135deg,
+    var(--bg-main) 0%,
+    var(--bg-section) 50%,
+    var(--bg-subtle) 100%
+  );
+  --gradient-sage: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--primary-dark) 100%
+  );
+  --gradient-dark: linear-gradient(
+    135deg,
+    var(--bg-dark-accent) 0%,
+    var(--bg-subtle) 100%
+  );
+  --gradient-card-placeholder: linear-gradient(
+    135deg,
+    var(--bg-section) 0%,
+    var(--border-subtle) 100%
+  );
 }
 
 [data-theme='light'] {
   /* Backgrounds */
-  --bg-main: #FAF8F5;
-  --bg-section: #F5F2ED;
-  --bg-subtle: #E8EDE9;
-  --bg-card: #FFFFFF;
-  --bg-dark-accent: #3D4A44;
+  --bg-main: #faf8f5;
+  --bg-section: #f5f2ed;
+  --bg-subtle: #e8ede9;
+  --bg-card: #ffffff;
+  --bg-dark-accent: #3d4a44;
 
   /* Text */
-  --text-heading: #3D4A44;
-  --text-body: #6B7265;
-  --text-accent: #5A7765;
+  --text-heading: #3d4a44;
+  --text-body: #6b7265;
+  --text-accent: #5a7765;
 
   /* Primary (Sage) */
-  --primary-light: #A3BFB0;
-  --primary: #7D9B8A;
-  --primary-dark: #5A7765;
+  --primary-light: #a3bfb0;
+  --primary: #7d9b8a;
+  --primary-dark: #5a7765;
 
   /* Priority colors */
-  --priority-high: #D77A61;
-  --priority-high-dark: #B65F49;
-  --priority-medium: #E8B86D;
-  --priority-medium-dark: #C9762A;
+  --priority-high: #d77a61;
+  --priority-high-dark: #b65f49;
+  --priority-medium: #e8b86d;
+  --priority-medium-dark: #c9762a;
 
   /* Warning/Caution colors */
   --warning: #f59e0b;
   --warning-text: #92400e;
 
   /* Border colors */
-  --border-subtle: #E8E4DD;
+  --border-subtle: #e8e4dd;
 
   /* Toggle control */
   --toggle-bg: #64748b;
@@ -89,17 +106,34 @@
 
   /* Opacity utilities */
   --sage-5: rgba(125, 155, 138, 0.05);
-  --sage-10: rgba(125, 155, 138, 0.10);
-  --sage-20: rgba(125, 155, 138, 0.20);
-  --white-10: rgba(255, 255, 255, 0.10);
-  --white-20: rgba(255, 255, 255, 0.20);
-  --white-60: rgba(255, 255, 255, 0.60);
+  --sage-10: rgba(125, 155, 138, 0.1);
+  --sage-20: rgba(125, 155, 138, 0.2);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-20: rgba(255, 255, 255, 0.2);
+  --white-60: rgba(255, 255, 255, 0.6);
 
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-section) 50%, var(--bg-subtle) 100%);
-  --gradient-sage: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-  --gradient-dark: linear-gradient(135deg, var(--text-heading) 0%, var(--primary-dark) 100%);
-  --gradient-card-placeholder: linear-gradient(135deg, var(--bg-section) 0%, var(--border-subtle) 100%);
+  --gradient-hero: linear-gradient(
+    135deg,
+    var(--bg-main) 0%,
+    var(--bg-section) 50%,
+    var(--bg-subtle) 100%
+  );
+  --gradient-sage: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--primary-dark) 100%
+  );
+  --gradient-dark: linear-gradient(
+    135deg,
+    var(--text-heading) 0%,
+    var(--primary-dark) 100%
+  );
+  --gradient-card-placeholder: linear-gradient(
+    135deg,
+    var(--bg-section) 0%,
+    var(--border-subtle) 100%
+  );
 }
 
 @layer utilities {
@@ -195,7 +229,7 @@ li::marker {
   }
 
   h1 {
-    @apply text-3xl md:text-5xl font-bold;
+    @apply text-5xl md:text-7xl font-bold;
   }
 
   h2 {

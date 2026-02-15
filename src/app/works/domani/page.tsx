@@ -7,16 +7,34 @@ import ChallengesLearnings from '@/components/caseStudy/domani/ChallengesLearnin
 import ProjectDemonstrates from '@/components/caseStudy/domani/ProjectDemonstrates'
 import WhatsNext from '@/components/caseStudy/domani/WhatsNext'
 import AvailableCases from '@/components/caseStudy/AvailableCases'
+import { FaRegCalendar, FaCircle, FaWandMagicSparkles } from 'react-icons/fa6'
 
-import caseDomani from '@/lib/caseStudies/caseDomani'
+import caseDomani, { domaniClasses } from '@/lib/caseStudies/caseDomani'
 
 export default function WorksDomani() {
   return (
     <>
       <WorkHero
-        img="/assets/Domani/DomaniHero.png"
         header="Domani"
-        descriptor="A calm, habit-focused planning app designed to help users trust tomorrow's decisions."
+        descriptor="A calm, habit-focused planning app designed to help users trust tomorrow's decisions"
+        badgeText="Portfolio Case Study"
+        badgeClassName={domaniClasses.badgeSage}
+        titleClassName={domaniClasses.hero.title}
+        tagClassName={domaniClasses.hero.tag}
+        tags={[
+          {
+            icon: <FaRegCalendar className="text-xs" />,
+            label: 'Public Beta'
+          },
+          {
+            icon: <FaCircle className="text-[6px] text-primary" />,
+            label: 'Product Designer'
+          },
+          {
+            icon: <FaWandMagicSparkles className="text-xs" />,
+            label: 'iOS & Android'
+          }
+        ]}
       />
       <ProductContext {...caseDomani.productContext} />
       <ProductHypothesis {...caseDomani.productHypothesis} />
