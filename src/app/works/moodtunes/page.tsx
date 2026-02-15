@@ -18,7 +18,8 @@ export default function WorksMoodTunes() {
       <WorkHero
         img="/assets/MoodTunes/HomeScreen.png"
         header="MoodTunes - UX Case Study"
-        descriptor="Designing a music discovery experience that curates playlists based on mood, energy, and activity."
+        descriptor="Designing a music discovery experience that adapts to how you feel in the moment."
+        subDescriptor="(Conceptual product design project)"
       />
       <ProblemFraming
         items={caseMood.problemFraming}
