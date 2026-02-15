@@ -2,7 +2,6 @@
 
 import { SlideInSection } from '@/components/animations'
 import { domaniClasses } from '@/lib/caseStudies/caseDomani'
-import Image from 'next/image'
 
 interface Decision {
   number: number
@@ -27,10 +26,13 @@ export default function DomaniDecisions({
   decisions
 }: DomaniDecisionsProps) {
   return (
-    <section className="halfPage">
+    <section className="halfPage bg-background-card">
       <div className="section space-y-12">
-        {/* Intro */}
-        <SlideInSection>
+        {/* Header & Intro */}
+        <SlideInSection className="text-center space-y-4">
+          <h2 className={domaniClasses.heading}>
+            Key UX Decisions & Iterations
+          </h2>
           <p className={`${domaniClasses.body} text-sm leading-relaxed`}>
             {intro}
           </p>
@@ -40,19 +42,71 @@ export default function DomaniDecisions({
         {decisions.map(decision => (
           <SlideInSection key={decision.number}>
             <div className={domaniClasses.decisionCard.container}>
-              {/* Number Badge */}
-              <div className={domaniClasses.decisionCard.numberBadge}>
-                {decision.number}
+              {/* Number Badge + Title */}
+              <div className="flex items-center gap-4">
+                <div className={domaniClasses.decisionCard.numberBadge}>
+                  {decision.number}
+                </div>
+                <h3
+                  className={`${domaniClasses.heading} text-xl font-semibold mb-0`}>
+                  {decision.title}
+                </h3>
               </div>
+
+              {/* Mockups */}
+              {(decision.mockup ||
+                decision.mockupBefore ||
+                decision.mockupLeft) && (
+                <div className="mt-6">
+                  {/* Single Mockup */}
+                  {decision.mockup && (
+                    <div className="border border-[var(--border-subtle)] rounded-lg p-4 flex justify-center shadow-lg max-w-[35vw] mx-auto">
+                      <img
+                        src={decision.mockup}
+                        alt={`${decision.title} mockup`}
+                        className="max-h-[35vh] object-contain"
+                      />
+                    </div>
+                  )}
+
+                  {/* Before/After or Left/Right - 2 Column Grid */}
+                  {(decision.mockupBefore || decision.mockupLeft) && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <span className="text-xs font-semibold uppercase tracking-wider text-text-body">
+                          {decision.mockupBefore ? 'Before' : 'Planning'}
+                        </span>
+                        <div className="border border-[var(--border-subtle)] rounded-lg p-4 flex justify-center shadow-lg max-w-[35vw] mx-auto">
+                          <img
+                            src={
+                              decision.mockupBefore || decision.mockupLeft || ''
+                            }
+                            alt={`${decision.title} ${decision.mockupBefore ? 'before' : 'planning'}`}
+                            className="max-h-[35vh] object-contain"
+                          />
+                        </div>
+                      </div>
+                      <div className="space-y-2">
+                        <span className="text-xs font-semibold uppercase tracking-wider text-text-body">
+                          {decision.mockupAfter ? 'After' : 'Execution'}
+                        </span>
+                        <div className="border border-[var(--border-subtle)] rounded-lg p-4 flex justify-center shadow-lg max-w-[35vw] mx-auto">
+                          <img
+                            src={
+                              decision.mockupAfter || decision.mockupRight || ''
+                            }
+                            alt={`${decision.title} ${decision.mockupAfter ? 'after' : 'execution'}`}
+                            className="max-h-[35vh] object-contain"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {/* Content */}
               <div className="mt-6 space-y-4">
-                {/* Title */}
-                <h3
-                  className={`${domaniClasses.heading} text-xl font-semibold`}>
-                  {decision.title}
-                </h3>
-
                 {/* Problem or Explanation */}
                 {(decision.problem || decision.explanation) && (
                   <div className="space-y-2">
@@ -74,51 +128,6 @@ export default function DomaniDecisions({
                     {decision.solution}
                   </p>
                 </div>
-
-                {/* Mockups - Flexible Grid */}
-                {(decision.mockup ||
-                  decision.mockupBefore ||
-                  decision.mockupLeft) && (
-                  <div className="mt-6">
-                    {/* Single Mockup */}
-                    {decision.mockup && (
-                      <div className="relative w-full aspect-video rounded-lg overflow-hidden">
-                        <Image
-                          src={decision.mockup}
-                          alt={`${decision.title} mockup`}
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                    )}
-
-                    {/* Before/After or Left/Right - 2 Column Grid */}
-                    {(decision.mockupBefore || decision.mockupLeft) && (
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="relative w-full aspect-video rounded-lg overflow-hidden">
-                          <Image
-                            src={
-                              decision.mockupBefore || decision.mockupLeft || ''
-                            }
-                            alt={`${decision.title} ${decision.mockupBefore ? 'before' : 'left'}`}
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
-                        <div className="relative w-full aspect-video rounded-lg overflow-hidden">
-                          <Image
-                            src={
-                              decision.mockupAfter || decision.mockupRight || ''
-                            }
-                            alt={`${decision.title} ${decision.mockupAfter ? 'after' : 'right'}`}
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
               </div>
             </div>
           </SlideInSection>

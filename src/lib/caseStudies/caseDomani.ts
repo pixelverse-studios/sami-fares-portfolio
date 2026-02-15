@@ -138,6 +138,8 @@ export const domaniClasses = {
 
   // Cards
   card: 'bg-background-section border border-[var(--border-subtle)] rounded-xl',
+  cardWhite:
+    'bg-background-card border border-[var(--border-subtle)] rounded-xl',
   cardGlass:
     'bg-[var(--white-60)] backdrop-blur border border-[var(--white-20)] rounded-xl',
 
@@ -155,7 +157,7 @@ export const domaniClasses = {
   // Decision Cards
   decisionCard: {
     container:
-      'bg-background-section border border-[var(--border-subtle)] rounded-xl p-6',
+      'bg-background-card border border-[var(--border-subtle)] rounded-xl p-6 shadow-sm',
     numberBadge:
       'bg-gradient-sage text-white rounded-full w-10 h-10 flex items-center justify-center font-bold',
     decisionTag:
@@ -171,7 +173,7 @@ export const domaniClasses = {
     title: 'text-primary',
     badge:
       'text-sm text-primary border border-primary bg-[var(--sage-10)] rounded-full px-4 py-1.5',
-    tag: 'flex items-center gap-2 text-sm text-primary border border-primary bg-[var(--bg-card)] rounded-full px-4 py-1.5'
+    tag: 'flex items-center gap-2 text-sm text-primary border border-primary bg-background-card rounded-full px-4 py-1.5'
   }
 }
 

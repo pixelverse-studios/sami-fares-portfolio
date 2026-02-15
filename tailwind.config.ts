@@ -6,7 +6,8 @@ const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/lib/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     extend: {
@@ -14,7 +15,8 @@ const config: Config = {
         background: {
           DEFAULT: 'var(--bg-main)',
           section: 'var(--bg-section)',
-          subtle: 'var(--bg-subtle)'
+          subtle: 'var(--bg-subtle)',
+          card: 'var(--bg-card)'
         },
         text: {
           heading: 'var(--text-heading)',

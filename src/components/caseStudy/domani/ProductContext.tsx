@@ -14,13 +14,20 @@ export default function ProductContext({
   challenges
 }: ProductContextProps) {
   return (
-    <section className="halfPage">
+    <section className="halfPage bg-background-card">
       <div className="section space-y-8">
+        <SlideInSection>
+          <h2 className={domaniClasses.heading}>
+            Product Context & Design Challenge
+          </h2>
+        </SlideInSection>
+
         {/* Paragraphs */}
         <div className="space-y-4">
           {paragraphs.map((text, index) => (
             <SlideInSection key={index}>
-              <p className={`${domaniClasses.body} text-sm leading-relaxed`}>
+              <p
+                className={`${domaniClasses.body} text-sm leading-relaxed ${index === 0 ? 'border-l-2 border-primary pl-4' : ''}`}>
                 {text}
               </p>
             </SlideInSection>

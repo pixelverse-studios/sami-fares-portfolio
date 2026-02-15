@@ -2,6 +2,7 @@
 
 import { SlideInSection } from '@/components/animations'
 import { domaniClasses } from '@/lib/caseStudies/caseDomani'
+import { FaRegLightbulb } from 'react-icons/fa6'
 
 interface ProductHypothesisProps {
   hypothesis: string[]
@@ -14,8 +15,10 @@ export default function ProductHypothesis({
     <section className="halfPage">
       <div className="section">
         <SlideInSection>
-          <div className={`${domaniClasses.card} p-8 space-y-4`}>
-            <h3 className={`${domaniClasses.heading} text-lg font-semibold`}>
+          <div className={`${domaniClasses.cardWhite} p-8 space-y-4`}>
+            <h3
+              className={`${domaniClasses.heading} text-lg font-semibold flex items-center gap-2`}>
+              <FaRegLightbulb className="text-primary" />
               Product Hypothesis
             </h3>
             <div className="space-y-4">
