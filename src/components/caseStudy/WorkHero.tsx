@@ -32,7 +32,7 @@ export default function WorkHero({
     'flex items-center gap-2 text-sm text-text-body border border-[var(--border-subtle)] rounded-full px-4 py-1.5'
 
   return (
-    <section className="page min-h-[75vh] flex items-center">
+    <section className="page min-h-[75vh] flex items-center pt-16">
       <div className="section flex flex-col gap-6 items-center space-y-4">
         <SlideInSection className="text-center space-y-4 flex flex-col gap-6">
           {badgeText && (
