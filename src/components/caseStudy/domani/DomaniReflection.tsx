@@ -4,10 +4,12 @@ import { SlideInSection } from '@/components/animations'
 import { domaniClasses } from '@/lib/caseStudies/caseDomani'
 
 interface DomaniReflectionProps {
-  paragraph: string
+  paragraphs: string[]
 }
 
-export default function DomaniReflection({ paragraph }: DomaniReflectionProps) {
+export default function DomaniReflection({
+  paragraphs
+}: DomaniReflectionProps) {
   return (
     <section
       className={`halfPage min-h-[35vh] flex items-center ${domaniClasses.sectionSage}`}>
@@ -15,11 +17,15 @@ export default function DomaniReflection({ paragraph }: DomaniReflectionProps) {
         <SlideInSection>
           <h2 className={domaniClasses.heading}>Reflection</h2>
         </SlideInSection>
-        <SlideInSection>
-          <p className={`${domaniClasses.heading} text-sm leading-relaxed`}>
-            {paragraph}
-          </p>
-        </SlideInSection>
+        <div className="space-y-4">
+          {paragraphs.map((text, index) => (
+            <SlideInSection key={index}>
+              <p className={`${domaniClasses.heading} text-sm leading-relaxed`}>
+                {text}
+              </p>
+            </SlideInSection>
+          ))}
+        </div>
       </div>
     </section>
   )

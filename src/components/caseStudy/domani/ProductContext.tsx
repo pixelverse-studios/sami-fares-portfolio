@@ -26,8 +26,7 @@ export default function ProductContext({
         <div className="space-y-4">
           {paragraphs.map((text, index) => (
             <SlideInSection key={index}>
-              <p
-                className={`${domaniClasses.body} text-sm leading-relaxed ${index === 0 ? 'border-l-2 border-primary pl-4' : ''}`}>
+              <p className={`${domaniClasses.body} text-sm leading-relaxed`}>
                 {text}
               </p>
             </SlideInSection>

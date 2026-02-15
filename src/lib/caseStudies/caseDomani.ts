@@ -10,8 +10,9 @@
 // ============================================================================
 const productContext = {
   paragraphs: [
+    'Domani is a task planning app designed around a specific moment: planning the night before. The core idea was to create a focused alternative to bloated productivity tools that attempt to do everything, often overwhelming users and undermining follow-through.',
     'Users want to feel calm, focused, and in control as they plan their day. However, many planning and productivity tools emphasize task density, reminders, and rigid workflows, which can increase stress rather than reduce it.',
-    'Domani was created to explore a different approach to planning — one that prioritizes emotional clarity, intentionality, and trust over constant optimization.',
+    "The insight driving Domani is that execution struggles often stem from planning at the wrong time. When users plan in the moment (rushed, reactive, already stressed) they make decisions they don't trust. Domani separates planning from execution intentionally, built on the principle that decisions made while calm lead to better follow-through than decisions made under pressure.",
     'The challenge was to design a system that:'
   ],
   challenges: [
@@ -27,8 +28,8 @@ const productContext = {
 // ============================================================================
 const productHypothesis = {
   hypothesis: [
-    'If users are encouraged to plan tomorrow intentionally, in advance, and without urgency, they will feel more confident in their decisions and more likely to follow through.',
-    'By shifting planning to a calm, reflective moment and limiting how and when tasks are surfaced, Domani aims to reduce decision fatigue while still supporting daily accountability.'
+    "Planning the night before helps users start the day with clarity instead of hesitation. When morning arrives, there's no need to second-guess or debate priorities because decisions were already made while calm and clear-headed.",
+    'Domani supports execution by helping users trust those prior decisions. The product is intentionally designed to reduce re-planning, minimize choice during execution, and reinforce commitment rather than constant adjustment.'
   ]
 }
 
@@ -37,15 +38,17 @@ const productHypothesis = {
 // ============================================================================
 const keyUXDecisions = {
   intro:
-    'Each design decision below reflects a deliberate attempt to balance clarity, emotional tone, and behavioral follow-through.',
+    'Each design decision was driven by user feedback and a commitment to maintaining calm, intentional planning.',
   decisions: [
     {
       number: 1,
       title: 'Moving away from a "tech startup" visual tone',
       problem:
-        'Early visual explorations leaned toward a dark, high-contrast aesthetic that felt more like a traditional productivity tool. While visually striking, this direction created unnecessary tension and made the experience feel more demanding.',
+        "The app's color palette shifted from a dark, high-contrast purple to a lighter sage-green palette.",
+      explanation:
+        'Feedback on early designs indicated the darker palette felt too "tech startup" and productivity-driven, which conflicted with Domani\'s goal of supporting calm, reflective planning and habit formation.',
       solution:
-        "The visual system evolved toward lighter backgrounds, softer colors, and increased spacing to reinforce calm and approachability. This shift supported Domani's goal of reducing anxiety rather than amplifying it.",
+        'The palette was adjusted to feel more lifestyle-oriented and approachable, reinforcing Domani as a habit-building tool rather than a high-pressure productivity app.',
       mockupBefore: '/assets/Domani/Decision1_Before.png',
       mockupAfter: '/assets/Domani/Decision1_After.png'
     },
@@ -53,28 +56,38 @@ const keyUXDecisions = {
       number: 2,
       title: 'Evolving the task priority model',
       problem:
-        'Initial task prioritization relied on traditional importance and urgency markers. During iteration, this approach felt too rigid and encouraged users to over-optimize their day.',
+        'The priority system evolved from a simple High / Medium / Low model into a four-tier structure with a single capped Top Priority task.',
+      explanation:
+        'Early versions limited users to one "High" priority task per day. Feedback revealed this didn\'t reflect real planning behavior, as many users legitimately consider multiple tasks high priority.',
       solution:
-        'The model was refined to emphasize intentional selection over strict prioritization, allowing users to commit to what matters most without ranking or labeling every task. This reduced decision overhead while still maintaining structure.',
+        'The restriction on high-priority tasks was removed, and a single Top Priority was introduced and capped at one per day. This preserved flexibility while still encouraging users to identify the most important outcome for the day.',
       mockup: '/assets/Domani/Decision2.png'
     },
     {
       number: 3,
       title: 'Separating planning from execution',
+      problem:
+        'Planning and execution were intentionally separated into distinct experiences rather than combined into a single screen or flow.',
       explanation:
-        'One of the core UX decisions was to clearly separate the act of planning from the act of doing. Planning occurs in advance, in a calm context, allowing users to think clearly about their intentions. Execution happens later, with minimal friction, reducing the need for re-decision-making throughout the day.',
+        'Planning and execution occur in different mental states. Planning is reflective and calm, while execution is reactive and time-sensitive. Combining both increased friction and encouraged re-prioritization.',
       solution:
-        'This separation helped reinforce trust in prior decisions rather than constantly revisiting them.',
+        'Users plan tasks the night before, then return the next day to a focused execution view. Each mode is designed around its specific needs: intention during planning and momentum during execution.',
+      outcome:
+        'This separation reduced morning decision fatigue and reinforced trust in previously made decisions.',
       mockupLeft: '/assets/Domani/Decision3_Planning.png',
       mockupRight: '/assets/Domani/Decision3_Execution.png'
     },
     {
       number: 4,
       title: 'Balancing reminders without increasing anxiety',
+      problem:
+        'Reminders were designed to support follow-through without creating pressure, while allowing users to opt in when needed.',
       explanation:
-        'Reminders were designed carefully to avoid feeling intrusive or stressful. Instead of frequent notifications, Domani uses gentle cues that reinforce commitment without creating pressure.',
+        'Many productivity apps rely on aggressive notifications, which can increase anxiety and avoidance. Feedback showed users wanted reminders, but only when they felt helpful.',
       solution:
-        'The goal was to support follow-through while respecting the emotional state of the user.'
+        'Instead of enforcing reminders by default, Domani introduced optional, user-defined reminders at the task level. This preserved a calm core experience while supporting individual planning styles.',
+      outcome:
+        'Users who wanted reminders could enable them, while others could rely on their original plan without feeling monitored or pressured.'
     }
   ]
 }
@@ -83,8 +96,11 @@ const keyUXDecisions = {
 // Reflection
 // ============================================================================
 const reflection = {
-  paragraph:
-    "Domani reinforced the importance of designing systems that respect a user's mental and emotional state, not just their productivity goals. Working without formal analytics or large-scale testing required making thoughtful tradeoffs and relying on UX judgment rather than optimization metrics. This project emphasized restraint, clarity, and intentional scope — designing only what was necessary to support the core experience."
+  paragraphs: [
+    'Domani is currently live in public beta, with a full launch planned in the coming weeks. The product was designed from the ground up as a focused alternative to bloated task managers, prioritizing clarity, restraint, and habit formation over feature density.',
+    'Design decisions throughout the project were guided by emotional timing rather than optimization metrics. Planning happens at night, when users are calmer and more reflective. Execution happens later, when the goal is momentum, not decision-making. Each interaction was shaped to respect those different mental states.',
+    'Rather than relying on aggressive reminders or complex systems, Domani supports follow-through by helping users trust the decisions they already made. The result is a lightweight experience that feels supportive instead of demanding, and intentional rather than prescriptive.'
+  ]
 }
 
 // ============================================================================
@@ -93,14 +109,19 @@ const reflection = {
 const challengesLearnings = {
   challenges: [
     {
-      title: 'Learning to separate solutions from habits',
+      title:
+        'Learning to separate actionable feedback from subjective preference',
       description:
-        'Designing behavior-focused products requires resisting the urge to over-engineer solutions. Simplicity often supports consistency better than flexibility.'
+        'Receiving feedback at scale during public beta surfaced a wide range of opinions and feature requests. Not all feedback pointed to a real problem, and many suggestions reflected personal preference rather than underlying user need.',
+      takeaway:
+        'I learned to slow down, look for patterns, and validate whether feedback addressed the root issue before deciding if it warranted a design change.'
     },
     {
-      title: 'Re-centering on the experience of time',
+      title: 'Re-centering on the perspective of first-time users',
       description:
-        "Planning tools don't just manage tasks — they shape how users feel about their future time. Small interface decisions can meaningfully influence that perception."
+        'Deep familiarity with the product occasionally clouded design judgment. When flows began to feel obvious to me but confusing to others, I had to consciously step back and design from the perspective of users encountering the app for the first time.',
+      takeaway:
+        'This helped realign decisions around clarity rather than internal logic.'
     }
   ]
 }
@@ -110,11 +131,11 @@ const challengesLearnings = {
 // ============================================================================
 const projectDemonstrates = {
   capabilities: [
-    'Product-level UX thinking beyond surface UI',
-    'Comfort designing without complete data or validation',
-    'Strong judgment around scope and restraint',
-    'Ability to design systems that support behavior, not just features',
-    'Emotional awareness in interaction design'
+    'End-to-end product design ownership from problem framing through live beta',
+    'Strong judgment around simplifying experiences instead of adding features',
+    'Ability to design for emotional context, not just functional requirements',
+    "Comfort iterating based on feedback without losing the product's core intent",
+    'Close collaboration with engineering while leading UX decisions'
   ]
 }
 
@@ -123,7 +144,7 @@ const projectDemonstrates = {
 // ============================================================================
 const whatsNext = {
   paragraph:
-    'Domani continues to evolve as a real-world concept, with future iterations focused on refining execution flows, reducing friction further, and preparing the experience for broader release.'
+    'As Domani approaches full launch, the focus will be on refining interactions, learning from real usage patterns, and strengthening the habit loop without increasing cognitive load. Future iterations will continue to prioritize calm, clarity, and intentional use.'
 }
 
 // ============================================================================

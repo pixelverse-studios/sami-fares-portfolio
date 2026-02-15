@@ -9,6 +9,7 @@ interface Decision {
   problem?: string
   explanation?: string
   solution: string
+  outcome?: string
   mockup?: string
   mockupBefore?: string
   mockupAfter?: string
@@ -107,27 +108,56 @@ export default function DomaniDecisions({
 
               {/* Content */}
               <div className="mt-6 space-y-4">
-                {/* Problem or Explanation */}
-                {(decision.problem || decision.explanation) && (
+                {/* Decision */}
+                {decision.problem && (
                   <div className="space-y-2">
-                    <span className={domaniClasses.decisionCard.whyTag}>
-                      {decision.problem ? 'Why' : 'Context'}
+                    <span className={domaniClasses.decisionCard.decisionTag}>
+                      Decision
                     </span>
                     <p
                       className={`${domaniClasses.body} text-sm leading-relaxed`}>
-                      {decision.problem || decision.explanation}
+                      {decision.problem}
                     </p>
                   </div>
                 )}
 
-                {/* Solution */}
+                {/* Why it mattered */}
+                {decision.explanation && (
+                  <div className="space-y-2">
+                    <span className={domaniClasses.decisionCard.whyTag}>
+                      Why it mattered
+                    </span>
+                    <p
+                      className={`${domaniClasses.body} text-sm leading-relaxed`}>
+                      {decision.explanation}
+                    </p>
+                  </div>
+                )}
+
+                {/* How it evolved */}
                 <div className="space-y-2">
-                  <span className={domaniClasses.decisionCard.howTag}>How</span>
+                  <span className={domaniClasses.decisionCard.howTag}>
+                    How it evolved
+                  </span>
                   <p
                     className={`${domaniClasses.body} text-sm leading-relaxed`}>
                     {decision.solution}
                   </p>
                 </div>
+
+                {/* Outcome */}
+                {decision.outcome && (
+                  <div className="space-y-2">
+                    <span
+                      className={`${domaniClasses.badge} text-xs font-medium`}>
+                      Outcome
+                    </span>
+                    <p
+                      className={`${domaniClasses.body} text-sm leading-relaxed`}>
+                      {decision.outcome}
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           </SlideInSection>

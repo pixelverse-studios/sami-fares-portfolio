@@ -7,6 +7,7 @@ import { FaBullseye, FaRegLightbulb } from 'react-icons/fa6'
 interface Challenge {
   title: string
   description: string
+  takeaway?: string
 }
 
 interface ChallengesLearningsProps {
@@ -45,6 +46,12 @@ export default function ChallengesLearnings({
                 <p className={`${domaniClasses.body} text-sm leading-relaxed`}>
                   {challenge.description}
                 </p>
+                {challenge.takeaway && (
+                  <p
+                    className={`${domaniClasses.body} text-sm leading-relaxed italic`}>
+                    {challenge.takeaway}
+                  </p>
+                )}
               </div>
             </SlideInSection>
           ))}
