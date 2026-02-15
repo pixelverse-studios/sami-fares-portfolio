@@ -26,7 +26,10 @@ export default function WorksMoodTunes() {
         header="Problem Framing – Music That Matches the Moment"
       />
       <ProjectOverview {...caseMood.projectOverview} />
-      <GoalsAndChallenges {...caseMood.goalsAndChallenges} />
+      <GoalsAndChallenges
+        {...caseMood.goalsAndChallenges}
+        header="UX Hypothesis: Designing for Mood, Energy, and Intent"
+      />
       <ResearchAndDiscovery {...caseMood.researchAndDiscovery} />
       {caseMood.keyUXDecisions && caseMood.keyUXDecisions.length > 0 && (
         <KeyUXDecisions decisions={caseMood.keyUXDecisions} />

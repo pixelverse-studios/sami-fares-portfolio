@@ -23,17 +23,10 @@ const projectOverview = {
 
 const goalsAndChallenges = {
   description: [
-    'The goal behind Moodtunes was to explore how music discovery could shift from algorithm-driven suggestions to real-time emotional curation. I wanted to create an experience that respected how users feel in the moment, not just what they’ve historically liked — while also giving local artists more visibility in a space dominated by mainstream data.',
-    'To strengthen emotional alignment, the playlist logic also draws inspiration from how certain frequencies can trigger psychological responses — calming, energizing, or focusing the listener. This helped inform both the tone of the UI and the intent behind curated playlist groupings.'
-  ],
-  goals: [
-    'Create a fast and frictionless flow where users can select their mood and receive music instantly — without needing to search, filter, or dig through menus.',
-    'Balance emotional depth with simplicity, ensuring the design feels reactive and supportive, not overwhelming.',
-    'Build a system that introduces local or lesser-known artists in a subtle, non-intrusive way — integrated into the flow, not tacked on.'
-  ],
-  constraints: [
-    'No live user testing was conducted, so design decisions were informed by competitive review, informal feedback, and UX best practices.',
-    'Because the app is conceptual, flows were designed to demonstrate clear UX logic and visual consistency, rather than functioning as a fully scoped MVP.'
+    'Moodtunes explores the hypothesis that music discovery becomes more meaningful when users can express how they feel in the moment, rather than relying solely on past listening behavior.',
+    'Drawing from my background in music and sound design, I explored how elements such as tempo, energy level, and overall sonic character influence emotional and cognitive states like focus, relaxation, or motivation. While Moodtunes does not attempt to model these relationships scientifically, the concept uses these principles as directional inputs to guide playlist grouping and UI tone.',
+    'The goal was not to overwhelm users with controls, but to create a lightweight interaction that allows them to signal intent quickly and receive music that feels emotionally aligned. This hypothesis informed both the structure of the input flow and the overall pacing, color, and density of the interface.',
+    'Because Moodtunes is a conceptual project, design decisions were evaluated based on clarity, emotional resonance, and internal UX logic rather than performance metrics or live user testing.'
   ]
 }
 
