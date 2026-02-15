@@ -15,7 +15,7 @@ export default function ProductContext({
 }: ProductContextProps) {
   return (
     <section className="halfPage bg-background-card">
-      <div className="section space-y-8">
+      <div className={`section space-y-8 ${domaniClasses.content}`}>
         <SlideInSection>
           <h2 className={domaniClasses.heading}>
             Product Context & Design Challenge

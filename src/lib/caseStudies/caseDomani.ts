@@ -130,6 +130,9 @@ const whatsNext = {
 // Reusable Class Constants (Theme-Specific Styling)
 // ============================================================================
 export const domaniClasses = {
+  // Layout
+  content: 'max-w-[70vw] mx-auto',
+
   // Section Variants
   section: 'bg-background text-text-heading',
   sectionAlt: 'bg-background-section text-text-heading',

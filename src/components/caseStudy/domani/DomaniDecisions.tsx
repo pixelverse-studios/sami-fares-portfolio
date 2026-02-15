@@ -27,7 +27,7 @@ export default function DomaniDecisions({
 }: DomaniDecisionsProps) {
   return (
     <section className="halfPage bg-background-card">
-      <div className="section space-y-12">
+      <div className={`section space-y-12 ${domaniClasses.content}`}>
         {/* Header & Intro */}
         <SlideInSection className="text-center space-y-4">
           <h2 className={domaniClasses.heading}>

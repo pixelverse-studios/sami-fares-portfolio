@@ -2,6 +2,7 @@
 
 import { SlideInSection } from '@/components/animations'
 import { domaniClasses } from '@/lib/caseStudies/caseDomani'
+import { FaBullseye, FaRegLightbulb } from 'react-icons/fa6'
 
 interface Challenge {
   title: string
@@ -12,24 +13,31 @@ interface ChallengesLearningsProps {
   challenges: Challenge[]
 }
 
+const challengeIcons = [
+  <FaBullseye key="bullseye" className="text-white text-lg" />,
+  <FaRegLightbulb key="lightbulb" className="text-white text-lg" />
+]
+
 export default function ChallengesLearnings({
   challenges
 }: ChallengesLearningsProps) {
   return (
-    <section className="halfPage">
-      <div className="section space-y-8">
+    <section className="halfPage min-h-[35vh] flex items-center bg-background-card">
+      <div className={`section space-y-8 ${domaniClasses.content}`}>
         {/* Header */}
         <SlideInSection>
-          <h3 className={`${domaniClasses.heading} text-xl font-semibold`}>
-            Key Challenges & Learnings
-          </h3>
+          <h2 className={domaniClasses.heading}>Key Challenges & Learnings</h2>
         </SlideInSection>
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {challenges.map((challenge, index) => (
             <SlideInSection key={index}>
-              <div className={`${domaniClasses.card} p-6 space-y-3`}>
+              <div
+                className={`${domaniClasses.cardWhite} p-6 space-y-3 shadow-lg`}>
+                <div className={domaniClasses.decisionCard.numberBadge}>
+                  {challengeIcons[index] || challengeIcons[0]}
+                </div>
                 <h4
                   className={`${domaniClasses.heading} text-lg font-semibold`}>
                   {challenge.title}

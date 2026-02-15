@@ -9,10 +9,14 @@ interface DomaniReflectionProps {
 
 export default function DomaniReflection({ paragraph }: DomaniReflectionProps) {
   return (
-    <section className="halfPage">
-      <div className="section">
+    <section
+      className={`halfPage min-h-[35vh] flex items-center ${domaniClasses.sectionSage}`}>
+      <div className={`section space-y-8 ${domaniClasses.content}`}>
         <SlideInSection>
-          <p className={`${domaniClasses.body} text-sm leading-relaxed`}>
+          <h2 className={domaniClasses.heading}>Reflection</h2>
+        </SlideInSection>
+        <SlideInSection>
+          <p className={`${domaniClasses.heading} text-sm leading-relaxed`}>
             {paragraph}
           </p>
         </SlideInSection>

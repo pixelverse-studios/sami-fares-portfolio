@@ -13,7 +13,7 @@ export default function ProductHypothesis({
 }: ProductHypothesisProps) {
   return (
     <section className="halfPage">
-      <div className="section">
+      <div className={`section ${domaniClasses.content}`}>
         <SlideInSection>
           <div className={`${domaniClasses.cardWhite} p-8 space-y-4`}>
             <h3

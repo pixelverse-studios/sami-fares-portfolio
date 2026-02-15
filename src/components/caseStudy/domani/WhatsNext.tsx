@@ -10,7 +10,7 @@ interface WhatsNextProps {
 export default function WhatsNext({ paragraph }: WhatsNextProps) {
   return (
     <section className="halfPage">
-      <div className="section space-y-8">
+      <div className={`section space-y-8 ${domaniClasses.content}`}>
         {/* Header */}
         <SlideInSection>
           <h3 className={`${domaniClasses.heading} text-xl font-semibold`}>
