@@ -32,11 +32,11 @@ const goalsAndChallenges = {
 
 const researchAndDiscovery = {
   description: [
-    'I began with a competitive review of the top home care agencies in northern New Jersey, analyzing how they structured their websites, the tone of their messaging, and how effectively they reassured visitors navigating emotionally complex decisions.',
-    'To complement that, I also conducted informal discovery through conversations with friends and family members who had recently gone through the process of finding home care. These stories underscored the urgency, emotional strain, and confusion that often accompany these decisions — and shaped how I approached tone, structure, and visual hierarchy.'
+    'I began with a competitive review of in-home care agencies in northern New Jersey, focusing on messaging tone, information hierarchy, and how competitors addressed trust and emotional reassurance.',
+    'I also conducted informal discovery through conversations with friends and family members who had recently searched for care services. These discussions highlighted the stress, uncertainty, and urgency families experience during this process.'
   ],
   quote:
-    '"When you are in a position where you need to find care for a loved one, it can be scary. It feels like you are trusting the person you hire with their life".',
+    '"When you are in a position where you need to find care for a loved one, it can be scary. It feels like you are trusting the person you hire with their life."',
   author: 'Mario G',
   takeaways: [
     'Visitors scan quickly for clarity around services, availability, and location',

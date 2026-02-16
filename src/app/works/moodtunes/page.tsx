@@ -6,7 +6,6 @@ import ProjectOverview from '@/components/caseStudy/ProjectOverview'
 import GoalsAndChallenges from '@/components/caseStudy/Goals&Challenges'
 import ResearchAndDiscovery from '@/components/caseStudy/Research&Discovery'
 import KeyUXDecisions from '@/components/caseStudy/KeyUXDecisions'
-import StrategyAndDesign from '@/components/caseStudy/Strategy&Design'
 import FinalReflections from '@/components/caseStudy/FinalReflections'
 import AvailableCases from '@/components/caseStudy/AvailableCases'
 
@@ -40,7 +39,6 @@ export default function WorksMoodTunes() {
           header="Interaction Model & Key Design Decisions"
         />
       )}
-      <StrategyAndDesign {...caseMood.strategyAndDesign} />
       <FinalReflections
         {...caseMood.finalReflections}
         outcomesHeader="What This Project Demonstrates"
