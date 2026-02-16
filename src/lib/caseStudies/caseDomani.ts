@@ -152,7 +152,7 @@ const whatsNext = {
 // ============================================================================
 export const domaniClasses = {
   // Layout
-  content: 'max-w-[70vw] mx-auto',
+  content: 'md:max-w-[70vw] mx-auto',
 
   // Section Variants
   section: 'bg-background text-text-heading',
