@@ -35,6 +35,8 @@ export default function WorksDomani() {
             label: 'iOS & Android'
           }
         ]}
+        ctaUrl="https://www.domani-app.com"
+        ctaLabel="Download app here"
       />
       <ProductContext {...caseDomani.productContext} />
       <ProductHypothesis {...caseDomani.productHypothesis} />

@@ -13,6 +13,8 @@ interface WorkHeroProps {
   titleClassName?: string
   tagClassName?: string
   tags?: Array<{ icon: React.ReactNode; label: string }>
+  ctaUrl?: string
+  ctaLabel?: string
 }
 
 export default function WorkHero({
@@ -24,7 +26,9 @@ export default function WorkHero({
   badgeClassName,
   titleClassName,
   tagClassName,
-  tags
+  tags,
+  ctaUrl,
+  ctaLabel
 }: WorkHeroProps) {
   const defaultBadge =
     'text-sm text-text-body border border-[var(--border-subtle)] rounded-full px-4 py-1.5'
@@ -54,6 +58,15 @@ export default function WorkHero({
                 </span>
               ))}
             </div>
+          )}
+          {ctaUrl && (
+            <a
+              href={ctaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-all duration-200 text-primary hover:font-bold text-sm">
+              {ctaLabel || 'View Live Site'} &rarr;
+            </a>
           )}
         </SlideInSection>
         {img && (
