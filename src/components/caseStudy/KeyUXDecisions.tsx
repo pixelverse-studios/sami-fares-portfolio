@@ -3,17 +3,20 @@
 import { SectionTitle } from './SectionTitle'
 import { CasesMap } from '@/lib/constants'
 import { SlideInSection } from '../animations'
-import { UXDecision } from '@/lib/types'
+import Mockups from '../mockups'
+import { UXDecision, Mockup } from '@/lib/types'
 
 const id = CasesMap.get(4).id
 
 interface KeyUXDecisionsProps {
   decisions: UXDecision[]
+  mockups?: Mockup[]
   header?: string
 }
 
 export default function KeyUXDecisions({
   decisions,
+  mockups,
   header
 }: KeyUXDecisionsProps) {
   return (
@@ -92,6 +95,7 @@ export default function KeyUXDecisions({
             </SlideInSection>
           ))}
         </div>
+        {mockups && mockups.length > 0 && <Mockups mockups={mockups} />}
       </div>
     </section>
   )

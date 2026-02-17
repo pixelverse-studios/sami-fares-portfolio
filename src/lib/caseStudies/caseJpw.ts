@@ -16,6 +16,7 @@ const projectOverview = {
     'Copywriting'
   ],
   client: 'Jones Pressure Washing (Local Home Service - NJ)',
+  url: 'https://www.jonespressurewashingnj.com',
   deliverables: [
     'Responsive homepage designed to support lead requests',
     'Service overview and detail pages with clear hierarchy',

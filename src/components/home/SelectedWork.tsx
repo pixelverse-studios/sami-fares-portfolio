@@ -112,7 +112,7 @@ export default function SelectedWork() {
     <section id="work" className="halfPage">
       <div className="section">
         <SlideInSection>
-          <h2 className="mb-12">Selected Work</h2>
+          <h2 className="mb-12 text-[2rem]">Selected Work</h2>
         </SlideInSection>
 
         <div className="flex flex-col gap-16">

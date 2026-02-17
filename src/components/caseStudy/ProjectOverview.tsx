@@ -13,6 +13,7 @@ interface ProjectOverviewProps {
   roles: string[]
   timeline: string
   tools: string[]
+  url?: string
 }
 
 export default function ProjectOverview({
@@ -21,7 +22,8 @@ export default function ProjectOverview({
   deliverables,
   roles,
   timeline,
-  tools
+  tools,
+  url
 }: ProjectOverviewProps) {
   return (
     <section id={id} className="halfPage text-sm">
@@ -54,6 +56,17 @@ export default function ProjectOverview({
                 <h4 className="text-primary mb-3 text-lg">Client</h4>
                 <p>{client}</p>
               </div>
+              {url && url !== '' && (
+                <div>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-all duration-200 text-primary hover:font-bold">
+                    View Live Site &rarr;
+                  </a>
+                </div>
+              )}
             </article>
           </SlideInSection>
 

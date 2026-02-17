@@ -7,11 +7,13 @@ import { FaCheck } from 'react-icons/fa6'
 interface ProductContextProps {
   paragraphs: string[]
   challenges: string[]
+  url?: string
 }
 
 export default function ProductContext({
   paragraphs,
-  challenges
+  challenges,
+  url
 }: ProductContextProps) {
   return (
     <section className="halfPage bg-background-card">
@@ -48,6 +50,18 @@ export default function ProductContext({
             ))}
           </ul>
         </SlideInSection>
+
+        {url && url !== '' && (
+          <SlideInSection>
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-all duration-200 text-primary hover:font-bold">
+              View Live Site &rarr;
+            </a>
+          </SlideInSection>
+        )}
       </div>
     </section>
   )

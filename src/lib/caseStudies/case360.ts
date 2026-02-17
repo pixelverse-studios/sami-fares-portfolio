@@ -10,6 +10,7 @@ const projectOverview = {
   ],
   roles: ['UX Designer', 'Content Strategy', 'UI Design'],
   client: '360 Degree Care, New Jersey',
+  url: 'https://www.360degreecare.net',
   timeline: '8 weeks',
   tools: ['Figma', 'Google Docs', 'Competitive Research']
 }

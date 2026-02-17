@@ -20,7 +20,8 @@ const productContext = {
     'Encourages follow-through without pressure',
     'Separates planning from execution to reduce cognitive load',
     'Feels supportive rather than demanding'
-  ]
+  ],
+  url: 'https://www.domani-app.com'
 }
 
 // ============================================================================
