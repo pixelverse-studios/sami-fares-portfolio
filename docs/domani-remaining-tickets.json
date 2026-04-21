@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Add Product Context Content",
+    "description": "## What\n\nPopulate productContext section with 3 paragraphs + 4 challenge bullets.\n\n## Content\n\n```typescript\nconst productContext = {\n  paragraphs: [\n    'Users want to feel calm, focused, and in control as they plan their day. However, many planning and productivity tools emphasize task density, reminders, and rigid workflows, which can increase stress rather than reduce it.',\n    'Domani was created to explore a different approach to planning — one that prioritizes emotional clarity, intentionality, and trust over constant optimization.',\n    'The challenge was to design a system that:'\n  ],\n  challenges: [\n    'Helps users make decisions without overthinking',\n    'Encourages follow-through without pressure',\n    'Separates planning from execution to reduce cognitive load',\n    'Feels supportive rather than demanding'\n  ]\n}\n```\n\n## Acceptance Criteria\n\n- [ ] Content added exactly as provided\n- [ ] File: `/src/lib/caseStudies/caseDomani.ts`"
+  },
+  {
+    "title": "Add Product Hypothesis Content",
+    "description": "## What\n\nPopulate productHypothesis section with 2-paragraph hypothesis.\n\n## Content\n\n```typescript\nconst productHypothesis = {\n  hypothesis: [\n    'If users are encouraged to plan tomorrow intentionally, in advance, and without urgency, they will feel more confident in their decisions and more likely to follow through.',\n    'By shifting planning to a calm, reflective moment and limiting how and when tasks are surfaced, Domani aims to reduce decision fatigue while still supporting daily accountability.'\n  ]\n}\n```\n\n## Acceptance Criteria\n\n- [ ] Content added exactly as provided\n- [ ] File: `/src/lib/caseStudies/caseDomani.ts`"
+  },
+  {
+    "title": "Add Key UX Decisions Content (4 decisions)",
+    "description": "## What\n\nPopulate keyUXDecisions with intro + 4 decision narratives with mockup paths.\n\n## Content\n\nSee scope document section \"Key UX Decisions & Iterations\" for complete 4-decision content with problem/explanation/solution fields and mockup paths.\n\n## Acceptance Criteria\n\n- [ ] Intro paragraph added\n- [ ] All 4 decisions added with correct structure\n- [ ] Mockup paths use placeholder values\n- [ ] Content exactly matches provided copy\n- [ ] File: `/src/lib/caseStudies/caseDomani.ts`"
+  },
+  {
+    "title": "Add Reflection Content",
+    "description": "## What\n\nPopulate reflection section with single paragraph.\n\n## Content\n\n```typescript\nconst reflection = {\n  paragraph: 'Domani reinforced the importance of designing systems that respect a user\\'s mental and emotional state, not just their productivity goals. Working without formal analytics or large-scale testing required making thoughtful tradeoffs and relying on UX judgment rather than optimization metrics. This project emphasized restraint, clarity, and intentional scope — designing only what was necessary to support the core experience.'\n}\n```\n\n## Acceptance Criteria\n\n- [ ] Content added exactly as provided\n- [ ] File: `/src/lib/caseStudies/caseDomani.ts`"
+  },
+  {
+    "title": "Add Key Challenges & Learnings Content",
+    "description": "## What\n\nPopulate challengesLearnings section with 2 learning items.\n\n## Content\n\n```typescript\nconst challengesLearnings = {\n  challenges: [\n    {\n      title: 'Learning to separate solutions from habits',\n      description: 'Designing behavior-focused products requires resisting the urge to over-engineer solutions. Simplicity often supports consistency better than flexibility.'\n    },\n    {\n      title: 'Re-centering on the experience of time',\n      description: 'Planning tools don\\'t just manage tasks — they shape how users feel about their future time. Small interface decisions can meaningfully influence that perception.'\n    }\n  ]\n}\n```\n\n## Acceptance Criteria\n\n- [ ] Content added exactly as provided\n- [ ] File: `/src/lib/caseStudies/caseDomani.ts`"
+  },
+  {
+    "title": "Add What This Project Demonstrates Content",
+    "description": "## What\n\nPopulate projectDemonstrates section with 5 capability bullets.\n\n## Content\n\n```typescript\nconst projectDemonstrates = {\n  capabilities: [\n    'Product-level UX thinking beyond surface UI',\n    'Comfort designing without complete data or validation',\n    'Strong judgment around scope and restraint',\n    'Ability to design systems that support behavior, not just features',\n    'Emotional awareness in interaction design'\n  ]\n}\n```\n\n## Acceptance Criteria\n\n- [ ] Content added exactly as provided\n- [ ] File: `/src/lib/caseStudies/caseDomani.ts`"
+  },
+  {
+    "title": "Add What's Next Content",
+    "description": "## What\n\nPopulate whatsNext section (unique to Domani).\n\n## Content\n\n```typescript\nconst whatsNext = {\n  paragraph: 'Domani continues to evolve as a real-world concept, with future iterations focused on refining execution flows, reducing friction further, and preparing the experience for broader release.'\n}\n```\n\n## Acceptance Criteria\n\n- [ ] Content added exactly as provided\n- [ ] File: `/src/lib/caseStudies/caseDomani.ts`"
+  },
+  {
+    "title": "Create ProductContext Component",
+    "description": "## What\n\nBuild custom `<ProductContext>` component with 3 paragraphs + 4-bullet challenge list.\n\n## Component Design\n\n- Import and use `domaniClasses` helpers\n- Paragraph text in body color\n- Challenge list with checkmark icons or bullets\n- Responsive spacing\n- Scroll animation (SlideInSection)\n\n## File Location\n\n`/src/components/caseStudy/domani/ProductContext.tsx`\n\n## Acceptance Criteria\n\n- [ ] Component renders paragraphs correctly\n- [ ] Challenge list displays with proper styling\n- [ ] Uses Domani sub-theme classes\n- [ ] Responsive layout\n- [ ] TypeScript interface defined"
+  },
+  {
+    "title": "Create ProductHypothesis Component",
+    "description": "## What\n\nBuild custom `<ProductHypothesis>` component as card/callout with 2 paragraphs.\n\n## Component Design\n\n- Card with light sage background\n- Border and padding\n- \"Product Hypothesis\" header\n- 2-paragraph content\n- Uses `domaniClasses.card` styling\n\n## File Location\n\n`/src/components/caseStudy/domani/ProductHypothesis.tsx`\n\n## Acceptance Criteria\n\n- [ ] Card component with proper styling\n- [ ] Hypothesis paragraphs render correctly\n- [ ] Uses Domani card classes\n- [ ] Scroll animation (SlideInSection)\n- [ ] TypeScript interface defined"
+  },
+  {
+    "title": "Create DomaniDecisions Component (Complex)",
+    "description": "## What\n\nBuild complex `<DomaniDecisions>` component with 4 numbered decision cards + side-by-side mockups.\n\n## Component Design\n\n**MOST COMPLEX COMPONENT**\n\n- Intro paragraph\n- 4 decision cards with:\n  - Circular number badge (sage gradient)\n  - Title\n  - Problem/explanation text\n  - Solution text\n  - Mockup grid (1 or 2 columns per decision)\n- Responsive: mockups stack on mobile\n\n## File Location\n\n`/src/components/caseStudy/domani/DomaniDecisions.tsx`\n\n## Acceptance Criteria\n\n- [ ] All 4 decisions render correctly\n- [ ] Number badges use sage gradient\n- [ ] Side-by-side mockups layout\n- [ ] Mockups responsive (stack on mobile)\n- [ ] Uses domaniClasses.decisionCard helpers\n- [ ] TypeScript interface defined"
+  },
+  {
+    "title": "Create DomaniReflection Component",
+    "description": "## What\n\nBuild simple `<DomaniReflection>` component with single paragraph.\n\n## Component Design\n\n- Simple section\n- Single paragraph\n- Body text styling\n\n## File Location\n\n`/src/components/caseStudy/domani/DomaniReflection.tsx`\n\n## Acceptance Criteria\n\n- [ ] Paragraph renders correctly\n- [ ] Uses Domani body text class\n- [ ] Scroll animation\n- [ ] TypeScript interface defined"
+  },
+  {
+    "title": "Create ChallengesLearnings Component",
+    "description": "## What\n\nBuild `<ChallengesLearnings>` component with 2-column grid layout.\n\n## Component Design\n\n- \"Key Challenges & Learnings\" header\n- 2-column grid (desktop) / 1-column stack (mobile)\n- Each item: card with title + description\n- Border and padding on cards\n\n## File Location\n\n`/src/components/caseStudy/domani/ChallengesLearnings.tsx`\n\n## Acceptance Criteria\n\n- [ ] 2-column grid on desktop\n- [ ] Stacks to 1 column on mobile\n- [ ] Card styling with borders\n- [ ] Uses Domani card classes\n- [ ] TypeScript interface defined"
+  },
+  {
+    "title": "Create ProjectDemonstrates Component",
+    "description": "## What\n\nBuild `<ProjectDemonstrates>` component with dark background + capability list.\n\n## Component Design\n\n- Dark section (sage dark gradient)\n- White/light text\n- \"What This Project Demonstrates\" header\n- 5 capability bullets\n- High visual prominence\n\n## File Location\n\n`/src/components/caseStudy/domani/ProjectDemonstrates.tsx`\n\n## Acceptance Criteria\n\n- [ ] Dark background (domaniGradients.dark)\n- [ ] Light text color\n- [ ] 5 capabilities render as list\n- [ ] Proper contrast for accessibility\n- [ ] TypeScript interface defined"
+  },
+  {
+    "title": "Create WhatsNext Component",
+    "description": "## What\n\nBuild simple `<WhatsNext>` component with forward-looking paragraph.\n\n## Component Design\n\n- Simple section\n- \"What's Next\" header\n- Single paragraph\n- Light background\n\n## File Location\n\n`/src/components/caseStudy/domani/WhatsNext.tsx`\n\n## Acceptance Criteria\n\n- [ ] Paragraph renders correctly\n- [ ] Uses Domani body text class\n- [ ] Scroll animation\n- [ ] TypeScript interface defined"
+  },
+  {
+    "title": "Update Domani Page Component",
+    "description": "## What\n\nUpdate `/src/app/works/domani/page.tsx` to use all 7 custom components.\n\n## Implementation\n\n```tsx\nimport WorkHero from '@/components/caseStudy/WorkHero'\nimport ProductContext from '@/components/caseStudy/domani/ProductContext'\nimport ProductHypothesis from '@/components/caseStudy/domani/ProductHypothesis'\nimport DomaniDecisions from '@/components/caseStudy/domani/DomaniDecisions'\nimport DomaniReflection from '@/components/caseStudy/domani/DomaniReflection'\nimport ChallengesLearnings from '@/components/caseStudy/domani/ChallengesLearnings'\nimport ProjectDemonstrates from '@/components/caseStudy/domani/ProjectDemonstrates'\nimport WhatsNext from '@/components/caseStudy/domani/WhatsNext'\nimport AvailableCases from '@/components/caseStudy/AvailableCases'\n\nimport caseDomani from '@/lib/caseStudies/caseDomani'\n\nexport default function WorksDomani() {\n  return (\n    <>\n      <WorkHero\n        img=\"/assets/Domani/DomaniHero.png\"\n        header=\"Domani\"\n        descriptor=\"A calm, habit-focused planning app designed to help users trust tomorrow's decisions.\"\n      />\n      <ProductContext {...caseDomani.productContext} />\n      <ProductHypothesis {...caseDomani.productHypothesis} />\n      <DomaniDecisions {...caseDomani.keyUXDecisions} />\n      <DomaniReflection {...caseDomani.reflection} />\n      <ChallengesLearnings {...caseDomani.challengesLearnings} />\n      <ProjectDemonstrates {...caseDomani.projectDemonstrates} />\n      <WhatsNext {...caseDomani.whatsNext} />\n      <AvailableCases current=\"Domani\" showHeader />\n    </>\n  )\n}\n```\n\n## Acceptance Criteria\n\n- [ ] All custom components imported\n- [ ] Data props passed correctly\n- [ ] WorkHero descriptor updated\n- [ ] No standard case study components used\n- [ ] Page accessible at `/works/domani`\n- [ ] File compiles without errors"
+  },
+  {
+    "title": "Integrate Domani Theme Throughout",
+    "description": "## What\n\nApply `domaniClasses` and `domaniGradients` throughout all custom components.\n\n## Implementation\n\nEach component should:\n- Import helpers: `import { domaniClasses, domaniGradients } from '@/lib/caseStudies/caseDomani'`\n- Use appropriate classes: `domaniClasses.section`, `domaniClasses.card`, etc.\n- Apply gradients where appropriate\n\n## Acceptance Criteria\n\n- [ ] All components use Domani classes\n- [ ] Theme switching works (light/dark)\n- [ ] No hard-coded colors\n- [ ] Visual consistency across sections\n- [ ] Matches layout image provided"
+  },
+  {
+    "title": "Add Domani Assets (7 mockup images)",
+    "description": "## What\n\nAdd all mockup images to `/public/assets/Domani/` and update paths in data file.\n\n## Assets Needed\n\n1. `/assets/Domani/DomaniHero.png` - Hero image\n2. `/assets/Domani/Decision1_Before.png` - Dark interface\n3. `/assets/Domani/Decision1_After.png` - Light interface\n4. `/assets/Domani/Decision2.png` - Priority model\n5. `/assets/Domani/Decision3_Planning.png` - Planning mode\n6. `/assets/Domani/Decision3_Execution.png` - Execution mode\n7. `/assets/Domani/Decision4.png` - Reminder interface\n\n## Acceptance Criteria\n\n- [ ] All 7 images added to directory\n- [ ] Paths updated in caseDomani.ts\n- [ ] Images display correctly\n- [ ] Images optimized for web\n- [ ] Alt text provided"
+  }
+]

@@ -2,7 +2,7 @@ import { CaseStudy } from '../types'
 
 const allCases: CaseStudy[] = [
   {
-    img: '/assets/Domani/HomeMock.png',
+    img: '/assets/Domani/Domani_Homepage.png',
     label: 'Domani',
     category: 'Product UX - Systems & Iteration',
     tags: ['Productivity App', 'Interaction Design'],
